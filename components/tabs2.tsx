@@ -39,7 +39,6 @@ import {AcmeIcon} from "./social";
 
 import NotificationsCard from "./notifications-card";
 import ThemeDropdown from "./theme-dropdown";
-import Antipasti from "./antipasti";
 import Primtab from "./primtab";
 
 export default function Tab2(props: CardProps) {
@@ -49,17 +48,10 @@ export default function Tab2(props: CardProps) {
             <div className="w-full max-w-[1024px] px-4 lg:px-8"></div>
             <header className="mb-6 flex w-full items-center justify-between mt-6 px-4">
             <div className="flex flex-col">
-              <h1 className="text-xl font-bold text-default-900 lg:text-3xl">Dashboard</h1>
-              <p className="text-small text-default-400 lg:text-medium">Manage your deployments</p>
+              <h1 className="text-xl font-bold text-default-900 lg:text-3xl">Menu</h1>
+              <p className="text-small text-default-400 lg:text-medium">Wellington Menu</p>
             </div>
-            <Button
-              className="bg-foreground text-background"
-              startContent={
-                <Icon className="flex-none text-background/60" icon="lucide:plus" width={16} />
-              }
-            >
-              New Deployment
-            </Button>
+         <ThemeDropdown/>
           </header>
 <div>
                 {/* <div className="flex items-center justify-between px-5 pt-6">
