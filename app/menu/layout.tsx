@@ -21,7 +21,7 @@ export default function MenuLayout({
 		<div>
 
 
-<img style={ {height: '15vh'}} className="w-full object-cover border-b-2" src="./images/p5.jpg" />
+<img style={ {height: '12vh'}} className="w-full object-cover border-b-2" src="./images/p5.jpg" />
 
 			<Tab2 className=""/>
 
