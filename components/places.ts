@@ -3,8 +3,8 @@ import type {PlaceItem} from "./place-list-item";
 const places: PlaceItem[] = [
   {
     id: "1",
-    name: "Pinsa Romana ",
-    rating: 4.5,
+    name: "Pinsa Sophia Loren",
+   
     href: "#",
     price: 49.99,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -12,8 +12,8 @@ const places: PlaceItem[] = [
   },
   {
     id: "2",
-    name: "Pinsa Joe Margherita",
-    rating: 4.84,
+    name: "Pinsa Joe Theismann",
+   
     href: "#",
     price: 29.99,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -21,8 +21,8 @@ const places: PlaceItem[] = [
   },
   {
     id: "3",
-    name: "Marton, New Zealand",
-    rating: 3.94,
+    name: "Pinsa Joe Theismann",
+   
     href: "#",
     price: 39.99,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -30,8 +30,8 @@ const places: PlaceItem[] = [
   },
   {
     id: "4",
-    name: "Nova Praia, Brazil",
-    rating: 4.2,
+    name: "Pinsa Sophia Loren",
+    
     href: "#",
     price: 49.99,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -39,8 +39,8 @@ const places: PlaceItem[] = [
   },
   {
     id: "5",
-    name: "Birgu, Malta",
-    rating: 3.5,
+    name: "Pinsa Sophia Loren",
+   
     href: "#",
     price: 29.99,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -48,8 +48,8 @@ const places: PlaceItem[] = [
   },
   {
     id: "6",
-    name: "Carmel, USA",
-    rating: 4.9,
+    name: "Pinsa Joe Theismann",
+
     href: "#",
     price: 39.99,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
