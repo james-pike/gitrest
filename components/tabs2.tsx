@@ -48,7 +48,7 @@ export default function Tab2(props: CardProps) {
     <Card {...props}>
         <div  style={{ overflowX: 'auto' }}> {/* Container for tabs */}
             <div className="w-full max-w-[1024px] px-4 lg:px-8"></div>
-            <header className="mb-4 flex w-full items-center justify-between mt-6 px-6">
+            <header className="mb-4 flex w-full items-center justify-between mt-5 px-6">
             <div className="flex flex-col">
               <h1 className="text-2xl font-bold text-default-900 lg:text-3xl">Menu</h1>
               <p className="text-medium text-default-400 lg:text-medium">Wellington Menu</p>

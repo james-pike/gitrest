@@ -28,7 +28,7 @@ export default function ThemeDropdown({  }) {
           key="almonte"
           shortcut="⌘N"
           
-          startContent={<PiForkKnifeFill />}
+          startContent={<SlLocationPin />}
         >
         Almonte
         </DropdownItem>
@@ -36,7 +36,7 @@ export default function ThemeDropdown({  }) {
           key="nepean"
           shortcut="⌘C"
          
-          startContent={<PiForkKnifeFill />}
+          startContent={<SlLocationPin />}
         >
           Nepean
         </DropdownItem>
@@ -44,7 +44,7 @@ export default function ThemeDropdown({  }) {
           key="wellington"
           shortcut="⌘⇧E"
       
-          startContent={<PiForkKnifeFill />}
+          startContent={<SlLocationPin />}
         >
           Welllington
         </DropdownItem>
