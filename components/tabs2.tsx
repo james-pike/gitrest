@@ -46,18 +46,33 @@ export default function Tab2(props: CardProps) {
   return (
     <Card {...props}>
             <div  style={{ overflowX: 'auto' }}> {/* Container for tabs */}
+            <div className="w-full max-w-[1024px] px-4 lg:px-8"></div>
+            <header className="mb-6 flex w-full items-center justify-between mt-6 px-4">
+            <div className="flex flex-col">
+              <h1 className="text-xl font-bold text-default-900 lg:text-3xl">Dashboard</h1>
+              <p className="text-small text-default-400 lg:text-medium">Manage your deployments</p>
+            </div>
+            <Button
+              className="bg-foreground text-background"
+              startContent={
+                <Icon className="flex-none text-background/60" icon="lucide:plus" width={16} />
+              }
+            >
+              New Deployment
+            </Button>
+          </header>
 <div>
-                <div className="flex items-center justify-between px-5 pt-6">
-                    <div className="flex items-center"> {/* New nested flex container */}
-                        {/* <AcmeIcon size={44} /> */}
+                {/* <div className="flex items-center justify-between px-5 pt-6">
+                    <div className="flex items-center"> 
+                      
                         <span className="text-lg px-1 font-medium">Menu</span>
                     </div>
                     <ThemeDropdown />
-                </div>
+                </div> */}
 
-                <p className="px-6 pt-3 pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit qui menu et dans le consectetur adipiscing elit</p>
+                {/* <p className="px-6 pt-3 pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit qui menu et dans le consectetur adipiscing elit</p>
                 <div className="overflow-x-auto w-full">
-                </div>
+                </div> */}
      
         
             </div>
