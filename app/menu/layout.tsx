@@ -1,6 +1,7 @@
 import BasicFooter from "@/components/footer";
 import List2 from "@/components/list2";
 import Primtab from "@/components/primtab";
+import Tabnav from "@/components/tabnav";
 
 import Tab1 from "@/components/tabs";
 import Tab2 from "@/components/tabs2";
@@ -18,6 +19,10 @@ export default function MenuLayout({
 	return (
 
 		<div>
+
+
+
+
 			<Tab2 className=""/>
 
 	
