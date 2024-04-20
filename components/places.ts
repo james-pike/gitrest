@@ -3,7 +3,7 @@ import type {PlaceItem} from "./place-list-item";
 const places: PlaceItem[] = [
   {
     id: "1",
-    name: "Ponta do Sol, Portugal",
+    name: "Pinsa Romana ",
     rating: 4.5,
     href: "#",
     price: 49.99,
@@ -12,7 +12,7 @@ const places: PlaceItem[] = [
   },
   {
     id: "2",
-    name: "Redberth, UK",
+    name: "Pinsa Joe Margherita",
     rating: 4.84,
     href: "#",
     price: 29.99,
