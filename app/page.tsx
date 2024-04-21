@@ -129,33 +129,7 @@ export default function HomePage() {
 
 			</a>
 
-			{/* <div className="border-4 border-black"></div>
-
-
-
-			<div style={{ position: 'relative' }}>
-				<img
-				className="w-full h-40 object-cover border-black"
-					style={{ opacity: 0.75, height: '20vh' }}
-					src="./images/events3.jpg"
-					alt="Background Image"
-				/>
-				<h1
-					className={title()}
-					style={{
-
-						position: 'absolute',
-						top: '50%', // Position the h1 in the middle vertically
-						left: '25%', // Position the h1 in the middle horizontally
-						transform: 'translate(-50%, -50%)', // Center the h1
-						color: 'white', // Text color
-						fontSize: '2rem', // Font size
-						zIndex: 10, // Ensure it's above the image
-					}}
-				>
-					Events
-				</h1>
-			</div> */}
+		
 
 			<div className="border-4 border-black"></div>
 
