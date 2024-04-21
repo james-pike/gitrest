@@ -19,12 +19,11 @@ import ThemeDropdown from "./theme-dropdown";
 import { PiForkKnifeFill } from "react-icons/pi";
 import { LuHome } from "react-icons/lu";
 
-
-
 const menuItems = [
   { name: "HOME", route: "/" },
   { name: "MENU", route: "/menu" },
   { name: "LOCATIONS", route: "/locations" },
+  { name: "CATERING", route: "/catering" },
   { name: "ABOUT", route: "/about" },
 ];
 
@@ -123,7 +122,7 @@ export default function BasicNavbar(props: NavbarProps) {
       <NavbarMenuToggle className="text-white md:hidden" style={{ outline: 'none' }}/>
 
       <NavbarMenu
-  className="top-[calc(var(--navbar-height)_-_1px)] max-h-fit bg-black pb-6 pt-6 shadow-medium backdrop-blur-md backdrop-saturate-150 dark:bg-stone-900"
+  className="top-[calc(var(--navbar-height)_-_1px)] max-h-fit bg-black pb-6 pt-6 shadow-medium backdrop-blur-md backdrop-saturate-150 dark:bg-stone-800"
   motionProps={{
     initial: { opacity: 0, y: -20 },
     animate: { opacity: 1, y: 0 },

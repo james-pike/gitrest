@@ -65,12 +65,12 @@ export default function BasicFooter() {
   
   return (
     <footer className="flex w-full flex-col  border-white">
-      <div className="mx-auto px-5 pb-8 pt-6 sm:pt-24 lg:px-8 lg:pt-32">
+      <div className="mx-auto px-4 pb-5 pt-4 sm:pt-24 lg:px-8 lg:pt-32">
         
         
 
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="space-y-3 md:pr-8">
+          <div className="space-y-2 md:pr-8">
             <div className="flex items-center justify-start">
               <AcmeIcon size={44} />
               {/* <img className="h-8 w-auto" src="./images/logo.png" alt="Logo" /> */}
@@ -79,7 +79,7 @@ export default function BasicFooter() {
             <p className="text-small text-default-500 pb-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique
             </p>
-            <div className="flex space-x-6">
+            <div className="flex space-x-6 pt-1">
               {footerNavigation.social.map((item) => (
                 <Link key={item.name} isExternal className="text-default-400" href={item.href}>
                   <span className="sr-only">{item.name}</span>
