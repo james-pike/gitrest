@@ -65,7 +65,7 @@ export default function BasicFooter() {
   
   return (
     <footer className="flex w-full flex-col  border-white">
-      <div className="mx-auto px-4 pb-5 pt-4 sm:pt-24 lg:px-8 lg:pt-32">
+      <div className="mx-auto px-4 pb-5 pt-3 sm:pt-24 lg:px-8 lg:pt-32">
         
         
 
