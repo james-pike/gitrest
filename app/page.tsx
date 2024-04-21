@@ -16,10 +16,10 @@ export default function HomePage() {
 
 
 
-<div style={{ position: 'relative', height: '50vh'}}>
+<div style={{ position: 'relative', height: '60vh'}}>
 				<img
 					className="w-full object-cover border-black"
-					style={{ opacity: 0.75, height: '50vh' }}
+					style={{ opacity: 0.75, height: '60vh' }}
 					src="./images/a6.png"
 					alt="Background Image"
 				
@@ -41,7 +41,7 @@ export default function HomePage() {
   <span style={{ display: 'block' }}>Italian</span>
   <span style={{ display: 'block' }}>Kitchen</span>
 </h1>
-				<div
+				<div className="pt-6"
     style={{
       position: 'absolute',
       top: '60%', // Position the buttons below the subtitle
@@ -50,23 +50,20 @@ export default function HomePage() {
       zIndex: 10, // Ensure it's above the image
     }}
   >
-
-	<a href="https://joesitaliankitchen-1asc.mobi2go.com">
+<div style={{ display: 'flex', alignItems: 'center' }}>
+  <a href="https://joesitaliankitchen-1asc.mobi2go.com">
     <button className="bg-black hover:bg-blue-700 text-white font-bold py-2 border-white border-2 px-4 rounded mr-2">
       Orders
     </button>
-
-	</a>
-	<div className="pt-2"></div>
-
-	<a href="https://booking.resdiary.com/widget/Standard/JoesItalianKitchen/364">
+  </a>
+  <div className="pt-2"></div>
+  <a href="https://booking.resdiary.com/widget/Standard/JoesItalianKitchen/364">
     <button className="bg-white hover:bg-green-700 text-black font-bold py-2 px-4 border-black border-2 rounded">
-		
       Reservations
     </button>
-	
+  </a>
+</div>
 
-	</a>
   </div>
 			</div>
 
