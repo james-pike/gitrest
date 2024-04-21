@@ -28,17 +28,17 @@ export default function Nepeantab() {
         onSelectionChange={handleTabChange}
         className="focus:outline-none"
       >
-        <Tab key="photos" title="PANINI">
-          <Card>
+        <Tab key="photos" title="PANINI" className="focus:outline-none">
+          <Card className="focus:outline-none">
             {cachedLists.photos}
           </Card>
         </Tab>
-        <Tab key="insalata" title="PINSA ROMANA">
+        <Tab key="insalata" title="PINSA ROMANA" className="focus:outline-none">
           <Card>
             {cachedLists.insalata}
           </Card>
         </Tab>
-        <Tab key="desserts" title="DESSERTS">
+        <Tab key="desserts" title="DESSERTS" className="focus:outline-none">
           <Card>
             {cachedLists.desserts}
           </Card>

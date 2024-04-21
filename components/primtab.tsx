@@ -32,27 +32,27 @@ export default function Primtab() {
         onSelectionChange={handleTabChange}
         className="focus:outline-none"
       >
-        <Tab key="pinsa" title="PINSA ROMANA">
+        <Tab key="pinsa" title="PINSA ROMANA" className="focus:outline-none">
           <Card>
             {cachedLists.pinsa}
           </Card>
         </Tab>
-        <Tab key="photos" title="ANTIPASTI">
+        <Tab key="photos" title="ANTIPASTI" className="focus:outline-none">
           <Card>
             {cachedLists.photos}
           </Card>
         </Tab>
-        <Tab key="insalata" title="INSALATA">
+        <Tab key="insalata" title="INSALATA" className="focus:outline-none">
           <Card>
             {cachedLists.insalata}
           </Card>
         </Tab>
-        <Tab key="pasta" title="PASTA">
+        <Tab key="pasta" title="PASTA" className="focus:outline-none">
           <Card>
             {cachedLists.pasta}
           </Card>
         </Tab>
-        <Tab key="desserts" title="DESSERTS">
+        <Tab key="desserts" title="DESSERTS" className="focus:outline-none">
           <Card>
             {cachedLists.desserts}
           </Card>

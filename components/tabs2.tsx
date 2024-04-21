@@ -43,8 +43,8 @@ export default function Tab2(props: CardProps) {
           <Dropdown>
             <DropdownTrigger>
               <Button
-                variant="bordered" className=" bg-foreground-100 hover:bg-foreground-200 px-2 h-11">
-                <div className="flex items-center gap-1.5 text-large">
+                variant="bordered" className=" bg-foreground-100 hover:bg-foreground-200 px-2 h-11 focus:outline-none">
+                <div className="flex items-center gap-1.5 text-large focus:outline-none">
                   <SlLocationPin />
                   <div className="md:flex text-small">
                     <p>{selectedLocation}</p>
