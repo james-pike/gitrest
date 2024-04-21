@@ -16,7 +16,7 @@ export default function Primtab() {
   };
 
   return (
-    <div className="flex w-full flex-col">
+    <div className="flex w-full flex-col px-2">
       <Tabs
         aria-label="Options"
         selectedKey={selected}
