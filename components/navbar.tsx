@@ -86,7 +86,7 @@ export default function BasicNavbar(props: NavbarProps) {
       {/* Right Content */}
       <NavbarContent className="hidden md:flex" justify="end">
         <NavbarItem className="ml-2 !flex gap-2">
-          <ThemeDropdown />
+          {/* <ThemeDropdown /> */}
           <Button
             className="text-default-500"
             radius="full"

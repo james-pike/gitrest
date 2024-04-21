@@ -50,6 +50,16 @@ const places: PlaceItem[] = [
 
   {
     id: "6",
+    name: "Pinsa Joe Dimaggio",
+   
+    href: "#",
+    price: 23,
+    description: "Double smoked bacon, baby spinach, tomato sauce, grape tomatoes, sunny side up egg, pecorino romano, mozzarella.",
+    imageSrc: "./images/p8.jpg"
+  },
+
+  {
+    id: "7",
     name: "Pinsa Mufferaw",
 
     href: "#",
@@ -59,7 +69,7 @@ const places: PlaceItem[] = [
   },
 
   {
-    id: "7",
+    id: "8",
     name: "Pinsa Joey Ramone",
    
     href: "#",
@@ -68,15 +78,7 @@ const places: PlaceItem[] = [
     imageSrc: "./images/p7.jpg"
   },
 
-  {
-    id: "8",
-    name: "Pinsa Joe Dimaggio",
-   
-    href: "#",
-    price: 23,
-    description: "Double smoked bacon, baby spinach, tomato sauce, grape tomatoes, sunny side up egg, pecorino romano, mozzarella.",
-    imageSrc: "./images/p8.jpg"
-  },
+
 
 
 ];

@@ -3,14 +3,10 @@ import { PiForkKnifeFill } from "react-icons/pi";
 import { title } from "@/components/primitives";
 
 export default function HomePage() {
+
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 	return (
-		<div>
-
-
-
-
-
-
+		<div className={isMobile ? "block" : "hidden"}>
 
 
 
@@ -181,3 +177,4 @@ export default function HomePage() {
 
 	);
 }
+
