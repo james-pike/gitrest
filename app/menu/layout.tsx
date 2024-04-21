@@ -1,4 +1,7 @@
+'use client';
+
 import Tab2 from "@/components/tabs2";
+import { useState, useEffect } from "react";
 
 
 export default function MenuLayout({
@@ -6,11 +9,27 @@ export default function MenuLayout({
 }: {
 	children: React.ReactNode;
 }) {
+
+	const [isMobile, setIsMobile] = useState(false);
+
+	useEffect(() => {
+		const handleResize = () => {
+			setIsMobile(window.innerWidth <= 568); // Adjust the threshold as needed
+		};
+
+		handleResize(); // Check initial width
+		window.addEventListener("resize", handleResize);
+
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
 	return (
 
 		<div>
-{/* <img style={ {height: '12vh'}} className="w-full object-cover border-b-2" src="./images/p5.jpg" /> */}
+<div className={isMobile ? "block" : "hidden"}>
 			<Tab2 className=""/>
+			</div>
 		</div>
 	);
 }
