@@ -1,3 +1,5 @@
+'use client ';
+
 import React, { useMemo } from "react";
 import { Tabs, Tab, Card, CardBody, CardHeader } from "@nextui-org/react";
 import List2 from "./list2";
@@ -23,7 +25,7 @@ export default function Primtab() {
   }), []);
 
   return (
-    <div className="flex w-full flex-col px-1">
+    <div className="flex w-full flex-col px-0">
       <Tabs
         aria-label="Options"
         selectedKey={selected}
