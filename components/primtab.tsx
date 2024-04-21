@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Tabs, Tab, Card, Spinner } from "@nextui-org/react";
 import List2 from "./list2";
 import List3 from "./list3";
