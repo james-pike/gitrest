@@ -77,7 +77,8 @@ export default function Tab2({ initialLocation = "Wellington", ...props }: { ini
           </Dropdown>
         </header>
         <div>
-          {selectedLocation === "Wellington" ? <Primtab /> : <Nepeantab />}
+          {selectedLocation === "Wellington" ? <Primtab /> :
+          selectedLocation === "Almonte" ? <Primtab /> : <Nepeantab />}
         </div>
       </div>
     </Card>
