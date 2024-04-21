@@ -3,13 +3,14 @@ import type {PlaceItem} from "./place-list-item";
 const paninis: PlaceItem[] = [
   {
     id: "1",
-    name: "Napoli Salami Panini",
+    name: "Grilled Veggie Panini",
    
     href: "#",
-    price: 49.99,
-    description: "Napoli Salami, Provolone Cheese, Tomato, Arugula",
-    imageSrc: "./images/psalami.jpg"
+    price: 29.99,
+    description: "Zucchini, Grilled Eggplant, Red Pepper, Pesto, Fior Di Latte, Calabrian Chile",
+    imageSrc: "./images/pan5.jpg"
   },
+ 
   {
     id: "2",
     name: "Prosciutto Cotto Panini",
@@ -29,7 +30,7 @@ const paninis: PlaceItem[] = [
     imageSrc: "./images/pan3.jpg"
   },
   {
-    id: "4",
+    id: "1",
     name: "Grilled Chicken Panini",
     
     href: "#",
@@ -37,15 +38,17 @@ const paninis: PlaceItem[] = [
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     imageSrc: "./images/pan4.jpg"
   },
+
   {
     id: "5",
-    name: "Grilled Veggie Panini",
+    name: "Napoli Salami Panini",
    
     href: "#",
-    price: 29.99,
-    description: "Zucchini, Grilled Eggplant, Red Pepper, Pesto, Fior Di Latte, Calabrian Chile",
-    imageSrc: "./images/pan5.jpg"
+    price: 49.99,
+    description: "Napoli Salami, Provolone Cheese, Tomato, Arugula",
+    imageSrc: "./images/psalami.jpg"
   },
+
   {
     id: "6",
     name: "Italian Sausage Panini",

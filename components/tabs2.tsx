@@ -16,9 +16,12 @@ import Nepeantab from "./nepeantab";
 
 export default function Tab2(props: CardProps) {
   // Retrieve selected location from local storage or default to "Wellington"
-  const [selectedLocation, setSelectedLocation] = useState(
-    localStorage.getItem("selectedLocation") || "Wellington"
-  );
+  const [selectedLocation, setSelectedLocation] = useState(() => {
+    if (typeof window !== "undefined") {
+      return localStorage.getItem("selectedLocation") || "Wellington";
+    }
+    return "Wellington";
+  });
 
   useEffect(() => {
     // Save selected location to local storage whenever it changes

@@ -31,26 +31,22 @@ export default function Primtab() {
         </Tab>
         <Tab key="pasta" title="PASTA">
           <Card>
-          <List2   />
+        
           </Card>
         </Tab>
         <Tab key="pinsa" title="PINSA ROMANA">
           <Card>
-          <List2   />
+          
           </Card>
         </Tab>
         <Tab key="desserts" title="DESSERTS">
           <Card>
-            <CardBody>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </CardBody>
+            
           </Card>
         </Tab>
         <Tab key="beverages" title="BEVERAGES">
           <Card>
-            <CardBody>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </CardBody>
+         
           </Card>
         </Tab>
       </Tabs>
