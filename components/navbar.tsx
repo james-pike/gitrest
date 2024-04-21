@@ -113,14 +113,14 @@ export default function BasicNavbar(props: NavbarProps) {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarContent className="flex md:hidden " justify="end">
+      {/* <NavbarContent className="flex md:hidden " justify="end">
         {isMenuOpen && <ThemeDropdown />}
-      </NavbarContent>
+      </NavbarContent> */}
 
       <NavbarMenuToggle className="text-white md:hidden" style={{ outline: 'none' }}/>
 
       <NavbarMenu
-  className="top-[calc(var(--navbar-height)_-_1px)] max-h-fit bg-black pb-6 pt-6 shadow-medium backdrop-blur-md backdrop-saturate-150 dark:bg-black"
+  className="top-[calc(var(--navbar-height)_-_1px)] max-h-fit bg-black pb-6 pt-6 shadow-medium backdrop-blur-md backdrop-saturate-150 dark:bg-stone-900"
   motionProps={{
     initial: { opacity: 0, y: -20 },
     animate: { opacity: 1, y: 0 },
@@ -163,7 +163,7 @@ export default function BasicNavbar(props: NavbarProps) {
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
            <Link className="mb-2 w-full text-foreground" href={item.route} size="md" onClick={handleMenuItemClick}>
-    <span style={{ marginRight: '6px' }}><PiForkKnifeFill/></span> {item.name}
+    <span style={{ marginRight: '6px' }}></span> {item.name}
 </Link>
             {index < menuItems.length - 1 && <Divider className="opacity-50" />}
           </NavbarMenuItem>
