@@ -16,10 +16,10 @@ export default function HomePage() {
 
 
 
-<div style={{ position: 'relative', height: '38vh'}}>
+<div style={{ position: 'relative', height: '45vh'}}>
 				<img
 					className="w-full object-cover border-black"
-					style={{ opacity: 0.75, height: '38vh' }}
+					style={{ opacity: 0.75, height: '45vh' }}
 					src="./images/a6.png"
 					alt="Background Image"
 				
@@ -50,7 +50,7 @@ export default function HomePage() {
   >
 
 	<a href="https://joesitaliankitchen-1asc.mobi2go.com">
-    <button className="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2">
+    <button className="bg-black hover:bg-blue-700 text-white font-bold py-2 border-white border-2 px-4 rounded mr-2">
       Orders
     </button>
 
@@ -58,7 +58,7 @@ export default function HomePage() {
 	<div className="pt-2"></div>
 
 	<a href="https://booking.resdiary.com/widget/Standard/JoesItalianKitchen/364">
-    <button className="bg-black hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+    <button className="bg-white hover:bg-green-700 text-black font-bold py-2 px-4 border-black border-2 rounded">
 		
       Reservations
     </button>
