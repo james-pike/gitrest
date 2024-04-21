@@ -16,12 +16,13 @@ export default function HomePage() {
 
 
 
-<div style={{ position: 'relative' }}>
+<div style={{ position: 'relative', height: '38vh'}}>
 				<img
-					className="w-full h-40 object-cover border-black"
-					style={{ opacity: 0.75, height: '40vh' }}
+					className="w-full object-cover border-black"
+					style={{ opacity: 0.75, height: '38vh' }}
 					src="./images/a6.png"
 					alt="Background Image"
+				
 				/>
 				<h1
 					className={title()}
@@ -32,7 +33,7 @@ export default function HomePage() {
 						left: '20%', // Position the h1 in the middle horizontally
 						transform: 'translate(-20%, -50%)', // Center the h1
 						color: 'white', // Text color
-						fontSize: '3rem', // Font size
+						fontSize: '3.5rem', // Font size
 						zIndex: 10, // Ensure it's above the image
 					}}
 				>
@@ -171,7 +172,7 @@ export default function HomePage() {
 			<div className="border-4 border-black"></div>
 
 
-<BasicFooter/>
+{/* <BasicFooter/> */}
 
 		</div>
 
