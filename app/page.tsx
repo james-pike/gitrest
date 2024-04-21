@@ -16,29 +16,31 @@ export default function HomePage() {
 
 
 
-<div style={{ position: 'relative', height: '45vh'}}>
+<div style={{ position: 'relative', height: '50vh'}}>
 				<img
 					className="w-full object-cover border-black"
-					style={{ opacity: 0.75, height: '45vh' }}
+					style={{ opacity: 0.75, height: '50vh' }}
 					src="./images/a6.png"
 					alt="Background Image"
 				
 				/>
-				<h1
-					className={title()}
-					style={{
-
-						position: 'absolute',
-						top: '40%', // Position the h1 in the middle vertically
-						left: '20%', // Position the h1 in the middle horizontally
-						transform: 'translate(-20%, -50%)', // Center the h1
-						color: 'white', // Text color
-						fontSize: '3.5rem', // Font size
-						zIndex: 10, // Ensure it's above the image
-					}}
-				>
-					Joes Italian Kitchen
-				</h1>
+			<h1
+  className={title()}
+  style={{
+    position: 'absolute',
+    top: '40%', // Position the h1 in the middle vertically
+    left: '20%', // Position the h1 in the middle horizontally
+    transform: 'translate(-20%, -50%)', // Center the h1
+    color: 'white', // Text color
+    fontSize: '4rem', // Font size
+    zIndex: 10, // Ensure it's above the image
+    lineHeight: '1', // Increase line height for better spacing between lines
+  }}
+>
+  <span style={{ display: 'block' }}>Joes</span>
+  <span style={{ display: 'block' }}>Italian</span>
+  <span style={{ display: 'block' }}>Kitchen</span>
+</h1>
 				<div
     style={{
       position: 'absolute',
