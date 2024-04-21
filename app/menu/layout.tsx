@@ -1,5 +1,5 @@
-
 import Tab2 from "@/components/tabs2";
+
 
 export default function MenuLayout({
 	children,

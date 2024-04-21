@@ -23,6 +23,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "tailwind.config.ts", "components/page.js", "app/layout.js", "app/catering/page.js", "components/tab3.js", "components/primtab.tsx", "components/tabs2.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "tailwind.config.ts", "components/page.js", "app/layout.js", "app/catering/page.js", "components/tab3.js", "components/primtab.tsx", "components/tabs2.tsx"],
   "exclude": ["node_modules"]
 }
