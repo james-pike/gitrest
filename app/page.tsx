@@ -172,7 +172,7 @@ export default function HomePage() {
 
 
 {/* <BasicFooter/> */}
-
+<div className="pt-2"></div>
 		</div>
 
 
