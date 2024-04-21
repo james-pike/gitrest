@@ -18,6 +18,7 @@ import { usePathname } from "next/navigation";
 import ThemeDropdown from "./theme-dropdown";
 import { PiForkKnifeFill } from "react-icons/pi";
 import { LuHome } from "react-icons/lu";
+import Sidenav from "./sidenav";
 
 const menuItems = [
   { name: "HOME", route: "/" },
@@ -112,6 +113,7 @@ export default function BasicNavbar(props: NavbarProps) {
           >
             Reservations
           </Button>
+          
         </NavbarItem>
       </NavbarContent>
 
@@ -145,7 +147,7 @@ export default function BasicNavbar(props: NavbarProps) {
             onClick={handleMenuItemClick} // Close menu when clicked
           >
             <LuHome />
-
+         
 
             ORDERS
           </Button>
