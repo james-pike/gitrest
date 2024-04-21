@@ -1,53 +1,28 @@
-import React, { useEffect, useMemo, useState } from "react";
-import { Tabs, Tab, Card, Spinner } from "@nextui-org/react";
+'use client ';
+
+import React, { useMemo } from "react";
+import { Tabs, Tab, Card, CardBody, CardHeader } from "@nextui-org/react";
 import List2 from "./list2";
-import List3 from "./list3";
 import List4 from "./list4";
 import List5 from "./list5";
 import List6 from "./list6";
 import List7 from "./list7";
 
-// Define a type for tab components
-interface TabComponent {
-  key: string;
-  title: string;
-  component: JSX.Element;
-}
+export default function Primtab() {
+  const [selected, setSelected] = React.useState("pinsa");
 
-const tabData: TabComponent[] = [
-  { key: "pinsa", title: "PINSA ROMANA", component: <List2 /> },
-  { key: "photos", title: "ANTIPASTI", component: <List4 /> },
-  { key: "insalata", title: "INSALATA", component: <List5 /> },
-  { key: "pasta", title: "PASTA", component: <List7 /> },
-  { key: "desserts", title: "DESSERTS", component: <List6 /> },
-];
-
-export default function CombinedTab() {
-  const [selected, setSelected] = useState<string>(tabData[0].key);
-  const [loading, setLoading] = useState<boolean>(true);
-
-  useEffect(() => {
-    // Simulate loading delay
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000); // Adjust the delay time as needed
-    return () => clearTimeout(timer);
-  }, []);
-
-
-
-  const handleTabChange = (newSelected: string | number) => {
-    setSelected(newSelected as string);
-    setLoading(true); // Show loading indicator
+  const handleTabChange = (newSelected: any) => {
+    setSelected(newSelected);
   };
 
   // Cache the lists using useMemo
-  const cachedLists = useMemo(() => {
-    return tabData.reduce((acc, tab) => {
-      acc[tab.key] = tab.component;
-      return acc;
-    }, {} as { [key: string]: JSX.Element });
-  }, []);
+  const cachedLists = useMemo(() => ({
+    pinsa: <List2 />,
+    photos: <List4 />,
+    insalata: <List5 />,
+    pasta: <List7 />,
+    desserts: <List6 />,
+  }), []);
 
   return (
     <div className="flex w-full flex-col px-0">
@@ -57,17 +32,31 @@ export default function CombinedTab() {
         onSelectionChange={handleTabChange}
         className="focus:outline-none"
       >
-        {tabData.map((tab) => (
-          <Tab key={tab.key} title={tab.title}>
-            <Card>
-              {loading ? (
-                <Spinner  />
-              ) : (
-                <>{cachedLists[tab.key]}</>
-              )}
-            </Card>
-          </Tab>
-        ))}
+        <Tab key="pinsa" title="PINSA ROMANA">
+          <Card>
+            {cachedLists.pinsa}
+          </Card>
+        </Tab>
+        <Tab key="photos" title="ANTIPASTI">
+          <Card>
+            {cachedLists.photos}
+          </Card>
+        </Tab>
+        <Tab key="insalata" title="INSALATA">
+          <Card>
+            {cachedLists.insalata}
+          </Card>
+        </Tab>
+        <Tab key="pasta" title="PASTA">
+          <Card>
+            {cachedLists.pasta}
+          </Card>
+        </Tab>
+        <Tab key="desserts" title="DESSERTS">
+          <Card>
+            {cachedLists.desserts}
+          </Card>
+        </Tab>
       </Tabs>
     </div>
   );
