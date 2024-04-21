@@ -35,7 +35,7 @@ export default function Tab2(props: CardProps) {
   return (
     <Card {...props}>
       <div style={{ overflowX: 'auto' }}>
-        <header className="mb-4 flex w-full items-center justify-between mt-5 px-6">
+        <header className="mb-4 flex w-full items-center justify-between mt-5 px-5">
           <div className="flex flex-col">
             <h1 className="text-2xl font-bold text-default-900 lg:text-3xl">Menu</h1>
             <p className="text-medium text-default-400 lg:text-medium">{selectedLocation} Menu</p>
