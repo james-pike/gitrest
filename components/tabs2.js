@@ -16,10 +16,10 @@ import { SlLocationPin } from "react-icons/sl";
 import Nepeantab from "./nepeantab";
 import { FiCheck } from "react-icons/fi"; 
 
-export default function Tab2(props: CardProps) {
+export default function Tab2(props) {
   const [selectedLocation, setSelectedLocation] = useState(() => {
     if (typeof window !== "undefined") {
-      return localStorage.getItem("selectedLocation") || "Wellington";
+      return localStorage.getItem("selectedLocation");
     }
     return "Wellington";
   });
@@ -28,7 +28,7 @@ export default function Tab2(props: CardProps) {
     localStorage.setItem("selectedLocation", selectedLocation);
   }, [selectedLocation]);
 
-  const handleLocationChange = (location: string) => {
+  const handleLocationChange = (location) => {
     setSelectedLocation(location);
   };
 
