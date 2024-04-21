@@ -22,7 +22,7 @@ export default function MenuLayout({
 
 
 {/* <img style={ {height: '12vh'}} className="w-full object-cover border-b-2" src="./images/p5.jpg" /> */}
-
+			
 			<Tab2 className=""/>
 
 	
