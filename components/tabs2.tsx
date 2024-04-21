@@ -35,7 +35,7 @@ export default function Tab2(props: CardProps) {
   return (
     <Card {...props}>
       <div style={{ overflowX: 'auto' }}>
-        <header className="mb-4 flex w-full items-center justify-between mt-5 px-5">
+        <header className="mb-4 flex w-full items-center justify-between mt-5 pl-7 pr-3">
           <div className="flex flex-col">
             <h1 className="text-2xl font-bold text-default-900 lg:text-3xl">Menu</h1>
             <p className="text-medium text-default-400 lg:text-medium">{selectedLocation} Menu</p>
@@ -43,7 +43,7 @@ export default function Tab2(props: CardProps) {
           <Dropdown>
             <DropdownTrigger>
               <Button
-                variant="bordered" className=" bg-foreground-100 hover:bg-foreground-200 px-3">
+                variant="bordered" className=" bg-foreground-100 hover:bg-foreground-200 px-2 h-11">
                 <div className="flex items-center gap-1.5 text-large">
                   <SlLocationPin />
                   <div className="md:flex text-small">
