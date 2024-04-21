@@ -30,6 +30,7 @@ export default function Primtab() {
         aria-label="Options"
         selectedKey={selected}
         onSelectionChange={handleTabChange}
+        className="focus:outline-none"
       >
         <Tab key="pinsa" title="PINSA ROMANA">
           <Card>
