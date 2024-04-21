@@ -6,6 +6,7 @@ import List2 from "./list2";
 import List4 from "./list4";
 import List5 from "./list5";
 import List6 from "./list6";
+import List7 from "./list7";
 
 export default function Primtab() {
   const [selected, setSelected] = React.useState("photos");
@@ -21,11 +22,6 @@ export default function Primtab() {
         selectedKey={selected}
         onSelectionChange={handleTabChange} // Pass the function here
       >
-         <Tab key="pinsa" title="PINSA">
-          <Card>
-          <List2   />
-          </Card>
-        </Tab>
         <Tab key="photos" title="ANTIPASTI">
           <Card>
           <List4   />
@@ -37,23 +33,24 @@ export default function Primtab() {
           </Card>
         </Tab>
 
-       
-        <Tab key="pasta" title="PASTA">
+        <Tab key="pinsa" title="PINSA ROMANA">
           <Card>
-        
+          <List2   />
           </Card>
         </Tab>
-        
+
         <Tab key="desserts" title="DESSERTS">
           <Card>
             <List6   />
           </Card>
         </Tab>
-        <Tab key="beverages" title="BEVERAGES">
+        <Tab key="pasta" title="PASTA">
           <Card>
-         
+        <List7   />
           </Card>
         </Tab>
+        
+   
       </Tabs>
     </div>
   );

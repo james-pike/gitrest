@@ -8,8 +8,8 @@ const paninis: PlaceItem[] = [
     name: "Grilled Chicken Panini",
     
     href: "#",
-    price: 49.99,
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    price: 10,
+    description: "Chicen Cutlet, Montasio Cheese, Tomato, Lettuce",
     imageSrc: "./images/pan4.jpg"
   },
  
@@ -18,7 +18,7 @@ const paninis: PlaceItem[] = [
     name: "Prosciutto Cotto Panini",
    
     href: "#",
-    price: 29.99,
+    price: 10,
     description: "Prosciutto Cotto, Pesto, Montasio Cheese, Tomato, Lettuce",
     imageSrc: "./images/pan2.jpg"
   },
@@ -27,7 +27,7 @@ const paninis: PlaceItem[] = [
     name: "Spicy Capicola Panini",
    
     href: "#",
-    price: 39.99,
+    price: 10,
     description: "Spicy Capicola, Fior Di Latte, Arugula, Pesto",
     imageSrc: "./images/pan3.jpg"
   },
@@ -37,7 +37,7 @@ const paninis: PlaceItem[] = [
     name: "Grilled Veggie Panini",
    
     href: "#",
-    price: 29.99,
+    price: 10,
     description: "Zucchini, Grilled Eggplant, Red Pepper, Pesto, Fior Di Latte, Calabrian Chile",
     imageSrc: "./images/pan5.jpg"
   },
@@ -48,7 +48,7 @@ const paninis: PlaceItem[] = [
     name: "Napoli Salami Panini",
    
     href: "#",
-    price: 49.99,
+    price: 10,
     description: "Napoli Salami, Provolone Cheese, Tomato, Arugula",
     imageSrc: "./images/psalami.jpg"
   },
@@ -58,7 +58,7 @@ const paninis: PlaceItem[] = [
     name: "Italian Sausage Panini",
 
     href: "#",
-    price: 39.99,
+    price: 10,
     description: "Italian Sausage, Provolone Cheese, Red Pepper, Onion",
     imageSrc: "./images/pan6.jpg"
   },

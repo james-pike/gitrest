@@ -5,6 +5,7 @@ import { Tabs, Tab, Card, CardBody, CardHeader } from "@nextui-org/react";
 
 import List2 from "./list2";
 import List3 from "./list3";
+import List6 from "./list6";
 
 export default function Nepeantab() {
   const [selected, setSelected] = React.useState("photos");
@@ -42,18 +43,10 @@ export default function Nepeantab() {
         </Tab>
         <Tab key="desserts" title="DESSERTS">
           <Card>
-            {/* <CardBody>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </CardBody> */}
+          <List6/>
           </Card>
         </Tab>
-        <Tab key="beverages" title="BEVERAGES">
-          <Card>
-            {/* <CardBody>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </CardBody> */}
-          </Card>
-        </Tab>
+  
       </Tabs>
     </div>
   );

@@ -3,56 +3,67 @@ import type {PlaceItem} from "./place-list-item";
 const insalata: PlaceItem[] = [
   {
     id: "1",
-    name: "Tuscan Wings",
+    name: "Seasonal Greens",
    
     href: "#",
-    price: 18.50,
-    description: "Herbed crispy Chicken Wings, Served with a side of Bomba Aioli.",
+    price: 9.00,
+    description: "Seasonal greens, tomatoes, red onions,parmigiano, house vinaigrette.",
     imageSrc: "./images/insa1.jpg"
   },
   {
     id: "2",
-    name: "Bruschetta",
+    name: "Caesar Salad",
    
     href: "#",
-    price: 14.75,
-    description: "Roma Tomatoes, Grana Padano, Olive Oil, Basil, Balsamic Glaze, served on our Pinsa al Forno Bread.",
+    price: 10.00,
+    description: "Crispy romaine, traditional caesar dressing, herbed croutons, crispy bacon, & parmigiano.",
     imageSrc: "./images/insa2.jpg"
   },
   {
     id: "3",
-    name: "Polpette",
+    name: "Arugula Salad",
    
     href: "#",
-    price: 39.99,
-    description: "Italian Style veal, pork and beef meatballs topped with Tomato Sauce, Whipped Ricotta, Grana Padano, served with a side of our Pinsa al Forno Bread.",
-    imageSrc: "./images/insa3.jpg"
-  },
-  {
-    id: "4",
-    name: "Roasted Olives",
-    
-    href: "#",
-    price: 49.99,
-    description: "Marinated olives, fennel piquante, served with our Pinsa al forno bread.",
-    imageSrc: "./images/insa4.jpg"
-  },
-  {
-    id: "5",
-    name: "Al Forno Bread",
-   
-    href: "#",
-    price: 7.50,
-    description: "Pinsa Al Forno Bread Served with Extra Virgin Olive Oil & Balsamic Vinaigrette.",
+    price: 18.00,
+    description: "Peppered arugula, Grana Padano, merlot-poached pears, candied pecans, white balsamic vinaigrette.",
     imageSrc: "./images/insa5.jpg"
   },
   {
-    id: "6",
-    name: "Salumi Board",
+    id: "4",
+    name: "Seasonal Greens (Large)",
+   
+    href: "#",
+    price: 14,
+    description: "Seasonal greens, tomatoes, red onions, parmigiano, house vinaigrette.",
+    imageSrc: "./images/insa3.jpg"
+  },
+  {
+    id: "5",
+    name: "Caesar (Large)",
+    
+    href: "#",
+    price: 15.00,
+    description: "Romaine Lettuce, Traditional Caesar Dressing, Herbed Croutons, Crispy Bacon, Parmigiano.",
+    imageSrc: "./images/insa4.jpg"
+  },
+
+  {
+    id: "5",
+    name: "Burratta Salad",
 
     href: "#",
-    price: 32.00,
-    description: "Italian meats & cheeses, oven roasted olives and vegetables served with our pinsa al forno bread.",
+    price: 24,
+    description: "Burratta cheese, peppered arugula , Roma tomatoes, extra virgin olive oil, balsamic glaze.",
+    imageSrc: "./images/insa0.jpg"
+  },
+  
+  {
+    id: "6",
+    name: "Goat Cheese & Beet",
+
+    href: "#",
+    price: 23.00,
+    description: "Ruby beets, spinach, baby arugula, pickled red onions, tomatoes, candied pecans, goat cheese, house vinaigrette.",
     imageSrc: "./images/insa6.jpg"
   },
 
