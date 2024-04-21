@@ -21,7 +21,7 @@ export default function Nepeantab() {
   }), []);
 
   return (
-    <div className="flex w-full flex-col px-1">
+    <div className="flex w-full flex-col">
       <Tabs
         aria-label="Options"
         selectedKey={selected}

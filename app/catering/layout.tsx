@@ -14,7 +14,7 @@ export default function CateringLayout({
 	return (
 
 		<div>
-			<img className="w-full h-40 object-cover border-b" src="./images/p1.jpg" />
+			<img className="w-full h-40 object-cover border-b" src="./images/c1.jpg" />
     
 <CateringFooter />
 		
