@@ -1,14 +1,16 @@
 import type {PlaceItem} from "./place-list-item";
 
 const paninis: PlaceItem[] = [
+
+
   {
     id: "1",
-    name: "Grilled Veggie Panini",
-   
+    name: "Grilled Chicken Panini",
+    
     href: "#",
-    price: 29.99,
-    description: "Zucchini, Grilled Eggplant, Red Pepper, Pesto, Fior Di Latte, Calabrian Chile",
-    imageSrc: "./images/pan5.jpg"
+    price: 49.99,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    imageSrc: "./images/pan4.jpg"
   },
  
   {
@@ -29,15 +31,17 @@ const paninis: PlaceItem[] = [
     description: "Spicy Capicola, Fior Di Latte, Arugula, Pesto",
     imageSrc: "./images/pan3.jpg"
   },
+
   {
-    id: "1",
-    name: "Grilled Chicken Panini",
-    
+    id: "4",
+    name: "Grilled Veggie Panini",
+   
     href: "#",
-    price: 49.99,
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    imageSrc: "./images/pan4.jpg"
+    price: 29.99,
+    description: "Zucchini, Grilled Eggplant, Red Pepper, Pesto, Fior Di Latte, Calabrian Chile",
+    imageSrc: "./images/pan5.jpg"
   },
+
 
   {
     id: "5",
