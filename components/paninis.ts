@@ -62,6 +62,28 @@ const paninis: PlaceItem[] = [
     description: "Italian Sausage, Provolone Cheese, Red Pepper, Onion",
     imageSrc: "./images/pan6.jpg"
   },
+
+
+
+  {
+    id: "7",
+    name: "Rio Tuna Panini",
+   
+    href: "#",
+    price: 10,
+    description: "Rio Tuna, Lemon Caper Aioli, Topean Onions, Calabrian Chile, Radish, Lettuce",
+    imageSrc: "./images/p01.jpg"
+  },
+
+  {
+    id: "8",
+    name: "Mortadella Panini",
+
+    href: "#",
+    price: 10,
+    description: "Mortadella, Provolone Cheese, Tomato, Lettuce",
+    imageSrc: "./images/p02.jpg"
+  },
   // {
   //   id: "7",
   //   name: "Ponta do Sol, Portugal",
