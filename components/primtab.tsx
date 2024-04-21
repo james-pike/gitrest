@@ -5,6 +5,7 @@ import { Tabs, Tab, Card, CardBody, CardHeader } from "@nextui-org/react";
 import List2 from "./list2";
 import List4 from "./list4";
 import List5 from "./list5";
+import List6 from "./list6";
 
 export default function Primtab() {
   const [selected, setSelected] = React.useState("photos");
@@ -45,7 +46,7 @@ export default function Primtab() {
         
         <Tab key="desserts" title="DESSERTS">
           <Card>
-            
+            <List6   />
           </Card>
         </Tab>
         <Tab key="beverages" title="BEVERAGES">
