@@ -189,9 +189,7 @@ export default function HomePage() {
 
 		</div>
 
-<div className={isMobile ? "hidden" : "block"}>
-<p>desktop not enabled</p>
-</div>
+
 
 </div>
 	);
