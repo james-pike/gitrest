@@ -16,12 +16,18 @@ export default function Primtab() {
   };
 
   return (
-    <div className="flex w-full flex-col px-2">
+    <div className="flex w-full flex-col px-1">
       <Tabs
         aria-label="Options"
         selectedKey={selected}
         onSelectionChange={handleTabChange} // Pass the function here
       >
+
+<Tab key="pinsa" title="PINSA ROMANA">
+          <Card>
+          <List2   />
+          </Card>
+        </Tab>
         <Tab key="photos" title="ANTIPASTI">
           <Card>
           <List4   />
@@ -33,11 +39,7 @@ export default function Primtab() {
           </Card>
         </Tab>
 
-        <Tab key="pinsa" title="PINSA ROMANA">
-          <Card>
-          <List2   />
-          </Card>
-        </Tab>
+      
 
       
         <Tab key="pasta" title="PASTA">

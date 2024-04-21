@@ -61,7 +61,7 @@ const footerNavigation = {
   ],
 };
 
-export default function LocationFooter() {
+export default function CateringFooter() {
   
   return (
     <footer className="flex w-full flex-col  border-white">
@@ -74,7 +74,7 @@ export default function LocationFooter() {
             <div className="flex items-center justify-start">
               <AcmeIcon size={44} />
               {/* <img className="h-8 w-auto" src="./images/logo.png" alt="Logo" /> */}
-              <span className="text-medium px-1 font-medium">Locations</span>
+              <span className="text-medium px-1 font-medium">Catering </span>
             </div>
             <p className="text-small text-default-500 pb-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique
