@@ -6,7 +6,7 @@ const antipasti: PlaceItem[] = [
     name: "Tuscan Wings",
    
     href: "#",
-    price: 18.50,
+    price: 19,
     description: "Herbed crispy Chicken Wings, Served with a side of Bomba Aioli.",
     imageSrc: "./images/anti1.jpg"
   },
@@ -15,7 +15,7 @@ const antipasti: PlaceItem[] = [
     name: "Bruschetta",
    
     href: "#",
-    price: 14.75,
+    price: 15,
     description: "Roma Tomatoes, Grana Padano, Olive Oil, Basil, Balsamic Glaze, served on our Pinsa al Forno Bread.",
     imageSrc: "./images/bruschetta.jpg"
   },
@@ -24,7 +24,7 @@ const antipasti: PlaceItem[] = [
     name: "Polpette",
    
     href: "#",
-    price: 39.99,
+    price: 18,
     description: "Italian Style veal, pork and beef meatballs topped with Tomato Sauce, Whipped Ricotta, Grana Padano, served with a side of our Pinsa al Forno Bread.",
     imageSrc: "./images/polpette.jpg"
   },
@@ -33,7 +33,7 @@ const antipasti: PlaceItem[] = [
     name: "Roasted Olives",
     
     href: "#",
-    price: 49.99,
+    price: 11,
     description: "Marinated olives, fennel piquante, served with our Pinsa al forno bread.",
     imageSrc: "./images/roastedolives.jpg"
   },
@@ -42,7 +42,7 @@ const antipasti: PlaceItem[] = [
     name: "Al Forno Bread",
    
     href: "#",
-    price: 7.50,
+    price: 7,
     description: "Pinsa Al Forno Bread Served with Extra Virgin Olive Oil & Balsamic Vinaigrette.",
     imageSrc: "./images/alforno.jpg"
   },

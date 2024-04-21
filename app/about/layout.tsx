@@ -1,3 +1,4 @@
+import AboutFooter from "@/components/aboutfooter";
 import BasicFooter from "@/components/footer";
 import { AcmeIcon } from "@/social";
 import ThemeSwitch from "@/theme-switch";
@@ -12,7 +13,7 @@ export default function AboutLayout({
 
 		<div>
 			<img className="w-full h-40 object-cover border-b" src="./images/p1.jpg" />
-<BasicFooter />
+<AboutFooter />
 		
 	
 	</div>

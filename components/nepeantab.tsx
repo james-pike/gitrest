@@ -26,21 +26,13 @@ export default function Nepeantab() {
           <List3   />
           </Card>
         </Tab>
-        <Tab key="insalata" title="PINSA">
+        <Tab key="insalata" title="PINSA ROMANA">
           <Card>
            <List2   />
           </Card>
         </Tab>
-        <Tab key="pasta" title="PASTA">
-          <Card>
-          {/* <List3   /> */}
-          </Card>
-        </Tab>
-        <Tab key="pinsa" title="PINSA ROMANA">
-          <Card>
-          {/* <List3   /> */}
-          </Card>
-        </Tab>
+      
+   
         <Tab key="desserts" title="DESSERTS">
           <Card>
           <List6/>

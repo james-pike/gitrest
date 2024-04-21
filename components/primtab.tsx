@@ -39,14 +39,16 @@ export default function Primtab() {
           </Card>
         </Tab>
 
-        <Tab key="desserts" title="DESSERTS">
-          <Card>
-            <List6   />
-          </Card>
-        </Tab>
+      
         <Tab key="pasta" title="PASTA">
           <Card>
         <List7   />
+          </Card>
+        </Tab>
+
+        <Tab key="desserts" title="DESSERTS">
+          <Card>
+            <List6   />
           </Card>
         </Tab>
         

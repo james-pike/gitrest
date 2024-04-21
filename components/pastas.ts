@@ -3,38 +3,38 @@ import type {PlaceItem} from "./place-list-item";
 const pastas: PlaceItem[] = [
   {
     id: "1",
-    name: "Tuscan Wings",
+    name: "Linguini Al Frutti Di Mare",
    
     href: "#",
-    price: 18.50,
-    description: "Herbed crispy Chicken Wings, Served with a side of Bomba Aioli.",
+    price: 34,
+    description: "Linguini with Jumbo Shrimp & Sea Scallops topped with Extra Virgin Olive Oil, Garlic, Crushed Red Pepper, Parmigiana.",
     imageSrc: "./images/pas1.jpg"
   },
   {
     id: "2",
-    name: "Bruschetta",
+    name: "Spahghetti Polpette",
    
     href: "#",
-    price: 14.75,
-    description: "Roma Tomatoes, Grana Padano, Olive Oil, Basil, Balsamic Glaze, served on our Pinsa al Forno Bread.",
+    price: 26,
+    description: "Spaghetti in San Marzano Tomato Sauce with our house made meatballs topped with Grana Padano.",
     imageSrc: "./images/pas2.jpg"
   },
   {
     id: "3",
-    name: "Polpette",
+    name: "LASAGNA AL FORNO",
    
     href: "#",
-    price: 39.99,
-    description: "Italian Style veal, pork and beef meatballs topped with Tomato Sauce, Whipped Ricotta, Grana Padano, served with a side of our Pinsa al Forno Bread.",
+    price: 26,
+    description: "Layers of fresh San Marzano Tomato Sauce, Meat Sauce, Mozzarella, Ricotta, Grana Padano.",
     imageSrc: "./images/pas3.jpg"
   },
   {
     id: "4",
-    name: "Roasted Olives",
+    name: "Spaghetti Carbonara",
     
     href: "#",
-    price: 49.99,
-    description: "Marinated olives, fennel piquante, served with our Pinsa al forno bread.",
+    price: 24,
+    description: "Spaghetti, pancetta, eggs, pecorino, black pepper.",
     imageSrc: "./images/pas4.jpg"
   },
 

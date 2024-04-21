@@ -17,6 +17,9 @@ import {
 import { usePathname } from "next/navigation";
 import ThemeDropdown from "./theme-dropdown";
 import { PiForkKnifeFill } from "react-icons/pi";
+import { LuHome } from "react-icons/lu";
+
+
 
 const menuItems = [
   { name: "HOME", route: "/" },
@@ -142,7 +145,9 @@ export default function BasicNavbar(props: NavbarProps) {
             rel="noopener noreferrer"
             onClick={handleMenuItemClick} // Close menu when clicked
           >
-            <PiForkKnifeFill />
+            <LuHome />
+
+
             ORDERS
           </Button>
         </NavbarMenuItem>

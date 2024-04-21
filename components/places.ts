@@ -26,7 +26,7 @@ const places: PlaceItem[] = [
     href: "#",
     price: 39.99,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    imageSrc: "./images/pjt.png"
+    imageSrc: "./images/p3.jpg"
   },
   {
     id: "4",
@@ -35,7 +35,7 @@ const places: PlaceItem[] = [
     href: "#",
     price: 49.99,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    imageSrc: "./images/psl.png"
+    imageSrc: "./images/pwalsh.jpg"
   },
   {
     id: "5",
@@ -44,7 +44,7 @@ const places: PlaceItem[] = [
     href: "#",
     price: 29.99,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    imageSrc: "./images/psl.png"
+    imageSrc: "./images/p5.jpg"
   },
   {
     id: "6",
@@ -53,7 +53,26 @@ const places: PlaceItem[] = [
     href: "#",
     price: 39.99,
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    imageSrc: "./images/pjt.png"
+    imageSrc: "./images/p6.jpg"
+  },
+
+  {
+    id: "5",
+    name: "Pinsa Sophia Loren",
+   
+    href: "#",
+    price: 29.99,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    imageSrc: "./images/p7.jpg"
+  },
+  {
+    id: "6",
+    name: "Pinsa Joe Theismann",
+
+    href: "#",
+    price: 39.99,
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    imageSrc: "./images/p8.jpg"
   },
 
 ];

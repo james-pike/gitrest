@@ -13,6 +13,7 @@ import { Icon } from "@iconify/react";
 import Primtab from "./primtab";
 import { SlLocationPin } from "react-icons/sl";
 import Nepeantab from "./nepeantab";
+import { FiCheck } from "react-icons/fi"; 
 
 export default function Tab2(props: CardProps) {
   // Retrieve selected location from local storage or default to "Wellington"
@@ -57,7 +58,7 @@ export default function Tab2(props: CardProps) {
             <DropdownMenu variant="faded" aria-label="Dropdown menu with icons">
               <DropdownItem
                 key="almonte"
-                shortcut="⌘N"
+                shortcut={selectedLocation === "Almonte" && <FiCheck />}
                 onClick={() => handleLocationChange("Almonte")}
                 startContent={<SlLocationPin />}
               >
@@ -65,7 +66,7 @@ export default function Tab2(props: CardProps) {
               </DropdownItem>
               <DropdownItem
                 key="nepean"
-                shortcut="⌘C"
+                shortcut={selectedLocation === "Nepean" && <FiCheck />}
                 onClick={() => handleLocationChange("Nepean")}
                 startContent={<SlLocationPin />}
               >
@@ -73,7 +74,7 @@ export default function Tab2(props: CardProps) {
               </DropdownItem>
               <DropdownItem
                 key="wellington"
-                shortcut="⌘⇧E"
+                shortcut={selectedLocation === "Wellington" && <FiCheck />}
                 onClick={() => handleLocationChange("Wellington")}
                 startContent={<SlLocationPin />}
               >

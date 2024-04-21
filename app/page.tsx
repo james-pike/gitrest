@@ -129,7 +129,7 @@ export default function HomePage() {
 
 			</a>
 
-			<div className="border-4 border-black"></div>
+			{/* <div className="border-4 border-black"></div>
 
 
 
@@ -155,7 +155,7 @@ export default function HomePage() {
 				>
 					Events
 				</h1>
-			</div>
+			</div> */}
 
 			<div className="border-4 border-black"></div>
 
