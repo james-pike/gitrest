@@ -26,6 +26,7 @@ export default function Nepeantab() {
         aria-label="Options"
         selectedKey={selected}
         onSelectionChange={handleTabChange}
+        className="focus:outline-none"
       >
         <Tab key="photos" title="PANINI">
           <Card>
