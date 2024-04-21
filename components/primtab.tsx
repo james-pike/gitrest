@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from "react";
-import { Tabs, Tab, Card } from "@nextui-org/react";
+import { Tabs, Tab, Card, Spinner } from "@nextui-org/react";
 import List2 from "./list2";
 import List3 from "./list3";
 import List4 from "./list4";
@@ -24,9 +24,21 @@ const tabData: TabComponent[] = [
 
 export default function CombinedTab() {
   const [selected, setSelected] = useState<string>(tabData[0].key);
+  const [loading, setLoading] = useState<boolean>(true);
+
+  useEffect(() => {
+    // Simulate loading delay
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Adjust the delay time as needed
+    return () => clearTimeout(timer);
+  }, []);
+
+
 
   const handleTabChange = (newSelected: string | number) => {
     setSelected(newSelected as string);
+    setLoading(true); // Show loading indicator
   };
 
   // Cache the lists using useMemo
@@ -47,7 +59,13 @@ export default function CombinedTab() {
       >
         {tabData.map((tab) => (
           <Tab key={tab.key} title={tab.title}>
-            <Card>{cachedLists[tab.key]}</Card>
+            <Card>
+              {loading ? (
+                <Spinner  />
+              ) : (
+                <>{cachedLists[tab.key]}</>
+              )}
+            </Card>
           </Tab>
         ))}
       </Tabs>
