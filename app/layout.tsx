@@ -5,10 +5,6 @@ import { fontSans } from "@/config/fonts";
 import { Providers } from "./providers";
 import BasicNavbar from '@/components/navbar';
 import clsx from "clsx";
-import BasicFooter from "@/components/footer";
-import Component from "@/components/list";
-import Wedge from "@/components/wedge";
-import WedgeX from "@/components/x";
 
 export const metadata: Metadata = {
 	title: {
