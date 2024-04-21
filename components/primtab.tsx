@@ -2,8 +2,9 @@
 
 import React from "react";
 import { Tabs, Tab, Card, CardBody, CardHeader } from "@nextui-org/react";
-import Antipasti from "./antipasti";
 import List2 from "./list2";
+import List4 from "./list4";
+import List5 from "./list5";
 
 export default function Primtab() {
   const [selected, setSelected] = React.useState("photos");
@@ -19,26 +20,29 @@ export default function Primtab() {
         selectedKey={selected}
         onSelectionChange={handleTabChange} // Pass the function here
       >
-        <Tab key="photos" title="ANTIPASTI">
+         <Tab key="pinsa" title="PINSA">
           <Card>
           <List2   />
           </Card>
         </Tab>
-        <Tab key="insalata" title="INSALATA">
+        <Tab key="photos" title="ANTIPASTI">
           <Card>
-           <List2   />
+          <List4   />
           </Card>
         </Tab>
+        <Tab key="insalata" title="INSALATA">
+          <Card>
+           <List5   />
+          </Card>
+        </Tab>
+
+       
         <Tab key="pasta" title="PASTA">
           <Card>
         
           </Card>
         </Tab>
-        <Tab key="pinsa" title="PINSA ROMANA">
-          <Card>
-          
-          </Card>
-        </Tab>
+        
         <Tab key="desserts" title="DESSERTS">
           <Card>
             

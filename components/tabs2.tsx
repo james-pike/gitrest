@@ -85,7 +85,7 @@ export default function Tab2(props: CardProps) {
         <div>
         </div>
         {selectedLocation === "Wellington" && <Primtab />}
-        {selectedLocation === "Almonte" && <div>Almonte Tabs</div>}
+        {selectedLocation === "Almonte" && <Primtab />}
         {selectedLocation === "Nepean" && <Nepeantab />}
       </div>
     </Card>
