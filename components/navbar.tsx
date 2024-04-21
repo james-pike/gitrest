@@ -24,7 +24,7 @@ const menuItems = [
   { name: "MENU", route: "/menu" },
   { name: "LOCATIONS", route: "/locations" },
   { name: "CATERING", route: "/catering" },
-  { name: "ABOUT", route: "/about" },
+  // { name: "ABOUT", route: "/about" },
 ];
 
 export default function BasicNavbar(props: NavbarProps) {
