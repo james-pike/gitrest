@@ -41,9 +41,9 @@ export default function HomePage() {
 						lineHeight: '1', // Increase line height for better spacing between lines
 					}}
 				>
-					<span style={{ display: 'block' }}>Joes</span>
-					<span style={{ display: 'block' }}>Italian</span>
-					<span style={{ display: 'block' }}>Kitchen</span>
+					<span style={{ display: 'block' }}>JOES</span>
+					<span style={{ display: 'block' }}>ITALIAN</span>
+					<span style={{ display: 'block' }}>KITCHEN</span>
 				</h1>
 				<div className="pt-6"
 					style={{
@@ -57,13 +57,13 @@ export default function HomePage() {
 					<div style={{ display: 'flex', alignItems: 'center' }}>
 						<a href="https://joesitaliankitchen-1asc.mobi2go.com">
 							<button className="bg-black text-white font-bold py-2 border-white border-2 px-4 rounded mr-2">
-								Orders
+								ORDERS
 							</button>
 						</a>
 						<div className="pt-2"></div>
 						<a href="https://booking.resdiary.com/widget/Standard/JoesItalianKitchen/364">
 							<button className="bg-white  text-black font-bold py-2 px-4 border-black border-2 rounded">
-								Reservations
+								RESERVATIONS
 							</button>
 						</a>
 					</div>
@@ -94,7 +94,7 @@ export default function HomePage() {
 							zIndex: 10, // Ensure it's above the image
 						}}
 					>
-						Menu
+						MENU
 					</h1>
 				</div>
 
@@ -125,7 +125,7 @@ export default function HomePage() {
 							zIndex: 10, // Ensure it's above the image
 						}}
 					>
-						Locations
+						LOCATIONS
 					</h1>
 				</div>
 
@@ -157,7 +157,7 @@ export default function HomePage() {
 							zIndex: 10, // Ensure it's above the image
 						}}
 					>
-						Catering
+						CATERING
 					</h1>
 				</div>
 
@@ -226,6 +226,7 @@ export default function HomePage() {
 			{/* <BasicFooter/> */}
 
 
+		
 
 
 

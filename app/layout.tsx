@@ -1,12 +1,16 @@
+'use client';
+
 import "@/styles/globals.css";
 import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Providers } from "./providers";
-import BasicNavbar from '@/components/navbar';
-import clsx from "clsx";
 
-export const metadata: Metadata = {
+import clsx from "clsx";
+import BasicNavbar from "@/components/navbar";
+
+
+ const metadata: Metadata = {
 	title: {
 		default: siteConfig.name,
 		template: `%s - ${siteConfig.name}`,

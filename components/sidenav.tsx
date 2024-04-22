@@ -32,7 +32,7 @@ import { AcmeLogo } from "./acme";
  * <Sidebar defaultSelectedKey="home" selectedKeys={[currentPath]} />
  * ```
  */
-export default function Component() {
+export default function Sidenav() {
   const {isOpen, onOpen, onOpenChange} = useDisclosure();
 
   return (

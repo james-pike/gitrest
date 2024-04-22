@@ -120,7 +120,7 @@ export default function BasicNavbar(props: NavbarProps) {
       {/* <NavbarContent className="flex md:hidden " justify="end">
         {isMenuOpen && <ThemeDropdown />}
       </NavbarContent> */}
-
+{/* <Sidenav /> */}
       <NavbarMenuToggle className="text-white md:hidden" style={{ outline: 'none' }}/>
 
       <NavbarMenu
