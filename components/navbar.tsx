@@ -57,7 +57,7 @@ export default function CombinedNavbar(props: NavbarProps) {
     base: "justify-start sm:m-0 p-0 h-dvh max-h-full",
     wrapper: "sm:items-start sm:justify-start max-w-[80%]",
     body: "p-0",
-    closeButton: "z-50",
+    closeButton: "z-50 hidden",
   }}
   isOpen={isOpen}
   motionProps={{
@@ -70,18 +70,19 @@ export default function CombinedNavbar(props: NavbarProps) {
     },
   }}
   radius="none"
-  scrollBehavior="inside"
+  // scrollBehavior="inside"
   onOpenChange={onOpenChange}
 >
         <ModalContent>
           <ModalBody>
             <div className="relative flex h-full w-78 flex-1 flex-col p-6">
               <div className="flex items-center gap-2 px-0">
-                <div className="flex  items-center justify-center rounded-full ">
+                <div className="flex items-center justify-center rounded-full ">
                 <img className="aspect-square h-10 " src="./images/logo.png" alt="Logo" />
                 </div>
                 <span className="text-small font-bold uppercase text-foreground">JOES ITALIAN KITCHEN</span>
               </div>
+              <div className="border-b border-gray-500 mt-5"></div>
              <Spacer y={4} /> 
               {/* <div className="flex items-center gap-3 px-3">
                 <Avatar
@@ -144,7 +145,7 @@ export default function CombinedNavbar(props: NavbarProps) {
                 </Button> */}
                 <Button
                   fullWidth
-                  className="justify-start border-white border text-default-500 data-[hover=true]:text-foreground"
+                  className="justify-start border-gray-500 border text-default-500 data-[hover=true]:text-foreground"
                   startContent={
                     <Icon
                       className="text-default-500"
@@ -154,7 +155,7 @@ export default function CombinedNavbar(props: NavbarProps) {
                   }
                   variant="light"
                 >
-                  ORDERS
+                  ORDERS / UBER EATS
                 </Button>
                 <Button
                   fullWidth
@@ -168,7 +169,7 @@ export default function CombinedNavbar(props: NavbarProps) {
                   }
                   variant="light"
                 >
-                  RESERVATIONS
+                  RESERVATIONS / OPEN TABLE
                 </Button>
 
               <Socials/>
