@@ -141,7 +141,7 @@ export default function HomePage() {
 					<img
 						className="w-full h-40 object-cover border-black"
 						style={{ opacity: 0.75, height: '20vh', }}
-						src="./images/c1.jpg"
+						src="./images/a3.jpg"
 						alt="Background Image"
 					/>
 					<h1
@@ -157,7 +157,7 @@ export default function HomePage() {
 							zIndex: 10, // Ensure it's above the image
 						}}
 					>
-						CATERING
+						ABOUT
 					</h1>
 				</div>
 

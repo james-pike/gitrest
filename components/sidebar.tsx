@@ -10,8 +10,8 @@ import {
 import React from "react";
 import {Listbox, Tooltip, ListboxItem, ListboxSection} from "@nextui-org/react";
 import {Icon} from "@iconify/react";
-import { cn } from "@/cn";
 
+import {cn} from "@/cn";
 
 export enum SidebarItemType {
   Nest = "nest",
@@ -201,6 +201,7 @@ const Sidebar = React.forwardRef<HTMLElement, SidebarProps>(
         }
 
         return (
+          
           <ListboxItem
             {...item}
             key={item.key}
@@ -275,7 +276,6 @@ const Sidebar = React.forwardRef<HTMLElement, SidebarProps>(
         variant="flat"
         onSelectionChange={(keys) => {
           const key = Array.from(keys)[0];
-
           setSelected(key as React.Key);
           onSelect?.(key as string);
         }}
