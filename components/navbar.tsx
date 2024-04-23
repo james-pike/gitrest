@@ -155,7 +155,21 @@ export default function CombinedNavbar(props: NavbarProps) {
                   }
                   variant="light"
                 >
-                  ORDERS / UBER EATS
+                  UBER EATS
+                </Button>
+                <Button
+                  fullWidth
+                  className="justify-start border-gray-500 border text-default-500 data-[hover=true]:text-foreground"
+                  startContent={
+                    <Icon
+                      className="text-default-500"
+                      icon="solar:info-circle-line-duotone"
+                      width={24}
+                    />
+                  }
+                  variant="light"
+                >
+                  ORDERS
                 </Button>
                 <Button
                   fullWidth
@@ -169,7 +183,7 @@ export default function CombinedNavbar(props: NavbarProps) {
                   }
                   variant="light"
                 >
-                  RESERVATIONS / OPEN TABLE
+                  RESERVATIONS 
                 </Button>
 
               <Socials/>

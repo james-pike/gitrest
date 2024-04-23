@@ -30,7 +30,7 @@ export default function Tab2({ initialLocation = "Wellington", ...props }: { ini
   return (
     <Card {...props}>
       <div style={{ overflowX: 'auto' }}>
-        <header className="mb-3 flex w-full items-center justify-between mt-6 pl-5 pr-3">
+        <header className="mb-3 flex w-full items-center justify-between mt-5 pl-5 pr-3">
           <div className="flex flex-col">
             <h1 className="text-2xl font-bold text-default-900 lg:text-3xl">Menu</h1>
             <p className="text-medium text-default-400 lg:text-medium">{selectedLocation} {selectedLocation === "Nepean" ? "Express" : ""} Menu</p>
@@ -57,14 +57,14 @@ export default function Tab2({ initialLocation = "Wellington", ...props }: { ini
               >
                 Almonte
               </DropdownItem>
-              <DropdownItem
+              {/* <DropdownItem
                 key="nepean"
                 shortcut={selectedLocation === "Nepean" && <FiCheck />}
                 onClick={() => handleLocationChange("Nepean")}
                 startContent={<SlLocationPin />}
               >
                 Nepean
-              </DropdownItem>
+              </DropdownItem> */}
               <DropdownItem
                 key="wellington"
                 shortcut={selectedLocation === "Wellington" && <FiCheck />}

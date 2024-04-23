@@ -27,19 +27,17 @@ export default function ThemeDropdown({  }) {
         <DropdownItem
           key="almonte"
           shortcut="⌘N"
-          
           startContent={<SlLocationPin />}
         >
         Almonte
         </DropdownItem>
-        <DropdownItem
+        {/* <DropdownItem
           key="nepean"
           shortcut="⌘C"
-         
           startContent={<SlLocationPin />}
         >
           Nepean
-        </DropdownItem>
+        </DropdownItem> */}
         <DropdownItem
           key="wellington"
           shortcut="⌘⇧E"
