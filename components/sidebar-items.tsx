@@ -106,11 +106,11 @@ export const sectionItems: SidebarItem[] = [
         href: "/menu",
         icon: "solar:widget-2-outline",
         title: "MENU",
-        endContent: (
-          <Chip size="sm" variant="flat">
-            New
-          </Chip>
-        ),
+        // endContent: (
+        //   <Chip size="sm" variant="flat">
+        //     New
+        //   </Chip>
+        // ),
       },
       {
         key: "locations",

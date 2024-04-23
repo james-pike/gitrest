@@ -42,7 +42,7 @@ export default function Socials() {
   return (
             <div className="">
                 <div className="h-8"></div>
-            <div className="flex space-x-6 pt-7 px-0 pb-2 border-t border-gray-500">
+            <div className="flex space-x-6 pt-7 px-0 pb-2 border-t border-gray-700">
               {footerNavigation.social.map((item) => (
                 <Link key={item.name} isExternal className="text-default-400" href={item.href}>
                   <span className="sr-only">{item.name}</span>

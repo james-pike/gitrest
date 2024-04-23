@@ -82,7 +82,7 @@ export default function CombinedNavbar(props: NavbarProps) {
                 </div>
                 <span className="text-small font-bold uppercase text-foreground">JOES ITALIAN KITCHEN</span>
               </div>
-              <div className="border-b border-gray-500 mt-5"></div>
+              <div className="border-b border-gray-700 mt-5"></div>
              <Spacer y={0} /> 
               {/* <div className="flex items-center gap-3 px-3">
                 <Avatar
