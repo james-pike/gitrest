@@ -99,13 +99,13 @@ export const sectionItems: SidebarItem[] = [
         key: "home",
         href: "/",
         icon: "solar:home-2-linear",
-        title: "Home",
+        title: "HOME",
       },
       {
         key: "menu",
         href: "/menu",
         icon: "solar:widget-2-outline",
-        title: "Menu",
+        title: "MENU",
         endContent: (
           <Chip size="sm" variant="flat">
             New
@@ -116,7 +116,7 @@ export const sectionItems: SidebarItem[] = [
         key: "locations",
         href: "/locations",
         icon: "solar:checklist-minimalistic-outline",
-        title: "Locations",
+        title: "LOCATIONS",
         // endContent: (
         //   <Icon className="text-default-400" icon="solar:add-circle-line-duotone" width={24} />
         // ),
@@ -126,7 +126,7 @@ export const sectionItems: SidebarItem[] = [
         key: "about",
         href: "/about",
         icon: "solar:users-group-two-rounded-outline",
-        title: "About",
+        title: "ABOUT",
       },
 
 

@@ -83,7 +83,7 @@ export default function CombinedNavbar(props: NavbarProps) {
                 <span className="text-small font-bold uppercase text-foreground">JOES ITALIAN KITCHEN</span>
               </div>
               <div className="border-b border-gray-500 mt-5"></div>
-             <Spacer y={4} /> 
+             <Spacer y={0} /> 
               {/* <div className="flex items-center gap-3 px-3">
                 <Avatar
                   isBordered
@@ -96,12 +96,12 @@ export default function CombinedNavbar(props: NavbarProps) {
                 </div>
               </div>  */}
 
-              <ScrollShadow className="-mr-6 h-full max-h-full py-6 pr-6">
+              <ScrollShadow className="-mr-6 h-full max-h-full pt-5 pr-6">
               <Sidebar defaultSelectedKey={path === "/" ? "home" : path.substring(1)} items={sectionItems} />
               </ScrollShadow>
 
-              <Spacer y={8} />
-              <div className="mt-auto flex flex-col space-y-2">
+              <Spacer y={4} />
+              <div className="mt-auto flex flex-col space-y-3  border-gray-500 pt-8">
                 
 {/*         
               <Button
@@ -143,6 +143,7 @@ export default function CombinedNavbar(props: NavbarProps) {
                 >
                   ORDERS
                 </Button> */}
+                
                 <Button
                   fullWidth
                   className="justify-start border-gray-500 border text-default-500 data-[hover=true]:text-foreground"
