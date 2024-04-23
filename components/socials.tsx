@@ -37,7 +37,7 @@ const footerNavigation = {
   ],
 };
 
-export default function () {
+export default function Socials() {
   
   return (
             <div className="">
