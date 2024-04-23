@@ -117,9 +117,9 @@ export const sectionItems: SidebarItem[] = [
         href: "/locations",
         icon: "solar:checklist-minimalistic-outline",
         title: "Locations",
-        endContent: (
-          <Icon className="text-default-400" icon="solar:add-circle-line-duotone" width={24} />
-        ),
+        // endContent: (
+        //   <Icon className="text-default-400" icon="solar:add-circle-line-duotone" width={24} />
+        // ),
       },
 
       {
@@ -129,12 +129,7 @@ export const sectionItems: SidebarItem[] = [
         title: "About",
       },
 
-      {
-        key: "social",
-        href: "/about",
-        icon: "solar:users-group-two-rounded-outline",
-        title: "About",
-      },
+
      
     ],
   },

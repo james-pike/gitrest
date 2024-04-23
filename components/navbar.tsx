@@ -27,6 +27,7 @@ import { AcmeLogo } from "./acme";
 import { sectionItems, sectionItemsWithTeams } from "./sidebar-items";
 import { Icon } from "@iconify/react";
 import Sidebar from "./sidebar";
+import Socials from "./socials";
 
 const menuItems = [
   { name: "HOME", route: "/" },
@@ -54,7 +55,7 @@ export default function CombinedNavbar(props: NavbarProps) {
    <Modal
   classNames={{
     base: "justify-start sm:m-0 p-0 h-dvh max-h-full",
-    wrapper: "sm:items-start sm:justify-start max-w-[75%]",
+    wrapper: "sm:items-start sm:justify-start max-w-[80%]",
     body: "p-0",
     closeButton: "z-50",
   }}
@@ -64,7 +65,7 @@ export default function CombinedNavbar(props: NavbarProps) {
     animate: { x: 0 },
     exit: { x: -288 }, // Exit position shifted to the left
     transition: {
-      duration: 0.3,
+      duration: 0.15,
       ease: "easeOut",
     },
   }}
@@ -74,7 +75,7 @@ export default function CombinedNavbar(props: NavbarProps) {
 >
         <ModalContent>
           <ModalBody>
-            <div className="relative flex h-full w-72 flex-1 flex-col p-6">
+            <div className="relative flex h-full w-78 flex-1 flex-col p-6">
               <div className="flex items-center gap-2 px-0">
                 <div className="flex  items-center justify-center rounded-full ">
                 <img className="aspect-square h-10 " src="./images/logo.png" alt="Logo" />
@@ -143,7 +144,7 @@ export default function CombinedNavbar(props: NavbarProps) {
                 </Button> */}
                 <Button
                   fullWidth
-                  className="justify-start bg-white text-default-500 data-[hover=true]:text-foreground"
+                  className="justify-start border-white border text-default-500 data-[hover=true]:text-foreground"
                   startContent={
                     <Icon
                       className="text-default-500"
@@ -169,7 +170,10 @@ export default function CombinedNavbar(props: NavbarProps) {
                 >
                   RESERVATIONS
                 </Button>
+
+              <Socials/>
               </div>
+              
             </div>
           </ModalBody>
         </ModalContent>
