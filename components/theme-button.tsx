@@ -38,10 +38,10 @@ export const ThemeButton = (props: UseSwitchProps | undefined) => {
               class: [
                 "w-8 h-8",
                 "flex items-center justify-center",
-                "rounded-lg bg-foreground-100 hover:bg-default-200",
+                "rounded-lg  hover:bg-default-200",
               ],
             })}
-            onClick={() => theme == 'dark' ? setTheme('light') : setTheme('dark')}
+            // onClick={() => theme == 'dark' ? setTheme('light') : setTheme('dark')}
           >
             {theme == 'light' ? <SunIcon /> : <MoonIcon />}
             
