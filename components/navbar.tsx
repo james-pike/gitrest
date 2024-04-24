@@ -54,8 +54,8 @@ export default function CombinedNavbar(props: NavbarProps) {
     <>
 <Modal
   classNames={{
-    base: "justify-start sm:m-0 p-0 h-dvh max-h-full -ml-0 -mb-0",
-    wrapper: "sm:items-start sm:justify-start max-w-[80%] fixed inset-0", // Set wrapper to fixed and inset-0
+    base: "justify-start sm:m-0 p-0 h-dvh max-h-full -ml-0 -mt-0",
+    wrapper: "sm:items-start sm:justify-start items-start max-w-[85%] fixed inset-0", // Set wrapper to fixed and inset-0
     body: "p-0",
     closeButton: "z-50 hidden",
   }}
@@ -65,8 +65,8 @@ export default function CombinedNavbar(props: NavbarProps) {
     animate: { x: 0 },
     exit: { x: -288 }, // Exit position shifted to the left
     transition: {
-      duration: 0.12,
-      ease: "easeOut",
+      duration: 0.10,
+      ease: "anticipate"
     },
   }}
   radius="none"
