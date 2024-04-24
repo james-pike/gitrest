@@ -266,7 +266,7 @@ const Sidebar = React.forwardRef<HTMLElement, SidebarProps>(
             itemClasses?.base,
           ),
           title: cn(
-            "text-small font-medium text-default-500 group-data-[selected=true]:text-foreground",
+            "font-medium text-lg px-3 text-default-500 group-data-[selected=true]:text-foreground",
             itemClasses?.title,
           ),
         }}

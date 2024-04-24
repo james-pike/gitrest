@@ -137,13 +137,6 @@ export const sectionItems: SidebarItem[] = [
         title: "PAGE 1",
       },
 
-      {
-        key: "catering",
-        href: "/about",
- 
-        title: "PAGE 2",
-      },
-
 
 
      
