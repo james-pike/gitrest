@@ -106,7 +106,7 @@ export default function CombinedNavbar(props: NavbarProps) {
                 
                 <Button
                   fullWidth
-                  className="justify-center bg-default-100 hover:border-white border-default hover:bg-green-800 border-1.5 py-6 text-medium text-default-600 data-[hover=true]:text-foreground"
+                  className="justify-center bg-default-100 hover:border-white border-default hover:bg-green-800 border-1.5 py-5 text-medium text-default-600 data-[hover=true]:text-foreground"
                   // startContent={
                   //   <Icon
                   //     className="text-default-500"
@@ -120,7 +120,7 @@ export default function CombinedNavbar(props: NavbarProps) {
                 </Button>
                 <Button
                   fullWidth
-                  className="justify-center bg-default-200 border-default hover:border-white border-1.5 py-6 text-medium  text-default-600 data-[hover=true]:text-foreground"
+                  className="justify-center bg-default-200 border-default hover:bg-blue-800 hover:border-white border-1.5 py-5 text-medium  text-default-600 data-[hover=true]:text-foreground"
               
                   variant="light"
                 >
@@ -128,7 +128,7 @@ export default function CombinedNavbar(props: NavbarProps) {
                 </Button>
                 <Button
                   fullWidth
-                  className="justify-center bg-black border-1.5 py-6 border-default hover:border-red-900 text-default-600  text-medium data-[hover=true]:text-foreground"
+                  className="justify-center bg-black border-1.5 py-5 border-default hover:border-white text-default-600  text-medium data-[hover=true]:text-foreground"
              
                   variant="light"
                 >
