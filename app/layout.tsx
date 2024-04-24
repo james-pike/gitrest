@@ -9,6 +9,7 @@ import { Providers } from "./providers";
 import clsx from "clsx";
 import BasicNavbar from "@/components/navbar";
 import CombinedNavbar from "@/components/navbar";
+import Navbar2 from "@/components/navbar2";
 
 
  const metadata: Metadata = {
@@ -59,7 +60,8 @@ export default function RootLayout({
 
 					<div className="relative w-full flex flex-col h-screen">
 				
-						<CombinedNavbar />
+						{/* <CombinedNavbar /> */}
+						<Navbar2 />
 					    
 						<main className="">
 							{children}
