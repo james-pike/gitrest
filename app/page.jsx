@@ -136,7 +136,7 @@ export default function HomePage() {
 			<div className="border-4 border-black"></div>
 
 
-			<a href="/catering" style={{ textDecoration: 'none' }}>
+			<a href="/about" style={{ textDecoration: 'none' }}>
 				<div style={{ position: 'relative' }}>
 					<img
 						className="w-full h-40 object-cover border-black"

@@ -52,10 +52,10 @@ export default function CombinedNavbar(props: NavbarProps) {
 
   return (
     <>
-   <Modal
+<Modal
   classNames={{
-    base: "justify-start sm:m-0 p-0 h-dvh max-h-full",
-    wrapper: "sm:items-start sm:justify-start max-w-[80%]",
+    base: "justify-start sm:m-0 p-0 h-dvh max-h-full -ml-0 -mb-0",
+    wrapper: "sm:items-start sm:justify-start max-w-[80%] fixed inset-0", // Set wrapper to fixed and inset-0
     body: "p-0",
     closeButton: "z-50 hidden",
   }}
@@ -70,12 +70,11 @@ export default function CombinedNavbar(props: NavbarProps) {
     },
   }}
   radius="none"
-  // scrollBehavior="inside"
   onOpenChange={onOpenChange}
 >
         <ModalContent>
           <ModalBody>
-            <div className="relative flex h-full w-78 flex-1 flex-col p-6">
+            <div className="relative border-2 border-gray-500 flex h-full w-78 flex-1 flex-col p-6">
               <div className="flex items-center gap-2 px-0">
                 <div className="flex items-center justify-center rounded-full ">
                  <img className="aspect-square h-10 " src="./images/logo.png" alt="Logo" /> 
@@ -84,7 +83,7 @@ export default function CombinedNavbar(props: NavbarProps) {
               </div>
               <div className="border-b-2 border-gray-500 mt-5"></div>
              <Spacer y={1} /> 
-              {/* <div className="flex items-center gap-3 px-3">
+               <div className="flex items-center gap-3 px-3">
                 <Avatar
                   isBordered
                   size="sm"
@@ -94,7 +93,7 @@ export default function CombinedNavbar(props: NavbarProps) {
                   <p className="text-small font-medium text-default-600">Wellington</p>
               
                 </div>
-              </div>  */}
+              </div>  
 
               <ScrollShadow className="-mr-6 h-full max-h-full pt-5 pr-6">
               <Sidebar defaultSelectedKey={path === "/" ? "home" : path.substring(1)} items={sectionItems} />

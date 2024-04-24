@@ -132,14 +132,14 @@ export const sectionItems: SidebarItem[] = [
 
       {
         key: "catering",
-        href: "/catering",
+        href: "/locations",
         icon: "solar:users-group-two-rounded-outline",
         title: "PAGE 1",
       },
 
       {
         key: "catering",
-        href: "/catering",
+        href: "/about",
         icon: "solar:users-group-two-rounded-outline",
         title: "PAGE 2",
       },
