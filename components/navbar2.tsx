@@ -1,7 +1,3 @@
-"use client";
-
-import type { NavbarProps } from "@nextui-org/react";
-
 import React from "react";
 import {
     Navbar,
@@ -14,21 +10,20 @@ import {
     Link,
     Button,
     Divider,
+    MergeWithAs,
+    NavbarProps,
 } from "@nextui-org/react";
 import { Icon } from "@iconify/react";
-
 import { cn } from "@/cn";
-import { AcmeIcon } from "./social";
 
 const menuItems = [
     { name: "HOME", route: "/" },
     { name: "MENU", route: "/menu" },
     { name: "LOCATIONS", route: "/locations" },
     { name: "ABOUT", route: "/about" },
-    // { name: "ABOUT", route: "/about" },
-  ];
+];
 
-export default function Navbar2(props: NavbarProps) {
+export default function Navbar2(props: React.JSX.IntrinsicAttributes & MergeWithAs<Omit<React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>, "ref">, Omit<Omit<React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>, "ref">, never>, NavbarProps, "div">) {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
     return (
@@ -48,38 +43,24 @@ export default function Navbar2(props: NavbarProps) {
             {/* Left Content */}
             <NavbarBrand>
                 <div className="rounded-full bg-foreground text-background">
-                    <img src="./images/logo.png" className="h-10 bg-black" />
+                    <img src="./images/logo.png" className="h-14 bg-black" />
                 </div>
-                {/* <span className="ml-3 text-small font-medium">ACME</span> */}
             </NavbarBrand>
 
             {/* Center Content */}
             <NavbarContent justify="center">
-                <NavbarItem>
-                    <Link className="text-default-500" href="#" size="sm">
-                        Home
-                    </Link>
-                </NavbarItem>
-                <NavbarItem>
-                    <Link className="text-default-500" href="#" size="sm">
-                        Features
-                    </Link>
-                </NavbarItem>
-                <NavbarItem isActive>
-                    <Link aria-current="page" color="foreground" href="#" size="sm">
-                        Customers
-                    </Link>
-                </NavbarItem>
-                <NavbarItem>
-                    <Link className="text-default-500" href="#" size="sm">
-                        About Us
-                    </Link>
-                </NavbarItem>
-                <NavbarItem>
-                    <Link className="text-default-500" href="#" size="sm">
-                        Integrations
-                    </Link>
-                </NavbarItem>
+                {menuItems.map((item, index) => (
+                    <NavbarItem key={index}>
+                        <Link
+                            className="text-default-500"
+                            href={item.route}
+                            size="sm"
+                            onClick={() => setIsMenuOpen(false)} // Close menu on click
+                        >
+                            {item.name}
+                        </Link>
+                    </NavbarItem>
+                ))}
             </NavbarContent>
 
             {/* Right Content */}
@@ -101,7 +82,6 @@ export default function Navbar2(props: NavbarProps) {
             </NavbarContent>
 
             <NavbarMenuToggle className="text-default-400 md:hidden" />
-
             <NavbarMenu
                 className="top-[calc(var(--navbar-height)_-_1px)] max-h-fit bg-default-200/50 pb-4 pt-6 shadow-medium backdrop-blur-md backdrop-saturate-150 dark:bg-default-100/50"
                 motionProps={{
@@ -114,37 +94,20 @@ export default function Navbar2(props: NavbarProps) {
                     },
                 }}
             >
-       
-
                 {menuItems.map((item, index) => (
                     <NavbarMenuItem key={`${item}-${index}`}>
-                        <Link className="mb-2 w-full text-default-500" href={item.route} size="lg">
+                        <Link
+                            className="mb-2 w-full text-default-500"
+                            href={item.route}
+                            size="lg"
+                            onClick={() => setIsMenuOpen(false)} // Close menu on click
+                        >
                             {item.name}
                         </Link>
                         {index < menuItems.length - 1 && <Divider className="opacity-50" />}
                     </NavbarMenuItem>
                 ))}
-
-{/* <div className="flex flex-row">
-  <NavbarMenuItem>
-    <Button fullWidth as={Link} href="/#" variant="faded">
-      UBER EATS
-    </Button>
-  </NavbarMenuItem>
-  <NavbarMenuItem className="mb-4">
-    <Button fullWidth as={Link} className="bg-foreground text-background" href="/#">
-      ORDER ONLINE
-    </Button>
-  </NavbarMenuItem>
-  <NavbarMenuItem className="mb-4">
-    <Button fullWidth as={Link} className="bg-foreground text-background" href="/#">
-      RESERVATIONS
-    </Button>
-  </NavbarMenuItem>
-</div> */}
-
-
-<NavbarMenuItem>
+                <NavbarMenuItem>
                     <Button fullWidth as={Link} href="/#" variant="faded">
                         UBER EATS
                     </Button>

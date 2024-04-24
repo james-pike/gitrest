@@ -12,6 +12,8 @@ import CombinedNavbar from "@/components/navbar";
 import Navbar2 from "@/components/navbar2";
 
 
+
+
  const metadata: Metadata = {
 	title: {
 		default: siteConfig.name,
