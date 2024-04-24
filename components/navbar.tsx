@@ -106,42 +106,30 @@ export default function CombinedNavbar(props: NavbarProps) {
                 
                 <Button
                   fullWidth
-                  className="justify-start border-green-800 hover:bg-green-800 border-1.5 py-6 text-medium text-default-600 data-[hover=true]:text-foreground"
-                  startContent={
-                    <Icon
-                      className="text-default-500"
-                      icon="solar:info-circle-line-duotone"
-                      width={24}
-                    />
-                  }
+                  className="justify-center bg-default-100 hover:border-white border-default hover:bg-green-800 border-1.5 py-6 text-medium text-default-600 data-[hover=true]:text-foreground"
+                  // startContent={
+                  //   <Icon
+                  //     className="text-default-500"
+                  //     icon="solar:info-circle-line-duotone"
+                  //     width={24}
+                  //   />
+                  // }
                   variant="light"
                 >
                   UBER EATS
                 </Button>
                 <Button
                   fullWidth
-                  className="justify-start border-gray-500 border-1.5 py-6 text-medium  text-default-600 data-[hover=true]:text-foreground"
-                  startContent={
-                    <Icon
-                      className="text-default-500"
-                      icon="solar:info-circle-line-duotone"
-                      width={24}
-                    />
-                  }
+                  className="justify-center bg-default-200 border-default hover:border-white border-1.5 py-6 text-medium  text-default-600 data-[hover=true]:text-foreground"
+              
                   variant="light"
                 >
                   ONLINE ORDERS
                 </Button>
                 <Button
                   fullWidth
-                  className="justify-start bg-black border-1.5 py-6 border-default hover:border-red-900 text-default-600  text-medium data-[hover=true]:text-foreground"
-                  startContent={
-                    <Icon
-                      className="text-default-500"
-                      icon="solar:info-circle-line-duotone"
-                      width={24}
-                    />
-                  }
+                  className="justify-center bg-black border-1.5 py-6 border-default hover:border-red-900 text-default-600  text-medium data-[hover=true]:text-foreground"
+             
                   variant="light"
                 >
                   RESERVATIONS 
