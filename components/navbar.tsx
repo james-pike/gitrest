@@ -82,7 +82,7 @@ export default function CombinedNavbar(props: NavbarProps) {
                 <span className="text-xl pl-1 uppercase text-default-600 ">JOES ITALIAN KITCHEN</span>
               </div>
               <div className="border-b-2 border-default-100 mt-5"></div>
-             <Spacer y={1} /> 
+             {/* <Spacer y={1} />  */}
                {/* <div className="flex items-center gap-3 px-3">
                 <Avatar
                   isBordered
@@ -99,7 +99,7 @@ export default function CombinedNavbar(props: NavbarProps) {
               <Sidebar defaultSelectedKey={path === "/" ? "home" : path.substring(1)} items={sectionItems} />
               </ScrollShadow>
 
-              <Spacer y={3} />
+              {/* <Spacer y={1} /> */}
               <div className="mt-auto flex flex-col space-y-3  border-black pt-4">
                 
               
@@ -134,7 +134,7 @@ export default function CombinedNavbar(props: NavbarProps) {
                 >
                   RESERVATIONS 
                 </Button>
-                <Spacer y={3} />
+                {/* <Spacer y={2} /> */}
 
               <Socials/>
               </div>
