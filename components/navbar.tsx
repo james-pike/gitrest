@@ -65,7 +65,7 @@ export default function CombinedNavbar(props: NavbarProps) {
     animate: { x: 0 },
     exit: { x: -288 }, // Exit position shifted to the left
     transition: {
-      duration: 0.15,
+      duration: 0.12,
       ease: "easeOut",
     },
   }}
@@ -78,12 +78,12 @@ export default function CombinedNavbar(props: NavbarProps) {
             <div className="relative flex h-full w-78 flex-1 flex-col p-6">
               <div className="flex items-center gap-2 px-0">
                 <div className="flex items-center justify-center rounded-full ">
-                {/* <img className="aspect-square h-10 " src="./images/logo.png" alt="Logo" /> */}
+                 <img className="aspect-square h-10 " src="./images/logo.png" alt="Logo" /> 
                 </div>
-                <span className="text-large font-bold uppercase text-default-500 ">JOES ITALIAN KITCHEN</span>
+                <span className="text-xl pl-1 font-bold uppercase text-default-500 ">JOES ITALIAN KITCHEN</span>
               </div>
               <div className="border-b-2 border-gray-500 mt-5"></div>
-             <Spacer y={0} /> 
+             <Spacer y={1} /> 
               {/* <div className="flex items-center gap-3 px-3">
                 <Avatar
                   isBordered
