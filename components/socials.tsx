@@ -42,11 +42,11 @@ export default function Socials() {
   return (
             <div className="">
                 <div className="h-8"></div>
-            <div className="flex justify-center space-x-6 pt-10 px-1 pb-4 border-t-2 border-default">
+            <div className="flex space-x-6 pt-10 px-1 pb-4 border-t-2 border-default">
               {footerNavigation.social.map((item) => (
                 <Link key={item.name} isExternal className="text-default-400" href={item.href}>
                   <span className="sr-only">{item.name}</span>
-                  <item.icon aria-hidden="true" className="w-6 text-2xl" />
+                  <item.icon aria-hidden="true" className="w-6 text-xl" />
                 </Link>
               ))}
             </div>
