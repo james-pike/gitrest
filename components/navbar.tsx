@@ -136,7 +136,7 @@ export default function CombinedNavbar(props: NavbarProps) {
                 </Button>
                 {/* <Spacer y={2} /> */}
 
-              <Socials/>
+              {/* <Socials/> */}
               </div>
               
             </div>
