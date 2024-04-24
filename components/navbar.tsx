@@ -83,7 +83,7 @@ export default function CombinedNavbar(props: NavbarProps) {
               </div>
               <div className="border-b-2 border-gray-500 mt-5"></div>
              <Spacer y={1} /> 
-               <div className="flex items-center gap-3 px-3">
+               {/* <div className="flex items-center gap-3 px-3">
                 <Avatar
                   isBordered
                   size="sm"
@@ -93,7 +93,7 @@ export default function CombinedNavbar(props: NavbarProps) {
                   <p className="text-small font-medium text-default-600">Wellington</p>
               
                 </div>
-              </div>  
+              </div>   */}
 
               <ScrollShadow className="-mr-6 h-full max-h-full pt-5 pr-6">
               <Sidebar defaultSelectedKey={path === "/" ? "home" : path.substring(1)} items={sectionItems} />
