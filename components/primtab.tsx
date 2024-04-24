@@ -47,6 +47,11 @@ export default function Primtab() {
             {cachedLists.insalata}
           </Card>
         </Tab>
+        <Tab key="bruschetta" title="BRUSCHETTA" className="focus:outline-none">
+          <Card>
+            {cachedLists.desserts}
+          </Card>
+        </Tab>
         <Tab key="pasta" title="PASTA" className="focus:outline-none">
           <Card>
             {cachedLists.pasta}
