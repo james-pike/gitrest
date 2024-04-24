@@ -74,14 +74,14 @@ export default function CombinedNavbar(props: NavbarProps) {
 >
         <ModalContent>
           <ModalBody>
-            <div className="relative rounded-lg border-2 border-default flex h-full w-78 flex-1 flex-col p-6">
+            <div className="relative rounded-lg border-2 border-default-100 flex h-full w-78 flex-1 flex-col p-6">
               <div className="flex items-center gap-2 px-0">
                 <div className="flex items-center justify-center rounded-full ">
                  <img className="aspect-square h-10 " src="./images/logo.png" alt="Logo" /> 
                 </div>
                 <span className="text-xl pl-1 uppercase text-default-600 ">JOES ITALIAN KITCHEN</span>
               </div>
-              <div className="border-b-2 border-default mt-5"></div>
+              <div className="border-b-2 border-default-100 mt-5"></div>
              <Spacer y={1} /> 
                {/* <div className="flex items-center gap-3 px-3">
                 <Avatar
