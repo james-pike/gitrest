@@ -131,7 +131,7 @@ export default function CombinedNavbar(props: NavbarProps) {
                   }
                   variant="light"
                 >
-                  ORDERS
+                  ONLINE ORDERS
                 </Button>
                 <Button
                   fullWidth
