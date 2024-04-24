@@ -78,11 +78,11 @@ export default function CombinedNavbar(props: NavbarProps) {
             <div className="relative flex h-full w-78 flex-1 flex-col p-6">
               <div className="flex items-center gap-2 px-0">
                 <div className="flex items-center justify-center rounded-full ">
-                <img className="aspect-square h-10 " src="./images/logo.png" alt="Logo" />
+                {/* <img className="aspect-square h-10 " src="./images/logo.png" alt="Logo" /> */}
                 </div>
-                <span className="text-small font-bold uppercase text-foreground">JOES ITALIAN KITCHEN</span>
+                <span className="text-large font-bold uppercase text-default-500 ">JOES ITALIAN KITCHEN</span>
               </div>
-              <div className="border-b border-gray-700 mt-5"></div>
+              <div className="border-b-2 border-gray-500 mt-5"></div>
              <Spacer y={0} /> 
               {/* <div className="flex items-center gap-3 px-3">
                 <Avatar
@@ -100,53 +100,14 @@ export default function CombinedNavbar(props: NavbarProps) {
               <Sidebar defaultSelectedKey={path === "/" ? "home" : path.substring(1)} items={sectionItems} />
               </ScrollShadow>
 
-              <Spacer y={4} />
-              <div className="mt-auto flex flex-col space-y-3  border-gray-500 pt-8">
+              <Spacer y={2} />
+              <div className="mt-auto flex flex-col space-y-3  border-gray-500 pt-4">
                 
-{/*         
-              <Button
-                  className="justify-start text-default-500 bg-green-500 data-[hover=true]:text-foreground"
-                  startContent={
-                    <Icon
-                      className="rotate-180 text-default-500"
-                      icon="solar:minus-circle-line-duotone"
-                      width={24}
-                    />
-                  }
-                  variant="light"
-                >
-                  UBER EATS
-                </Button> */}
-                {/* <Button
-                  className="justify-start text-default-500 bg-red-500 data-[hover=true]:text-foreground"
-                  startContent={
-                    <Icon
-                      className="rotate-180 text-default-500"
-                      icon="solar:minus-circle-line-duotone"
-                      width={24}
-                    />
-                  }
-                  variant="light"
-                >
-                  DOORDASH
-                </Button> */}
-                {/* <Button
-                  className="justify-start text-default-500 data-[hover=true]:text-foreground"
-                  startContent={
-                    <Icon
-                      className="rotate-180 text-default-500"
-                      icon="solar:minus-circle-line-duotone"
-                      width={24}
-                    />
-                  }
-                  variant="light"
-                >
-                  ORDERS
-                </Button> */}
+              
                 
                 <Button
                   fullWidth
-                  className="justify-start border-gray-500 border text-default-500 data-[hover=true]:text-foreground"
+                  className="justify-start border-gray-500 border-2 text-medium font-medium text-default-500 data-[hover=true]:text-foreground"
                   startContent={
                     <Icon
                       className="text-default-500"
@@ -160,7 +121,7 @@ export default function CombinedNavbar(props: NavbarProps) {
                 </Button>
                 <Button
                   fullWidth
-                  className="justify-start border-gray-500 border text-default-500 data-[hover=true]:text-foreground"
+                  className="justify-start border-gray-500 border-2 text-medium font-medium text-default-500 data-[hover=true]:text-foreground"
                   startContent={
                     <Icon
                       className="text-default-500"
@@ -174,7 +135,7 @@ export default function CombinedNavbar(props: NavbarProps) {
                 </Button>
                 <Button
                   fullWidth
-                  className="justify-start bg-black text-default-500 data-[hover=true]:text-foreground"
+                  className="justify-start bg-black border-2 border-gray-500 text-default-500 font-medium text-medium data-[hover=true]:text-foreground"
                   startContent={
                     <Icon
                       className="text-default-500"

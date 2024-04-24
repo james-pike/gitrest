@@ -39,6 +39,7 @@ export const items: SidebarItem[] = [
     href: "#",
     icon: "solar:users-group-two-rounded-outline",
     title: "Team",
+  
   },
   {
     key: "tracker",

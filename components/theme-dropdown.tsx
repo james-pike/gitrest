@@ -16,10 +16,10 @@ export default function ThemeDropdown({  }) {
         variant="bordered" className=" bg-foreground-100 hover:bg-foreground-200 px-3">
           <div className="flex items-center gap-1.5 text-large">
             <SlLocationPin />
-            <div className="md:flex text-small">
+            <div className="md:flex text-small text-default-500">
               <p>Wellington</p>
             </div>
-            <Icon className="flex-none text-white" icon="lucide:arrow-down" width={13}/>
+            <Icon className="flex-none text-default-500" icon="lucide:arrow-down" width={13}/>
           </div>
         </Button>
       </DropdownTrigger>
