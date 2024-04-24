@@ -74,7 +74,7 @@ export default function CombinedNavbar(props: NavbarProps) {
 >
         <ModalContent>
           <ModalBody>
-            <div className="relative border-2 border-default flex h-full w-78 flex-1 flex-col p-6">
+            <div className="relative rounded-lg border-2 border-default flex h-full w-78 flex-1 flex-col p-6">
               <div className="flex items-center gap-2 px-0">
                 <div className="flex items-center justify-center rounded-full ">
                  <img className="aspect-square h-10 " src="./images/logo.png" alt="Logo" /> 
