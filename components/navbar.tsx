@@ -74,14 +74,14 @@ export default function CombinedNavbar(props: NavbarProps) {
 >
         <ModalContent>
           <ModalBody>
-            <div className="relative border-2 border-gray-800 flex h-full w-78 flex-1 flex-col p-6">
+            <div className="relative border-2 border-default flex h-full w-78 flex-1 flex-col p-6">
               <div className="flex items-center gap-2 px-0">
                 <div className="flex items-center justify-center rounded-full ">
                  <img className="aspect-square h-10 " src="./images/logo.png" alt="Logo" /> 
                 </div>
-                <span className="text-xl pl-1 font-medium uppercase text-default-600 ">JOES ITALIAN KITCHEN</span>
+                <span className="text-xl pl-1 uppercase text-default-600 ">JOES ITALIAN KITCHEN</span>
               </div>
-              <div className="border-b-2 border-gray-800 mt-5"></div>
+              <div className="border-b-2 border-default mt-5"></div>
              <Spacer y={1} /> 
                {/* <div className="flex items-center gap-3 px-3">
                 <Avatar
@@ -106,7 +106,7 @@ export default function CombinedNavbar(props: NavbarProps) {
                 
                 <Button
                   fullWidth
-                  className="justify-start border-black border-2 text-medium font-medium text-default-600 data-[hover=true]:text-foreground"
+                  className="justify-start border-green-800 hover:bg-green-800 border-1.5 py-6 text-medium text-default-600 data-[hover=true]:text-foreground"
                   startContent={
                     <Icon
                       className="text-default-500"
@@ -120,7 +120,7 @@ export default function CombinedNavbar(props: NavbarProps) {
                 </Button>
                 <Button
                   fullWidth
-                  className="justify-start border-gray-700 border-2 text-medium font-medium text-default-600 data-[hover=true]:text-foreground"
+                  className="justify-start border-gray-500 border-1.5 py-6 text-medium  text-default-600 data-[hover=true]:text-foreground"
                   startContent={
                     <Icon
                       className="text-default-500"
@@ -134,7 +134,7 @@ export default function CombinedNavbar(props: NavbarProps) {
                 </Button>
                 <Button
                   fullWidth
-                  className="justify-start bg-black border-2 border-gray-700 text-default-600 font-medium text-medium data-[hover=true]:text-foreground"
+                  className="justify-start bg-black border-1.5 py-6 border-default hover:border-red-900 text-default-600  text-medium data-[hover=true]:text-foreground"
                   startContent={
                     <Icon
                       className="text-default-500"
