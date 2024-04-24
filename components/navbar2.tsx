@@ -21,12 +21,12 @@ import { cn } from "@/cn";
 import { AcmeIcon } from "./social";
 
 const menuItems = [
-    "Home",
-    "Menu",
-    "Locations",
-    "About",
-
-];
+    { name: "HOME", route: "/" },
+    { name: "MENU", route: "/menu" },
+    { name: "LOCATIONS", route: "/locations" },
+    { name: "ABOUT", route: "/about" },
+    // { name: "ABOUT", route: "/about" },
+  ];
 
 export default function Navbar2(props: NavbarProps) {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -118,8 +118,8 @@ export default function Navbar2(props: NavbarProps) {
 
                 {menuItems.map((item, index) => (
                     <NavbarMenuItem key={`${item}-${index}`}>
-                        <Link className="mb-2 w-full text-default-500" href="#" size="lg">
-                            {item}
+                        <Link className="mb-2 w-full text-default-500" href={item.route} size="lg">
+                            {item.name}
                         </Link>
                         {index < menuItems.length - 1 && <Divider className="opacity-50" />}
                     </NavbarMenuItem>
