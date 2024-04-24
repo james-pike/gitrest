@@ -31,11 +31,7 @@ const footerNavigation = {
       href: "#",
       icon: (props: SocialIconProps) => <Icon {...props} icon="fontisto:twitter" />,
     },
-    {
-      name: "GitHub",
-      href: "#",
-      icon: (props: SocialIconProps) => <Icon {...props} icon="fontisto:github" />,
-    },
+
   ],
 };
 
@@ -45,14 +41,16 @@ export default function Socials() {
             <div className="">
                 <div className="h-8"></div>
                 <div className="flex justify-between space-x-6 pt-10 px-1 pb-4 border-t-2 border-default">
+                    <div className="space-x-6">
   {footerNavigation.social.map((item) => (
     <Link key={item.name} isExternal className="text-default-400" href={item.href}>
       <span className="sr-only">{item.name}</span>
       <item.icon aria-hidden="true" className="w-6 text-xl" />
     </Link>
   ))}
+  </div>
   {/* Add the icon you want to align to the right */}
-  <div className="flex items-center">
+  <div className="flex ">
     {/* Your icon component */}
     <ThemeButton />
   </div>
