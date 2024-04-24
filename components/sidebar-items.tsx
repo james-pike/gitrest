@@ -99,13 +99,13 @@ export const sectionItems: SidebarItem[] = [
       {
         key: "home",
         href: "/",
-        icon: "solar:home-2-linear",
+        // icon: "solar:home-2-linear",
         title: "HOME",
       },
       {
         key: "menu",
         href: "/menu",
-        icon: "solar:widget-2-outline",
+     
         title: "MENU",
         // endContent: (
         //   <Chip size="sm" variant="flat">
@@ -116,7 +116,7 @@ export const sectionItems: SidebarItem[] = [
       {
         key: "locations",
         href: "/locations",
-        icon: "solar:checklist-minimalistic-outline",
+        // icon: "solar:checklist-minimalistic-outline",
         title: "LOCATIONS",
         // endContent: (
         //   <Icon className="text-default-400" icon="solar:add-circle-line-duotone" width={24} />
@@ -126,21 +126,21 @@ export const sectionItems: SidebarItem[] = [
       {
         key: "about",
         href: "/about",
-        icon: "solar:users-group-two-rounded-outline",
+    
         title: "ABOUT",
       },
 
       {
         key: "catering",
         href: "/locations",
-        icon: "solar:users-group-two-rounded-outline",
+     
         title: "PAGE 1",
       },
 
       {
         key: "catering",
         href: "/about",
-        icon: "solar:users-group-two-rounded-outline",
+ 
         title: "PAGE 2",
       },
 
