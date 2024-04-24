@@ -99,7 +99,7 @@ export default function CombinedNavbar(props: NavbarProps) {
               <Sidebar defaultSelectedKey={path === "/" ? "home" : path.substring(1)} items={sectionItems} />
               </ScrollShadow>
 
-              <Spacer y={2} />
+              <Spacer y={3} />
               <div className="mt-auto flex flex-col space-y-3  border-black pt-4">
                 
               
@@ -134,6 +134,7 @@ export default function CombinedNavbar(props: NavbarProps) {
                 >
                   RESERVATIONS 
                 </Button>
+                <Spacer y={3} />
 
               <Socials/>
               </div>
