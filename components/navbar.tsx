@@ -73,6 +73,7 @@ export default function CombinedNavbar(props: NavbarProps) {
             "data-[active=true]:after:h-[2px]",
             "data-[active=true]:after:rounded-[2px]",
             "data-[active=true]:after:bg-red-700",
+            "focus:outline-none",
           ],
         }}
         className="lg:px-10 border-y-1"
@@ -183,7 +184,7 @@ export default function CombinedNavbar(props: NavbarProps) {
               as={Link}
               href="/#"
               variant="faded"
-              className=" hover:border-white bg-default-300"
+              className=" hover:border-white bg-default-400"
               onClick={() => setIsOnlineOrdersOpen(true)}
             >
               ONLINE ORDERS
