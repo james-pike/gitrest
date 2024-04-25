@@ -185,7 +185,7 @@ export default function CombinedNavbar(props: NavbarProps) {
               href="/#"
               variant="faded"
               className=" hover:border-white bg-default-400"
-              onClick={() => setIsOnlineOrdersOpen(true)}
+              onClick={() => window.open("https://joesitaliankitchen-1asc.mobi2go.com/")}
             >
               ONLINE ORDERS
             </Button>
@@ -218,10 +218,10 @@ export default function CombinedNavbar(props: NavbarProps) {
                 </p>
               </ModalBody>
               <ModalFooter>
-                <Button color="primary" onPress={onClose}>
+                <Button color="primary" onPress={onClose} >
                   Almonte
                 </Button>
-                <Button color="primary" onPress={onClose}>
+                <Button className="bg-white" onPress={onClose}>
                   Wellington
                 </Button>
               </ModalFooter>
@@ -237,15 +237,14 @@ export default function CombinedNavbar(props: NavbarProps) {
               <ModalHeader className="flex flex-col gap-1">RESERVATIONS</ModalHeader>
               <ModalBody>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar risus non risus hendrerit
-                  venenatis.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar asus connect Open Table
                 </p>
               </ModalBody>
               <ModalFooter>
-                <Button color="primary" onPress={onClose}>
+                <Button color="default" className="border border-white" onPress={onClose}>
                   Almonte
                 </Button>
-                <Button color="primary" onPress={onClose}>
+                <Button color="default" onPress={onClose} className="border border-white">
                   Wellington
                 </Button>
               </ModalFooter>
