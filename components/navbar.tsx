@@ -18,6 +18,8 @@ import {
   Spacer,
   useDisclosure,
   Avatar,
+  ModalFooter,
+  ModalHeader,
 } from "@nextui-org/react";
 import { usePathname } from "next/navigation";
 import ThemeDropdown from "./theme-dropdown";
@@ -40,7 +42,7 @@ const menuItems = [
 export default function CombinedNavbar(props: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const path = usePathname();
-  
+  const {isOpen, onOpen, onOpenChange} = useDisclosure();
 
 
 
@@ -49,6 +51,8 @@ export default function CombinedNavbar(props: NavbarProps) {
     setIsMenuOpen(false);
 
   };
+
+
 
   return (
     <>
@@ -117,6 +121,7 @@ export default function CombinedNavbar(props: NavbarProps) {
               color="secondary"
               radius="full"
               variant="flat"
+              
             >
               Reservations
             </Button>
@@ -160,9 +165,42 @@ export default function CombinedNavbar(props: NavbarProps) {
                 ))}
                 <NavbarMenuItem>
                   
-                    <Button fullWidth as={Link} href="/#" variant="faded" className="hover:bg-green-700 hover:border-white bg-default-400 ">
+                    <Button 
+                    onPress={onOpen}
+                    fullWidth as={Link} href="/#" variant="faded" className="hover:bg-green-700 hover:border-white bg-default-400   ">
+                    
                         UBER EATS
                     </Button>
+
+                    <Modal isOpen={isOpen} onOpenChange={onOpenChange} placement="center">
+        <ModalContent>
+          {(onClose) => (
+            <>
+              <ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
+              <ModalBody>
+                <p> 
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam pulvinar risus non risus hendrerit venenatis.
+                  Pellentesque sit amet hendrerit risus, sed porttitor quam.
+                </p>
+            
+              </ModalBody>
+              <ModalFooter>
+                <Button color="danger" variant="light" onPress={onClose}>
+                  Close
+                </Button>
+                <Button color="primary" onPress={onClose}>
+                  Action
+                </Button>
+              </ModalFooter>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
+
+                    
+
+                    
                 </NavbarMenuItem>
                 <NavbarMenuItem>
                     <Button fullWidth as={Link} href="/#" variant="faded" className="hover:bg-red-700 hover:border-white bg-default-300">
@@ -175,40 +213,6 @@ export default function CombinedNavbar(props: NavbarProps) {
                     </Button>
                 </NavbarMenuItem>
             </NavbarMenu>
-
-
-
-
-
-
-
-            {/* <Button
-                  fullWidth
-                  className="justify-center bg-default-100 hover:border-white border-default hover:bg-green-800 border-1.5 py-5 text-medium text-default-600 data-[hover=true]:text-foreground"
-             
-                  variant="light"
-                >
-                  UBER EATS
-                </Button>
-                <Button
-                  fullWidth
-                  className="justify-center bg-default-200 border-default hover:bg-blue-800 hover:border-white border-1.5 py-5 text-medium  text-default-600 data-[hover=true]:text-foreground"
-              
-                  variant="light"
-                >
-                  ONLINE ORDERS
-                </Button>
-                <Button
-                  fullWidth
-                  className="justify-center bg-black border-1.5 py-5 border-default hover:border-white text-default-600  text-medium data-[hover=true]:text-foreground"
-             
-                  variant="light"
-                >
-                  RESERVATIONS 
-                </Button> */}
-
-
-
 
       </Navbar>
 
