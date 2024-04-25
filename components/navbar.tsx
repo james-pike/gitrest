@@ -138,7 +138,7 @@ export default function CombinedNavbar(props: NavbarProps) {
           </NavbarItem>
         </NavbarContent>
 
-        <NavbarMenuToggle className="text-default-400 md:hidden" />
+        <NavbarMenuToggle className="text-default-400 md:hidden focus:outline-none" />
         <NavbarMenu
           className="top-[calc(var(--navbar-height)_-_1px)] max-h-fit bg-default-200/50 pb-4 pt-6 shadow-medium backdrop-blur-md backdrop-saturate-150 dark:bg-default-100/50"
           motionProps={{
@@ -154,7 +154,7 @@ export default function CombinedNavbar(props: NavbarProps) {
           {menuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
-                className="mb-2 w-full text-default-500"
+                className="mb-2 w-full text-default-500 "
                 href={item.route}
                 size="lg"
                 onClick={() => onMenuOpenChange()} // Close menu on click
