@@ -141,7 +141,7 @@ export default function Nav2(props: NavbarProps) {
             </NavbarMenuItem>
           ))}
           <NavbarMenuItem className="col-span-2 pt-1">
-            <div className="flex justify-between w-full gap-0.5">
+            <div className="flex justify-between w-full gap-1">
               <Button
                 as={Link}
                 href="/#"
