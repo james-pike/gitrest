@@ -162,7 +162,7 @@ export default function CombinedNavbar(props: NavbarProps) {
                   )
                 }
               >
-                ONLINE ORDERS
+                ORDERS
               </Button>
               <Button
                 as={Link}
