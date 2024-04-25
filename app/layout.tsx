@@ -66,7 +66,7 @@ export default function RootLayout({
 					<div className="relative w-full flex flex-col h-screen">
 				
 						<CombinedNavbar />
-						{/* <Navbar2 isOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} /> */}
+					
 					    
 						<main className="">
 							{children}

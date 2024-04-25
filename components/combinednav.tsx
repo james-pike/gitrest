@@ -159,18 +159,17 @@ export default function CombinedNavbar(props: NavbarProps) {
                     </NavbarMenuItem>
                 ))}
                 <NavbarMenuItem>
-                  
-                    <Button fullWidth as={Link} href="/#" variant="faded" className="hover:bg-green-700 hover:border-white bg-default-400 ">
+                    <Button fullWidth as={Link} href="/#" variant="faded">
                         UBER EATS
                     </Button>
                 </NavbarMenuItem>
                 <NavbarMenuItem>
-                    <Button fullWidth as={Link} href="/#" variant="faded" className="hover:bg-red-700 hover:border-white bg-default-300">
+                    <Button fullWidth as={Link} href="/#" variant="faded">
                         ONLINE ORDERS
                     </Button>
                 </NavbarMenuItem>
                 <NavbarMenuItem>
-                    <Button fullWidth as={Link} href="/#" variant="faded" className="mb-2 bg-black hover:border-white">
+                    <Button fullWidth as={Link} href="/#" variant="faded" className="mb-2">
                         RESERVATIONS
                     </Button>
                 </NavbarMenuItem>
@@ -182,7 +181,7 @@ export default function CombinedNavbar(props: NavbarProps) {
 
 
 
-            {/* <Button
+            <Button
                   fullWidth
                   className="justify-center bg-default-100 hover:border-white border-default hover:bg-green-800 border-1.5 py-5 text-medium text-default-600 data-[hover=true]:text-foreground"
              
@@ -205,7 +204,7 @@ export default function CombinedNavbar(props: NavbarProps) {
                   variant="light"
                 >
                   RESERVATIONS 
-                </Button> */}
+                </Button>
 
 
 
