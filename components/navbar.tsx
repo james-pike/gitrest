@@ -136,8 +136,8 @@ export default function CombinedNavbar(props: NavbarProps) {
               {index < menuItems.length - 1 && <Divider className="opacity-50" />}
             </NavbarMenuItem>
           ))}
-          <NavbarMenuItem className="col-span-2 pt-1 pb-1">
-            <div className="flex justify-between w-full gap-1">
+          <NavbarMenuItem className="col-span-2 pt-1">
+            <div className="flex justify-between w-full gap-0.5">
               <Button
                 as={Link}
                 href="/#"
