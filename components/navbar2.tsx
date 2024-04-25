@@ -10,8 +10,6 @@ import {
     Link,
     Button,
     Divider,
-    MergeWithAs,
-    NavbarProps,
 } from "@nextui-org/react";
 import { Icon } from "@iconify/react";
 import { cn } from "@/cn";
@@ -23,21 +21,24 @@ const menuItems = [
     { name: "ABOUT", route: "/about" },
 ];
 
-export default function Navbar2(props: React.JSX.IntrinsicAttributes & MergeWithAs<Omit<React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>, "ref">, Omit<Omit<React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>, "ref">, never>, NavbarProps, "div">) {
-    const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+interface Navbar2Props {
+    isOpen: boolean;
+    setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
 
+const Navbar2: React.FC<Navbar2Props> = ({ isOpen, setIsMenuOpen }) => {
     return (
         <Navbar
-            {...props}
+
             classNames={{
                 base: cn("border-default-100", {
-                    "bg-default-200/50 dark:bg-default-100/50": isMenuOpen,
+                    "bg-default-200/50 dark:bg-default-100/50": isOpen,
                 }),
                 wrapper: "w-full justify-center",
                 item: "hidden md:flex",
             }}
             height="60px"
-            isMenuOpen={isMenuOpen}
+            isMenuOpen={isOpen}
             onMenuOpenChange={setIsMenuOpen}
         >
             {/* Left Content */}
@@ -126,3 +127,5 @@ export default function Navbar2(props: React.JSX.IntrinsicAttributes & MergeWith
         </Navbar>
     );
 }
+
+export default Navbar2;

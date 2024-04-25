@@ -10,6 +10,9 @@ import clsx from "clsx";
 import BasicNavbar from "@/components/navbar";
 import CombinedNavbar from "@/components/navbar";
 import Navbar2 from "@/components/navbar2";
+import { useState } from "react";
+
+
 
 
 
@@ -40,7 +43,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 
-
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 
 	return (
@@ -62,8 +65,8 @@ export default function RootLayout({
 
 					<div className="relative w-full flex flex-col h-screen">
 				
-						{/* <CombinedNavbar /> */}
-						<Navbar2 />
+						<CombinedNavbar />
+						{/* <Navbar2 isOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} /> */}
 					    
 						<main className="">
 							{children}

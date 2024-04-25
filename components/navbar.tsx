@@ -40,19 +40,18 @@ const menuItems = [
 export default function CombinedNavbar(props: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const path = usePathname();
-  const { isOpen, onOpen, onOpenChange } = useDisclosure();
-  const [refresh, setRefresh] = useState(false); // State variable for triggering refresh
+  
+
 
 
   const handleMenuItemClick = () => {
     // Close the menu when a menu item is clicked
     setIsMenuOpen(false);
-    setRefresh((prevState) => !prevState);
+
   };
 
   return (
     <>
-
       <Navbar
         {...props}
         isMenuOpen={isMenuOpen}
@@ -73,11 +72,11 @@ export default function CombinedNavbar(props: NavbarProps) {
             </div>
           </a>
         </NavbarBrand>
-        <NavbarMenuToggle
+        {/* <NavbarMenuToggle
           className="text-white md:hidden"
           style={{ outline: 'none' }}
-          onClick={onOpen}
-        />
+          onClick={() => setIsMenuOpen(isMenuOpen)}
+        /> */}
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
           {menuItems.map((item, index) => (
             <React.Fragment key={index}>
@@ -127,7 +126,75 @@ export default function CombinedNavbar(props: NavbarProps) {
             </Button>
           </NavbarItem>
         </NavbarContent>
+
+
+
+
+
+
+
+
+
+
+        <NavbarMenuToggle className="text-default-400 md:hidden" />
+            <NavbarMenu
+                className="top-[calc(var(--navbar-height)_-_1px)] max-h-fit bg-default-200/50 pb-4 pt-6 shadow-medium backdrop-blur-md backdrop-saturate-150 dark:bg-default-100/50"
+                motionProps={{
+                    initial: { opacity: 0, y: -20 },
+                    animate: { opacity: 1, y: 0 },
+                    exit: { opacity: 0, y: -20 },
+                    transition: {
+                        ease: "easeInOut",
+                        duration: 0.2,
+                    },
+                }}
+            >
+                {menuItems.map((item, index) => (
+                    <NavbarMenuItem key={`${item}-${index}`}>
+                        <Link
+                            className="mb-2 w-full text-default-500"
+                            href={item.route}
+                            size="lg"
+                            onClick={() => setIsMenuOpen(false)} // Close menu on click
+                        >
+                            {item.name}
+                        </Link>
+                        {index < menuItems.length - 1 && <Divider className="opacity-50" />}
+                    </NavbarMenuItem>
+                ))}
+                <NavbarMenuItem>
+                    <Button fullWidth as={Link} href="/#" variant="faded">
+                        UBER EATS
+                    </Button>
+                </NavbarMenuItem>
+                <NavbarMenuItem>
+                    <Button fullWidth as={Link} href="/#" variant="faded">
+                        ONLINE ORDERS
+                    </Button>
+                </NavbarMenuItem>
+                <NavbarMenuItem>
+                    <Button fullWidth as={Link} href="/#" variant="faded" className="mb-2">
+                        RESERVATIONS
+                    </Button>
+                </NavbarMenuItem>
+            </NavbarMenu>
+
+
+
+
+
+
+
+
+
+
+
+
       </Navbar>
+
+
+
+      
     </>
   );
 }
