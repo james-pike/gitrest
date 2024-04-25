@@ -125,7 +125,7 @@ export default function CombinedNavbar(props: NavbarProps) {
             <NavbarMenuItem key={`${item}-${index}`}>
               <div>
                 <Link
-                  className="mb-2 w-full text-default-500 text-2xl px-1"
+                  className="mb-2 w-full text-default-500 text-xl px-1"
                   href={item.route}
                   size="lg"
                   onClick={() => setIsMenuOpen(false)} // Close menu on click
