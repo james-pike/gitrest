@@ -40,31 +40,40 @@ const menuItems = [
 ];
 
 export default function CombinedNavbar(props: NavbarProps) {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isOnlineOrdersOpen, setIsOnlineOrdersOpen] = useState(false);
+  const [isReservationsOpen, setIsReservationsOpen] = useState(false);
   const path = usePathname();
-  const {isOpen, onOpen, onOpenChange} = useDisclosure();
-
-
+  const { isOpen: isMenuOpen, onOpen: onMenuOpen, onOpenChange: onMenuOpenChange } = useDisclosure();
 
   const handleMenuItemClick = () => {
     // Close the menu when a menu item is clicked
-    setIsMenuOpen(false);
-
+    onMenuOpenChange();
   };
-
-
 
   return (
     <>
       <Navbar
         {...props}
         isMenuOpen={isMenuOpen}
-        onMenuOpenChange={setIsMenuOpen}
+        onMenuOpenChange={onMenuOpenChange}
         isBordered
         classNames={{
           base: "border-default-100",
           wrapper: "justify-between",
-          item: ["hidden md:flex", "flex", "relative", "items-center", "data-[active=true]:after:content-['']", "data-[active=true]:after:absolute", "data-[active=true]:after:bottom-0", "data-[active=true]:after:left-0", "data-[active=true]:after:right-0", "data-[active=true]:after:h-[2px]", "data-[active=true]:after:rounded-[2px]", "data-[active=true]:after:bg-red-700"],
+          item: [
+            "hidden md:flex",
+            "flex",
+            "relative",
+            "items-center",
+            "data-[active=true]:after:content-['']",
+            "data-[active=true]:after:absolute",
+            "data-[active=true]:after:bottom-0",
+            "data-[active=true]:after:left-0",
+            "data-[active=true]:after:right-0",
+            "data-[active=true]:after:h-[2px]",
+            "data-[active=true]:after:rounded-[2px]",
+            "data-[active=true]:after:bg-red-700",
+          ],
         }}
         className="lg:px-10 border-y-1"
         height="60px"
@@ -76,7 +85,7 @@ export default function CombinedNavbar(props: NavbarProps) {
             </div>
           </a>
         </NavbarBrand>
-     
+
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
           {menuItems.map((item, index) => (
             <React.Fragment key={index}>
@@ -121,84 +130,93 @@ export default function CombinedNavbar(props: NavbarProps) {
               color="secondary"
               radius="full"
               variant="flat"
-              
+
             >
               Reservations
             </Button>
           </NavbarItem>
         </NavbarContent>
 
-
-
-
-
-
-
-
-
-
         <NavbarMenuToggle className="text-default-400 md:hidden" />
-            <NavbarMenu
-                className="top-[calc(var(--navbar-height)_-_1px)] max-h-fit bg-default-200/50 pb-4 pt-6 shadow-medium backdrop-blur-md backdrop-saturate-150 dark:bg-default-100/50"
-                motionProps={{
-                    initial: { opacity: 0, y: -20 },
-                    animate: { opacity: 1, y: 0 },
-                    exit: { opacity: 0, y: -20 },
-                    transition: {
-                        ease: "easeInOut",
-                        duration: 0.2,
-                    },
-                }}
+        <NavbarMenu
+          className="top-[calc(var(--navbar-height)_-_1px)] max-h-fit bg-default-200/50 pb-4 pt-6 shadow-medium backdrop-blur-md backdrop-saturate-150 dark:bg-default-100/50"
+          motionProps={{
+            initial: { opacity: 0, y: -20 },
+            animate: { opacity: 1, y: 0 },
+            exit: { opacity: 0, y: -20 },
+            transition: {
+              ease: "easeInOut",
+              duration: 0.2,
+            },
+          }}
+        >
+          {menuItems.map((item, index) => (
+            <NavbarMenuItem key={`${item}-${index}`}>
+              <Link
+                className="mb-2 w-full text-default-500"
+                href={item.route}
+                size="lg"
+                onClick={() => onMenuOpenChange()} // Close menu on click
+              >
+                {item.name}
+              </Link>
+              {index < menuItems.length - 1 && <Divider className="opacity-50" />}
+            </NavbarMenuItem>
+          ))}
+
+
+<NavbarMenuItem>
+            <Button
+              fullWidth
+              as={Link}
+              variant="faded"
+              className="hover:bg-green-700 hover:border-white bg-default-300"
+              onClick={() => window.open("https://www.ubereats.com/ca/store/joes-italian-kitchen/Z4rz0qIwTSq1vaWJQSrLRw")}
             >
-                {menuItems.map((item, index) => (
-                    <NavbarMenuItem key={`${item}-${index}`}>
-                        <Link
-                            className="mb-2 w-full text-default-500"
-                            href={item.route}
-                            size="lg"
-                            onClick={() => setIsMenuOpen(false)} // Close menu on click
-                        >
-                            {item.name}
-                        </Link>
-                        {index < menuItems.length - 1 && <Divider className="opacity-50" />}
-                    </NavbarMenuItem>
-                ))}
+              UBER EATS
+            </Button>
+          </NavbarMenuItem>
 
+          <NavbarMenuItem>
+            <Button
+              fullWidth
+              as={Link}
+              href="/#"
+              variant="faded"
+              className=" hover:border-white bg-default-300"
+              onClick={() => setIsOnlineOrdersOpen(true)}
+            >
+              ONLINE ORDERS
+            </Button>
+          </NavbarMenuItem>
 
+          <NavbarMenuItem>
+            <Button
+              fullWidth
+              as={Link}
+              href="/#"
+              variant="faded"
+              className=" bg-black hover:border-white"
+              onClick={() => setIsReservationsOpen(true)}
+            >
+              RESERVATIONS
+            </Button>
+          </NavbarMenuItem>
+        </NavbarMenu>
+      </Navbar>
 
-              <NavbarMenuItem>
-                    <Button fullWidth as={Link} href="/#" variant="faded" className="hover:bg-green-700 hover:border-white bg-default-300">
-                        UBER EATS
-                    </Button>
-                </NavbarMenuItem>
-
-
-
-
-                <NavbarMenuItem>
-                  
-                    <Button 
-                    onPress={onOpen}
-                    fullWidth as={Link} href="/#" variant="faded" className=" hover:border-white bg-default-400   ">
-                    
-                        ONLINE ORDERS
-                    </Button>
-
-                    <Modal isOpen={isOpen} onOpenChange={onOpenChange} placement="center">
+      <Modal isOpen={isOnlineOrdersOpen} onOpenChange={setIsOnlineOrdersOpen} placement="center">
         <ModalContent>
           {(onClose) => (
             <>
               <ModalHeader className="flex flex-col gap-1">ONLINE ORDERS</ModalHeader>
               <ModalBody>
-                <p> 
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam pulvinar risus non risus hendrerit venenatis.
-             
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar risus non risus hendrerit
+                  venenatis.
                 </p>
-            
               </ModalBody>
               <ModalFooter>
-            
                 <Button color="primary" onPress={onClose}>
                   Almonte
                 </Button>
@@ -211,58 +229,29 @@ export default function CombinedNavbar(props: NavbarProps) {
         </ModalContent>
       </Modal>
 
-                    
-
-                    
-                </NavbarMenuItem>
-               
-                <NavbarMenuItem>
-                  
-                  <Button 
-                  onPress={onOpen}
-                  fullWidth as={Link} href="/#" variant="faded" className="hover:bg-green-700 bg-black hover:border-white">
-                  
-                      RESERVATIONS
-                  </Button>
-
-                  <Modal isOpen={isOpen} onOpenChange={onOpenChange} placement="center">
-      <ModalContent>
-        {(onClose) => (
-          <>
-            <ModalHeader className="flex flex-col gap-1">RESERVATIONS</ModalHeader>
-            <ModalBody>
-              <p> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Nullam pulvinar risus non risus hendrerit venenatis.
-           
-              </p>
-          
-            </ModalBody>
-            <ModalFooter>
-          
-              <Button color="primary" onPress={onClose}>
-                Almonte
-              </Button>
-              <Button color="primary" onPress={onClose}>
-                Wellington
-              </Button>
-            </ModalFooter>
-          </>
-        )}
-      </ModalContent>
-    </Modal>
-
-                  
-
-                  
-              </NavbarMenuItem>
-            </NavbarMenu>
-
-      </Navbar>
-
-
-
-      
+      <Modal isOpen={isReservationsOpen} onOpenChange={setIsReservationsOpen} placement="center">
+        <ModalContent>
+          {(onClose) => (
+            <>
+              <ModalHeader className="flex flex-col gap-1">RESERVATIONS</ModalHeader>
+              <ModalBody>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar risus non risus hendrerit
+                  venenatis.
+                </p>
+              </ModalBody>
+              <ModalFooter>
+                <Button color="primary" onPress={onClose}>
+                  Almonte
+                </Button>
+                <Button color="primary" onPress={onClose}>
+                  Wellington
+                </Button>
+              </ModalFooter>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
     </>
   );
 }
