@@ -163,34 +163,47 @@ export default function CombinedNavbar(props: NavbarProps) {
                         {index < menuItems.length - 1 && <Divider className="opacity-50" />}
                     </NavbarMenuItem>
                 ))}
+
+
+
+              <NavbarMenuItem>
+                    <Button fullWidth as={Link} href="/#" variant="faded" className="hover:bg-green-700 hover:border-white bg-default-300">
+                        UBER EATS
+                    </Button>
+                </NavbarMenuItem>
+
+
+
+
                 <NavbarMenuItem>
                   
                     <Button 
                     onPress={onOpen}
-                    fullWidth as={Link} href="/#" variant="faded" className="hover:bg-green-700 hover:border-white bg-default-400   ">
+                    fullWidth as={Link} href="/#" variant="faded" className=" hover:border-white bg-default-400   ">
                     
-                        UBER EATS
+                        ONLINE ORDERS
                     </Button>
 
                     <Modal isOpen={isOpen} onOpenChange={onOpenChange} placement="center">
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
+              <ModalHeader className="flex flex-col gap-1">ONLINE ORDERS</ModalHeader>
               <ModalBody>
                 <p> 
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Nullam pulvinar risus non risus hendrerit venenatis.
-                  Pellentesque sit amet hendrerit risus, sed porttitor quam.
+             
                 </p>
             
               </ModalBody>
               <ModalFooter>
-                <Button color="danger" variant="light" onPress={onClose}>
-                  Close
+            
+                <Button color="primary" onPress={onClose}>
+                  Almonte
                 </Button>
                 <Button color="primary" onPress={onClose}>
-                  Action
+                  Wellington
                 </Button>
               </ModalFooter>
             </>
@@ -202,16 +215,47 @@ export default function CombinedNavbar(props: NavbarProps) {
 
                     
                 </NavbarMenuItem>
+               
                 <NavbarMenuItem>
-                    <Button fullWidth as={Link} href="/#" variant="faded" className="hover:bg-red-700 hover:border-white bg-default-300">
-                        ONLINE ORDERS
-                    </Button>
-                </NavbarMenuItem>
-                <NavbarMenuItem>
-                    <Button fullWidth as={Link} href="/#" variant="faded" className="mb-2 bg-black hover:border-white">
-                        RESERVATIONS
-                    </Button>
-                </NavbarMenuItem>
+                  
+                  <Button 
+                  onPress={onOpen}
+                  fullWidth as={Link} href="/#" variant="faded" className="hover:bg-green-700 bg-black hover:border-white">
+                  
+                      RESERVATIONS
+                  </Button>
+
+                  <Modal isOpen={isOpen} onOpenChange={onOpenChange} placement="center">
+      <ModalContent>
+        {(onClose) => (
+          <>
+            <ModalHeader className="flex flex-col gap-1">RESERVATIONS</ModalHeader>
+            <ModalBody>
+              <p> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nullam pulvinar risus non risus hendrerit venenatis.
+           
+              </p>
+          
+            </ModalBody>
+            <ModalFooter>
+          
+              <Button color="primary" onPress={onClose}>
+                Almonte
+              </Button>
+              <Button color="primary" onPress={onClose}>
+                Wellington
+              </Button>
+            </ModalFooter>
+          </>
+        )}
+      </ModalContent>
+    </Modal>
+
+                  
+
+                  
+              </NavbarMenuItem>
             </NavbarMenu>
 
       </Navbar>
