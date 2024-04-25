@@ -175,7 +175,7 @@ export default function CombinedNavbar(props: NavbarProps) {
                   
                   <Button 
                   onPress={onOpen}
-                  fullWidth as={Link} href="/#" variant="faded" className="hover:bg-green-700  bg-black hover:border-white ">
+                  fullWidth as={Link} href="/#" variant="faded" className=" bg-black hover:border-white ">
                   
                       RESERVATIONS
                   </Button>
@@ -210,9 +210,6 @@ export default function CombinedNavbar(props: NavbarProps) {
       </ModalContent>
     </Modal>
 
-                  
-
-                  
               </NavbarMenuItem>
             </NavbarMenu>
 
