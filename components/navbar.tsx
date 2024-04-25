@@ -124,7 +124,7 @@ export default function CombinedNavbar(props: NavbarProps) {
           {menuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
-                className="mb-2 w-full text-default-500"
+                className="mb-2 w-full text-default-500 text-xl"
                 href={item.route}
                 size="lg"
                 onClick={() => setIsMenuOpen(false)} // Close menu on click
@@ -134,12 +134,21 @@ export default function CombinedNavbar(props: NavbarProps) {
               {index < menuItems.length - 1 && <Divider className="opacity-50" />}
             </NavbarMenuItem>
           ))}
-          <NavbarMenuItem >
-            <Button fullWidth as={Link} href="/#" variant="faded" className="hover:bg-green-700 hover:border-white bg-default-300"
-              onClick={() => window.open("https://www.ubereats.com/ca/store/joes-italian-kitchen/Z4rz0qIwTSq1vaWJQSrLRw ")}>
-              UBER EATS
-            </Button>
-          </NavbarMenuItem>
+         <div className="col-span-2">
+    <NavbarMenuItem>
+      <Button
+        fullWidth
+        as={Link}
+        href="/#"
+        variant="faded"
+        className="hover:bg-green-700 hover:border-white bg-default-300"
+        onClick={() => window.open("https://www.ubereats.com/ca/store/joes-italian-kitchen/Z4rz0qIwTSq1vaWJQSrLRw ")}
+      >
+        UBER EATS
+      </Button>
+    </NavbarMenuItem>
+  </div>
+  <div className="col-span-2">
           <NavbarMenuItem>
             <Button
               fullWidth as={Link} href="/" variant="faded" className=" hover:border-white bg-default-400   "
@@ -147,6 +156,9 @@ export default function CombinedNavbar(props: NavbarProps) {
               ONLINE ORDERS
             </Button>
           </NavbarMenuItem>
+          </div>
+
+          <div className="col-span-2">
           <NavbarMenuItem>
             <Button
               onPress={onOpen}
@@ -180,6 +192,8 @@ export default function CombinedNavbar(props: NavbarProps) {
               </ModalContent>
             </Modal>
           </NavbarMenuItem>
+
+          </div>
         </NavbarMenu>
       </Navbar>
     </>
