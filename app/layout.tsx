@@ -11,6 +11,7 @@ import BasicNavbar from "@/components/navbar";
 import CombinedNavbar from "@/components/navbar";
 import Navbar2 from "@/components/navbar2";
 import { useState } from "react";
+import Nav2 from "@/components/nav2";
 
 
 
@@ -65,7 +66,8 @@ export default function RootLayout({
 
 					<div className="relative w-full flex flex-col h-screen">
 				
-						<CombinedNavbar />
+						{/* <CombinedNavbar /> */}
+						<Nav2 />
 					
 					    
 						<main className="">

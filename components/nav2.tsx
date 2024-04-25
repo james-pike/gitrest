@@ -27,7 +27,7 @@ const menuItems = [
   { name: "ABOUT", route: "/about" },
 ];
 
-export default function CombinedNavbar(props: NavbarProps) {
+export default function Nav2(props: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const path = usePathname();
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -46,7 +46,11 @@ export default function CombinedNavbar(props: NavbarProps) {
         classNames={{
           base: "border-default-100",
           wrapper: "justify-between",
-          item: ["hidden md:flex", "flex", "relative", "items-center", "data-[active=true]:after:content-['']", "data-[active=true]:after:absolute", "data-[active=true]:after:bottom-0", "data-[active=true]:after:left-0", "data-[active=true]:after:right-0", "data-[active=true]:after:h-[2px]", "data-[active=true]:after:rounded-[2px]", "data-[active=true]:after:bg-red-700"],
+          item: ["hidden md:flex", "flex", "relative", 
+          "focus:outline-none",
+          "items-center", 
+          "focus:outline-none",
+          "data-[active=true]:after:content-['']", "data-[active=true]:after:absolute", "data-[active=true]:after:bottom-0", "data-[active=true]:after:left-0", "data-[active=true]:after:right-0", "data-[active=true]:after:h-[2px]", "data-[active=true]:after:rounded-[2px]", "data-[active=true]:after:bg-red-700"],
         }}
         className="lg:px-10 border-y-1"
         height="60px"
@@ -110,7 +114,7 @@ export default function CombinedNavbar(props: NavbarProps) {
         </NavbarContent>
         <NavbarMenuToggle className="text-default-400 md:hidden" />
         <NavbarMenu
-          className="top-[calc(var(--navbar-height)_-_1px)] grid grid-cols-3 max-h-fit bg-default-200/50 pb-4 pt-6 shadow-medium backdrop-blur-md backdrop-saturate-150 dark:bg-default-100/50"
+          className="top-[calc(var(--navbar-height)_-_1px)] grid grid-cols-2 max-h-fit bg-default-200/50 pb-4 pt-6 shadow-medium backdrop-blur-md backdrop-saturate-150 dark:bg-default-100/50"
           motionProps={{
             initial: { opacity: 0, y: -20 },
             animate: { opacity: 1, y: 0 },
@@ -123,52 +127,57 @@ export default function CombinedNavbar(props: NavbarProps) {
         >
           {menuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
-              <Link
-                className="mb-2 w-full text-default-500 text-2xl px-1 col-span-2"
-                href={item.route}
-                size="lg"
-                onClick={() => setIsMenuOpen(false)} // Close menu on click
-              >
-                {item.name}
-              </Link>
+              <div>
+                <Link
+                  className="mb-2 w-full text-default-500 text-xl px-1"
+                  href={item.route}
+                
+                  onClick={() => setIsMenuOpen(false)} // Close menu on click
+                >
+                  {item.name}
+                </Link>
+              </div>
               {index < menuItems.length - 1 && <Divider className="opacity-50" />}
             </NavbarMenuItem>
           ))}
-          <NavbarMenuItem>
-            <Button
-              fullWidth
-              as={Link}
-              href="/#"
-              variant="faded"
-              className="hover:bg-green-700 hover:border-white bg-default-300 col-span-1"
-              onClick={() => window.open("https://www.ubereats.com/ca/store/joes-italian-kitchen/Z4rz0qIwTSq1vaWJQSrLRw ")}
-            >
-              UBER EATS
-            </Button>
-          </NavbarMenuItem>
-          <NavbarMenuItem>
-            <Button
-              fullWidth
-              as={Link}
-              href="/"
-              variant="faded"
-              className="hover:border-white bg-default-400 col-span-1"
-              onClick={() => window.open("https://joesitaliankitchen-1asc.mobi2go.com")}
-            >
-              ONLINE ORDERS
-            </Button>
-          </NavbarMenuItem>
-          <NavbarMenuItem>
-            <Button
-              onPress={onOpen}
-              fullWidth
-              as={Link}
-              href="/#"
-              variant="faded"
-              className="bg-black hover:border-white col-span-1"
-            >
-              RESERVATIONS
-            </Button>
+          <NavbarMenuItem className="col-span-2 pt-1">
+            <div className="flex justify-between w-full gap-0.5">
+              <Button
+                as={Link}
+                href="/#"
+                variant="faded"
+                className="flex-1 mr-2 hover:bg-green-700 hover:border-white bg-default-300"
+                onClick={() =>
+                  window.open(
+                    "https://www.ubereats.com/ca/store/joes-italian-kitchen/Z4rz0qIwTSq1vaWJQSrLRw "
+                  )
+                }
+              >
+                UBER EATS
+              </Button>
+              <Button
+                as={Link}
+                href="/"
+                variant="faded"
+                className="flex-1 hover:border-white bg-default-400"
+                onClick={() =>
+                  window.open(
+                    "https://joesitaliankitchen-1asc.mobi2go.com"
+                  )
+                }
+              >
+                ORDERS
+              </Button>
+              <Button
+                as={Link}
+                href=""
+                variant="faded"
+                className="flex-1 ml-2 hover:border-white bg-default-200"
+                onClick={onOpen}
+              >
+                RESERVATIONS
+              </Button>
+            </div>
             <Modal isOpen={isOpen} onOpenChange={onOpenChange} placement="center">
               <ModalContent>
                 {(onClose) => (
@@ -183,7 +192,11 @@ export default function CombinedNavbar(props: NavbarProps) {
                       <Button
                         color="default"
                         className="border-white border"
-                        onClick={() => window.open("https://booking.resdiary.com/widget/Standard/JoesItalianKitchen/364")}
+                        onClick={() =>
+                          window.open(
+                            "https://booking.resdiary.com/widget/Standard/JoesItalianKitchen/364"
+                          )
+                        }
                         onPress={onClose}
                       >
                         Almonte
@@ -191,7 +204,11 @@ export default function CombinedNavbar(props: NavbarProps) {
                       <Button
                         color="default"
                         className="border-white border"
-                        onClick={() => window.open("https://booking.resdiary.com/widget/Standard/JoesItalianKitchenWellington/438")}
+                        onClick={() =>
+                          window.open(
+                            "https://booking.resdiary.com/widget/Standard/JoesItalianKitchenWellington/438"
+                          )
+                        }
                         onPress={onClose}
                       >
                         Wellington
