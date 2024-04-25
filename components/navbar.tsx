@@ -124,7 +124,7 @@ export default function CombinedNavbar(props: NavbarProps) {
           {menuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
-                className="mb-2 w-full text-default-500 text-xl px-2"
+                className="mb-2 w-full text-default-500 text-2xl px-1"
                 href={item.route}
                 size="lg"
                 onClick={() => setIsMenuOpen(false)} // Close menu on click
@@ -134,7 +134,7 @@ export default function CombinedNavbar(props: NavbarProps) {
               {index < menuItems.length - 1 && <Divider className="opacity-50" />}
             </NavbarMenuItem>
           ))}
-         <div className="col-span-1">
+         <div className="col-span-1 pt-1">
     <NavbarMenuItem>
       <Button
         fullWidth
@@ -148,7 +148,7 @@ export default function CombinedNavbar(props: NavbarProps) {
       </Button>
     </NavbarMenuItem>
   </div>
-  <div className="col-span-1">
+  <div className="col-span-1 pt-1">
           <NavbarMenuItem>
             <Button
               fullWidth as={Link} href="/" variant="faded" className=" hover:border-white bg-default-400   "
@@ -158,7 +158,7 @@ export default function CombinedNavbar(props: NavbarProps) {
           </NavbarMenuItem>
           </div>
 
-          <div className="col-span-1">
+          <div className="col-span-1 pt-1">
           <NavbarMenuItem>
             <Button
               onPress={onOpen}
