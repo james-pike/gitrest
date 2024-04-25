@@ -14,45 +14,27 @@ import {
   Modal,
   ModalBody,
   ModalContent,
-  ScrollShadow,
-  Spacer,
   useDisclosure,
-  Avatar,
   ModalFooter,
   ModalHeader,
 } from "@nextui-org/react";
 import { usePathname } from "next/navigation";
-import ThemeDropdown from "./theme-dropdown";
-import { PiForkKnifeFill } from "react-icons/pi";
-import { LuHome } from "react-icons/lu";
-import { AcmeLogo } from "./acme";
-import { sectionItems, sectionItemsWithTeams } from "./sidebar-items";
-import { Icon } from "@iconify/react";
-import Sidebar from "./sidebar";
-import Socials from "./socials";
 
 const menuItems = [
   { name: "HOME", route: "/" },
   { name: "MENU", route: "/menu" },
   { name: "LOCATIONS", route: "/locations" },
   { name: "ABOUT", route: "/about" },
-  // { name: "ABOUT", route: "/about" },
 ];
 
 export default function CombinedNavbar(props: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const path = usePathname();
-  const {isOpen, onOpen, onOpenChange} = useDisclosure();
-
-
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
   const handleMenuItemClick = () => {
-    // Close the menu when a menu item is clicked
     setIsMenuOpen(false);
-
   };
-
-
 
   return (
     <>
@@ -76,7 +58,7 @@ export default function CombinedNavbar(props: NavbarProps) {
             </div>
           </a>
         </NavbarBrand>
-     
+
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
           {menuItems.map((item, index) => (
             <React.Fragment key={index}>
@@ -121,103 +103,85 @@ export default function CombinedNavbar(props: NavbarProps) {
               color="secondary"
               radius="full"
               variant="flat"
-              
             >
               Reservations
             </Button>
           </NavbarItem>
         </NavbarContent>
         <NavbarMenuToggle className="text-default-400 md:hidden" />
-            <NavbarMenu
-                className="top-[calc(var(--navbar-height)_-_1px)] max-h-fit bg-default-200/50 pb-4 pt-6 shadow-medium backdrop-blur-md backdrop-saturate-150 dark:bg-default-100/50"
-                motionProps={{
-                    initial: { opacity: 0, y: -20 },
-                    animate: { opacity: 1, y: 0 },
-                    exit: { opacity: 0, y: -20 },
-                    transition: {
-                        ease: "easeInOut",
-                        duration: 0.2,
-                    },
-                }}
-            >
-                {menuItems.map((item, index) => (
-                    <NavbarMenuItem key={`${item}-${index}`}>
-                        <Link
-                            className="mb-2 w-full text-default-500"
-                            href={item.route}
-                            size="lg"
-                            onClick={() => setIsMenuOpen(false)} // Close menu on click
-                        >
-                            {item.name}
-                        </Link>
-                        {index < menuItems.length - 1 && <Divider className="opacity-50" />}
-                    </NavbarMenuItem>
-                ))}
-              <NavbarMenuItem>
-                    <Button fullWidth as={Link} href="/#" variant="faded" className="hover:bg-green-700 hover:border-white bg-default-300"
-                      onClick={() => window.open("https://www.ubereats.com/ca/store/joes-italian-kitchen/Z4rz0qIwTSq1vaWJQSrLRw ")}>
-                        UBER EATS
-                    </Button>
-                </NavbarMenuItem>
-                <NavbarMenuItem>
-                    <Button 
-            
-                    fullWidth as={Link} href="/" variant="faded" className=" hover:border-white bg-default-400   "
-                    onClick={() => window.open("https://joesitaliankitchen-1asc.mobi2go.com")}>
-                    
-                        ONLINE ORDERS
-                    </Button>
-
-    
-                </NavbarMenuItem>
-               
-                <NavbarMenuItem>
-                  
-                  <Button 
-                  onPress={onOpen}
-                  fullWidth as={Link} href="/#" variant="faded" className=" bg-black hover:border-white ">
-                  
-                      RESERVATIONS
-                  </Button>
-
-                  <Modal isOpen={isOpen} onOpenChange={onOpenChange} placement="center">
-      <ModalContent>
-        {(onClose) => (
-          <>
-            <ModalHeader className="flex flex-col gap-1">RESERVATIONS</ModalHeader>
-            <ModalBody>
-              <p> 
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus atque integra connect Open Table
-           
-              </p>
-          
-            </ModalBody>
-            <ModalFooter>
-          
-              <Button color="default" className="border-white border" 
-              onClick={() => window.open("https://booking.resdiary.com/widget/Standard/JoesItalianKitchen/364")}
-              onPress={onClose}>
-                Almonte
-              </Button>
-              <Button color="default" className="border-white border" 
-              onClick={() => window.open("https://booking.resdiary.com/widget/Standard/JoesItalianKitchenWellington/438")}
-              onPress={onClose}>
-                Wellington
-              </Button>
-            </ModalFooter>
-          </>
-        )}
-      </ModalContent>
-    </Modal>
-
-              </NavbarMenuItem>
-            </NavbarMenu>
-
+        <NavbarMenu
+          className="top-[calc(var(--navbar-height)_-_1px)] grid grid-cols-2 max-h-fit bg-default-200/50 pb-4 pt-6 shadow-medium backdrop-blur-md backdrop-saturate-150 dark:bg-default-100/50"
+          motionProps={{
+            initial: { opacity: 0, y: -20 },
+            animate: { opacity: 1, y: 0 },
+            exit: { opacity: 0, y: -20 },
+            transition: {
+              ease: "easeInOut",
+              duration: 0.2,
+            },
+          }}
+        >
+          {menuItems.map((item, index) => (
+            <NavbarMenuItem key={`${item}-${index}`}>
+              <Link
+                className="mb-2 w-full text-default-500"
+                href={item.route}
+                size="lg"
+                onClick={() => setIsMenuOpen(false)} // Close menu on click
+              >
+                {item.name}
+              </Link>
+              {index < menuItems.length - 1 && <Divider className="opacity-50" />}
+            </NavbarMenuItem>
+          ))}
+          <NavbarMenuItem >
+            <Button fullWidth as={Link} href="/#" variant="faded" className="hover:bg-green-700 hover:border-white bg-default-300"
+              onClick={() => window.open("https://www.ubereats.com/ca/store/joes-italian-kitchen/Z4rz0qIwTSq1vaWJQSrLRw ")}>
+              UBER EATS
+            </Button>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <Button
+              fullWidth as={Link} href="/" variant="faded" className=" hover:border-white bg-default-400   "
+              onClick={() => window.open("https://joesitaliankitchen-1asc.mobi2go.com")}>
+              ONLINE ORDERS
+            </Button>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <Button
+              onPress={onOpen}
+              fullWidth as={Link} href="/#" variant="faded" className=" bg-black hover:border-white ">
+              RESERVATIONS
+            </Button>
+            <Modal isOpen={isOpen} onOpenChange={onOpenChange} placement="center">
+              <ModalContent>
+                {(onClose) => (
+                  <>
+                    <ModalHeader className="flex flex-col gap-1">RESERVATIONS</ModalHeader>
+                    <ModalBody>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus atque integra connect Open Table
+                      </p>
+                    </ModalBody>
+                    <ModalFooter>
+                      <Button color="default" className="border-white border"
+                        onClick={() => window.open("https://booking.resdiary.com/widget/Standard/JoesItalianKitchen/364")}
+                        onPress={onClose}>
+                        Almonte
+                      </Button>
+                      <Button color="default" className="border-white border"
+                        onClick={() => window.open("https://booking.resdiary.com/widget/Standard/JoesItalianKitchenWellington/438")}
+                        onPress={onClose}>
+                        Wellington
+                      </Button>
+                    </ModalFooter>
+                  </>
+                )}
+              </ModalContent>
+            </Modal>
+          </NavbarMenuItem>
+        </NavbarMenu>
       </Navbar>
-
-
-
-      
     </>
   );
 }
