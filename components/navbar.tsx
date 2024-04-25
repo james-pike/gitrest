@@ -168,7 +168,7 @@ export default function CombinedNavbar(props: NavbarProps) {
                 as={Link}
                 href="/#"
                 variant="faded"
-                className="flex-1 ml-2 hover:border-white bg-black"
+                className="flex-1 ml-2 hover:border-white bg-default-200"
                 onClick={onOpen}
               >
                 RESERVATIONS
