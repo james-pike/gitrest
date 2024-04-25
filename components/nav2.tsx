@@ -141,12 +141,12 @@ export default function Nav2(props: NavbarProps) {
             </NavbarMenuItem>
           ))}
           <NavbarMenuItem className="col-span-2 pt-1">
-            <div className="flex justify-between w-full gap-1">
+            <div className="flex justify-between w-full gap-">
               <Button
                 as={Link}
                 href="/#"
                 variant="faded"
-                className="flex-1 mr-2 rounded-lg hover:bg-green-700 hover:border-white bg-default-400 border-green-800 border-1.5"
+                className="flex-1 mr-2 rounded-xl hover:bg-green-700 hover:border-white bg-default-400 border-green-800 border-1.5"
                 onClick={() =>
                   window.open(
                     "https://www.ubereats.com/ca/store/joes-italian-kitchen/Z4rz0qIwTSq1vaWJQSrLRw "
@@ -159,7 +159,7 @@ export default function Nav2(props: NavbarProps) {
                 as={Link}
                 href="/"
                 variant="faded"
-                className="flex-1 hover:border-white rounded-lg bg-default-200 border-1.5 border-default-500"
+                className="flex-1 hover:border-white rounded-xl bg-default-200 border-1.5 border-default-500"
                 onClick={() =>
                   window.open(
                     "https://joesitaliankitchen-1asc.mobi2go.com"
@@ -172,7 +172,7 @@ export default function Nav2(props: NavbarProps) {
                 as={Link}
                 href=""
                 variant="faded"
-                className="flex-1 ml-2 hover:border-white rounded-lg bg-default-50 border-white border-1.5"
+                className="flex-1 ml-2 hover:border-white rounded-xl bg-default-50 border-white border-1.5"
                 onClick={onOpen}
               >
                 RESERVATIONS
