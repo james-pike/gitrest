@@ -158,7 +158,7 @@ export default function CombinedNavbar(props: NavbarProps) {
           </NavbarMenuItem>
           </div>
 
-          <div className="col-span-1 pt-1">
+          <div className="col-span-1">
           <NavbarMenuItem>
             <Button
               onPress={onOpen}
