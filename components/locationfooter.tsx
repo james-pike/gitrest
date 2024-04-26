@@ -70,6 +70,7 @@ export default function LocationFooter() {
         className="w-full h-40 object-cover border-b"
         src="./video/almonte1.mp4"
         autoPlay
+        playsInline
         loop
         poster="./images/a6.png"
       >
