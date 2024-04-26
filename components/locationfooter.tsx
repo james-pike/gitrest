@@ -69,18 +69,16 @@ export default function LocationFooter() {
       <video
         className="w-full h-40 object-cover border-b"
         src="./video/almonte1.mp4"
-        
-       
         autoPlay
         loop
         muted
-
-        
+        playsInline
         poster="./images/a6.png"
+        controls
       >
-        
-      
       </video>
+
+
       <div className="mx-auto px-5 pb-8 pt-6 sm:pt-24 lg:px-8 lg:pt-32">
         
        
