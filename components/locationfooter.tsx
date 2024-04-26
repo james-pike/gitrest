@@ -71,6 +71,7 @@ export default function LocationFooter() {
         src="./video/almonte1.mp4"
         autoPlay
         loop
+        poster="./images/a6.png"
       >
         
       
