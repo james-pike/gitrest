@@ -148,11 +148,11 @@ export default function HomePage() {
 							lineHeight: '1', // Increase line height for better spacing between lines
 						}}
 					>
-						<span style={{ display: 'block' }}>CLASSIC</span>
+						<span style={{ display: 'block' }}>CERTIFIED</span>
 					
-						<span style={{ display: 'block' }}>PINSA</span>
+						<span style={{ display: 'block' }}>PINSAS</span>
 					</h1>
-					<div className="pt-6"
+					<div className=""
 						style={{
 							position: 'absolute',
 							top: '60%', // Position the buttons below the subtitle
