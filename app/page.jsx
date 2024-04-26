@@ -229,7 +229,7 @@ export default function HomePage() {
 				<img
 					className="w-full object-cover border-black"
 					style={{ opacity: 0.75, height: '40vh' }}
-					src="./images/des2.jpg"
+					src="./images/des5.jpg"
 					alt="Background Image"
 				/>
 				<h1
