@@ -148,9 +148,9 @@ export default function HomePage() {
 							lineHeight: '1', // Increase line height for better spacing between lines
 						}}
 					>
-						<span style={{ display: 'block' }}>CANADAS</span>
-						<span style={{ display: 'block' }}>CERTIFIED</span>
-						<span style={{ display: 'block' }}>PINSARIA</span>
+						<span style={{ display: 'block' }}>CLASSIC</span>
+					
+						<span style={{ display: 'block' }}>PINSA</span>
 					</h1>
 					<div className="pt-6"
 						style={{
@@ -310,38 +310,61 @@ export default function HomePage() {
 				<div className="border-4 border-black"></div>
 
 
-				{/* <a href="/about" style={{ textDecoration: 'none' }}>
-					<div style={{ position: 'relative' }}>
-						<img
-							className="w-full h-40 object-cover border-black"
-							style={{ opacity: 0.75, height: '20vh', }}
-							src="./images/a3.jpg"
-							alt="Background Image"
-						/>
-						<h1
-							// className={title()}
-							style={{
+		
+				 <div style={{ position: 'relative', height: '40vh' }}>
+					<img
+						className="w-full object-cover border-black"
+						style={{ opacity: 0.75, height: '40vh' }}
+						src="./images/des5.jpg"
+						alt="Background Image"
+					/>
+					<h1
 
-								position: 'absolute',
-								top: '50%', // Position the h1 in the middle vertically
-								left: '25%', // Position the h1 in the middle horizontally
-								transform: 'translate(-50%, -50%)', // Center the h1
-								color: 'white', // Text color
-								fontSize: '2rem', // Font size
-								zIndex: 10, // Ensure it's above the image
-							}}
-						>
-							ABOUT
-						</h1>
+						style={{
+							position: 'absolute',
+							top: '40%', // Position the h1 in the middle vertically
+							left: '20%', // Position the h1 in the middle horizontally
+							transform: 'translate(-20%, -50%)', // Center the h1
+							color: 'white', // Text color
+							fontSize: '2.8rem', // Font size
+							zIndex: 10, // Ensure it's above the image
+							lineHeight: '1', // Increase line height for better spacing between lines
+						}}
+					>
+						<span style={{ display: 'block' }}>CERTIFIED</span>
+						<span style={{ display: 'block' }}>DESSERTS</span>
+
+
+					</h1>
+					<div className="pt-0"
+						style={{
+							position: 'absolute',
+							top: '60%', // Position the buttons below the subtitle
+							left: '20%', // Position the buttons in the middle horizontally
+							transform: 'translateX(-20%)', // Center the buttons horizontally
+							zIndex: 10, // Ensure it's above the image
+						}}
+					>
+						<div className="pt-1" style={{ display: 'flex', alignItems: 'center' }}>
+							<a href="/menu">
+								<button className="bg-black text-white font-bold py-3 border-white border-1 px-4 rounded mr-2">
+									BROWSE BRUSCHETTA
+								</button>
+							</a>
+							<div className="pt-2"></div>
+
+						</div>
+
 					</div>
-
-				</a>
-
-				<div className="border-4 border-black"></div> */}
+				</div> 
 
 
 
-				{/* <div style={{ position: 'relative', height: '40vh' }}>
+				<div className="border-4 border-black"></div>
+
+
+		
+				 <div style={{ position: 'relative', height: '40vh' }}>
 					<img
 						className="w-full object-cover border-black"
 						style={{ opacity: 0.75, height: '40vh' }}
@@ -386,7 +409,7 @@ export default function HomePage() {
 						</div>
 
 					</div>
-				</div> */}
+				</div> 
 
 
 

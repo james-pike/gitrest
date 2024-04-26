@@ -65,9 +65,19 @@ export default function LocationFooter() {
   
   return (
     <footer className="flex w-full flex-col  border-white">
+
+      <video
+        className="w-full h-40 object-cover border-b"
+        src="./video/almonte1.mp4"
+        autoPlay
+        loop
+      >
+        
+      
+      </video>
       <div className="mx-auto px-5 pb-8 pt-6 sm:pt-24 lg:px-8 lg:pt-32">
         
-        
+       
 
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-3 md:pr-8">
