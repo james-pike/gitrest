@@ -129,7 +129,7 @@ export default function Nav2(props: NavbarProps) {
             <NavbarMenuItem key={`${item}-${index}`}>
               <div>
                 <Link
-                  className="mb-2 w-full text-default-500 text-xl px-1"
+                  className="mb-2 w-full text-default-500 text-lg px-1"
                   href={item.route}
                 
                   onClick={() => setIsMenuOpen(false)} // Close menu on click
