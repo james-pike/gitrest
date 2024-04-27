@@ -26,6 +26,11 @@ module.exports = {
       colors: {}
     },
     extend: {
+
+      maxWidth: {
+        '8xl': '88rem', // You can adjust the value as needed
+      },
+      
       borderWidth: {
         '12': '12px', // You can change '12' to any number you need
       },
