@@ -1,5 +1,6 @@
 'use client';
 
+import Footer2 from "@/components/foot2";
 import BasicFooter from "@/components/footer";
 import Tab2 from "@/components/tabs2";
 import { Basic } from "next/font/google";
@@ -33,7 +34,8 @@ export default function MenuLayout({
 			<Tab2 className=""/>
 			{/* </div> */}
 
-			<BasicFooter />
+			{/* <BasicFooter /> */}
+			<Footer2 />
 		</div>
 	);
 }

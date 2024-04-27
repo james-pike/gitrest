@@ -1,4 +1,5 @@
 import AboutFooter from "@/components/aboutfooter";
+import Foot2 from "@/components/foot2";
 import BasicFooter from "@/components/footer";
 import MenuFoot from "@/components/menufoot";
 import { AcmeIcon } from "@/social";
@@ -15,7 +16,7 @@ export default function AboutLayout({
 		<div>
 		
 
-		<MenuFoot />
+		<Foot2 />
 	
 	</div>
 	);

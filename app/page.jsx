@@ -6,22 +6,22 @@ import { useEffect, useState } from "react";
 export default function HomePage() {
 	const [isMobile, setIsMobile] = useState(false);
 
-	// useEffect(() => {
-	// 	const handleResize = () => {
-	// 		setIsMobile(window.innerWidth <= 568); // Adjust the threshold as needed
-	// 	};
+	useEffect(() => {
+		const handleResize = () => {
+			setIsMobile(window.innerWidth <= 568); // Adjust the threshold as needed
+		};
 
-	// 	handleResize(); // Check initial width
-	// 	window.addEventListener("resize", handleResize);
+		handleResize(); // Check initial width
+		window.addEventListener("resize", handleResize);
 
-	// 	return () => {
-	// 		window.removeEventListener("resize", handleResize);
-	// 	};
-	// }, []);
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
 
 	return (
 		<div>
-			{/* <div className={isMobile ? "block" : "hidden"}> */}
+			<div className={isMobile ? "block" : "hidden"}>
 				<div style={{ position: 'relative', height: '60vh' }}>
 					<img
 						className="w-full object-cover border-black"
@@ -293,7 +293,7 @@ export default function HomePage() {
 			
 <BasicFooter />
 
-
+</div>
 		</div>
 	);
 }
