@@ -38,10 +38,11 @@ export default function Tab2({ initialLocation = "Wellington", ...props }: { ini
           <Dropdown>
             <DropdownTrigger>
               <Button
-                variant="bordered" className=" bg-foreground-100 hover:bg-foreground-200 px-2 h-11 focus:outline-none">
+       
+                variant="bordered" className=" bg-foreground-100 hover:bg-foreground-200 px-1.5 h-11 focus:outline-none">
                 <div className="flex items-center gap-1.5 text-large focus:outline-none">
                   <SlLocationPin />
-                  <div className="md:flex text-small">
+                  <div className="md:flex text-small text-gray-200">
                     <p>{selectedLocation}</p>
                   </div>
                   <Icon className="flex-none text-white" icon="lucide:arrow-down" width={13} />

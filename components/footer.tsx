@@ -65,16 +65,16 @@ export default function BasicFooter() {
   
   return (
     <footer className="flex w-full flex-col  border-white">
-      <div className="mx-auto px-4 pb-5 pt-3 sm:pt-24 lg:px-8 lg:pt-32">
+      <div className="mx-auto px-4 pb-5 pt-5 sm:pt-24 lg:px-8 lg:pt-8 lg:pb-8">
         
         
 
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-2 md:pr-8">
             <div className="flex items-center justify-start">
-              <AcmeIcon size={44} />
-              {/* <img className="h-8 w-auto" src="./images/logo.png" alt="Logo" /> */}
-              <span className="text-medium px-1 font-medium">Joes Italian Kitchen</span>
+            
+               <img className="h-8 w-auto" src="./images/logo.png" alt="Logo" /> 
+              <span className="text-medium px-2.5 font-medium">Joes Italian Kitchen</span>
             </div>
             <p className="text-small text-default-500 pb-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique
