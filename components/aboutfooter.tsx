@@ -85,45 +85,17 @@ export default function AboutFooter() {
         <footer className="flex w-full flex-col">
             <div className="mx-auto max-w-7xl px-6 pb-8 lg:px-8 ">
 
-                <img className="h-10 w-full object-cover" src="./images/a1.jpg" alt="Logo" />
             
-                <Tab2 />
+            
+                {/* <Tab2 /> */}
 
-                <div className="my-10 rounded-medium bg-default-200/20 p-4 sm:my-14 sm:p-8 lg:my-16 lg:flex lg:items-center lg:justify-between lg:gap-2">
-                    <div>
-                        <h3 className="text-small font-semibold text-default-600">
-                            Subscribe to our newsletter
-                        </h3>
-                        <p className="mt-2 text-small text-default-400">
-                            Receive weekly updates with the newest insights, trends, and tools, straight to your
-                            email.
-                        </p>
-                    </div>
-                    <form className="mt-6 sm:flex sm:max-w-md lg:mt-0">
-                        <Input
-                            isRequired
-                            aria-label="Email"
-                            autoComplete="email"
-                            id="email-address"
-                            labelPlacement="outside"
-                            name="email-address"
-                            placeholder="johndoe@email.com"
-                            startContent={<Icon className="text-default-500" icon="solar:letter-linear" />}
-                            type="email"
-                        />
-                        <div className="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
-                            <Button color="primary" type="submit">
-                                Subscribe
-                            </Button>
-                        </div>
-                    </form>
-                </div>
+             <img className="h-20 w-full object-cover" src="./images/a1.jpg" alt="Logo" />
 
-                <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+                <div className="xl:grid xl:grid-cols-3 pt-4 xl:gap-8">
                     <div className="space-y-8 md:pr-8">
                         <div className="flex items-center justify-start">
                             <AcmeIcon size={44} />
-                            <span className="text-medium font-medium">ACME</span>
+                            <span className="text-medium font-medium">ABOUT</span>
                         </div>
                         <p className="text-small text-default-500">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique

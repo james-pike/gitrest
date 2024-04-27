@@ -85,7 +85,7 @@ export default function Footer2() {
         <footer className="flex w-full flex-col">
             <div className="mx-auto max-w-7xl px-6 pb-8 lg:px-8 ">
 
-                <img className="h-10 w-full object-cover" src="./images/a1.jpg" alt="Logo" />
+               
             
                 <Tab2 />
 

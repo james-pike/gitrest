@@ -64,9 +64,9 @@ export default function RootLayout({
 			>
 				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
 
-					<div className="relative w-full flex flex-col h-screen">
+					<div className="">
 				
-						{/* <CombinedNavbar /> */}
+					
 						<Nav2 />
 					
 					    

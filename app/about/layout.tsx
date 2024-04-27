@@ -31,7 +31,7 @@ export default function AboutLayout({
 		};
 	}, []);
 	return (
-		isMobile ? <AboutFooter/> : <Footer3/>
+		isMobile ? <AboutFooter/> : <AboutFooter/>
 		
 
 		
