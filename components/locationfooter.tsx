@@ -71,7 +71,7 @@ export default function LocationFooter() {
         src="./video/almonte1.mp4"
        
         loop
-        muted
+     
         playsInline
         poster="./images/a6.png"
         controls
