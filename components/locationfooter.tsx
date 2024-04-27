@@ -67,7 +67,7 @@ export default function LocationFooter() {
     <footer className="flex w-full flex-col  border-white">
 
       <video
-        className="w-full h-40 object-cover border-b"
+        className="w-full h-48 object-cover border-b"
         src="./video/almonte1.mp4"
         autoPlay
         loop

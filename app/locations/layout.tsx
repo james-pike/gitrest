@@ -31,7 +31,7 @@ export default function LocationLayout({
 		};
 	}, []);
 	return (
-		isMobile ? <LocationFooter/> : <AboutFooter/>
+		<LocationFooter/>
 		
 
 		
