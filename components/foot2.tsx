@@ -89,7 +89,7 @@ export default function Footer2() {
             
                 <Tab2 />
 
-                <div className="my-10 rounded-medium bg-default-200/20 p-4 sm:my-14 sm:p-8 lg:my-16 lg:flex lg:items-center lg:justify-between lg:gap-2">
+                {/* <div className="my-10 rounded-medium bg-default-200/20 p-4 sm:my-14 sm:p-8 lg:my-16 lg:flex lg:items-center lg:justify-between lg:gap-2">
                     <div>
                         <h3 className="text-small font-semibold text-default-600">
                             Subscribe to our newsletter
@@ -117,9 +117,9 @@ export default function Footer2() {
                             </Button>
                         </div>
                     </form>
-                </div>
+                </div> */}
 
-                <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+                <div className="xl:grid xl:grid-cols-3 xl:gap-8 pt-10">
                     <div className="space-y-8 md:pr-8">
                         <div className="flex items-center justify-start">
                             <AcmeIcon size={44} />

@@ -29,7 +29,7 @@ export default function MenuLayout({
 		};
 	}, []);
 	return (
-		isMobile ? <Tab2/> : <Footer2/>
+		<Tab2/>
 		
 
 		
