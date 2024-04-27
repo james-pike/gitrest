@@ -31,7 +31,7 @@ export default function MenuLayout({
 
 		<div>
 {/* <div className={isMobile ? "block" : "hidden"}> */}
-			<Tab2 className=""/>
+			{/* <Tab2 className=""/> */}
 			{/* </div> */}
 
 			{/* <BasicFooter /> */}
