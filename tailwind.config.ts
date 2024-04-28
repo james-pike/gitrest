@@ -28,7 +28,9 @@ module.exports = {
     extend: {
 
       maxWidth: {
-        '8xl': '88rem', // You can adjust the value as needed
+        '8xl': '88rem',
+        '9xl': '96rem',
+        '10xl': '104rem', // You can adjust the value as needed
       },
       
       borderWidth: {

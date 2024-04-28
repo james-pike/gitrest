@@ -83,7 +83,7 @@ export default function AboutFooter() {
 
     return (
         <footer className="flex w-full flex-col">
-            <div className="mx-auto max-w-8xl px-6 pb-8 lg:px-8 ">
+            <div className="mx-auto max-w-9xl md:px-6 pb-8 lg:px-8 ">
             
             <div style={{ position: 'relative', height: '20em' }}>
 					<img
