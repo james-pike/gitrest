@@ -30,7 +30,7 @@ export default function Tab2({ initialLocation = "Wellington", ...props }: { ini
   return (
     <Card {...props}>
       <div className="md:mx-auto" style={{ overflowX: 'auto' }}>
-        <img src="/images/a1.jpg" alt="menu" className="w-full h-32 object-cover" />
+        {/* <img src="/images/a1.jpg" alt="menu" className="w-full h-32 object-cover" /> */}
         <header className="mb-3 flex w-full items-center  justify-between mt-5 pl-5 pr-3">
           <div className="flex flex-col ">
             <h1 className="text-2xl font-bold text-default-900  lg:text-3xl">Menu</h1>
