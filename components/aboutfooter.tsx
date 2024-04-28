@@ -85,10 +85,10 @@ export default function AboutFooter() {
         <footer className="flex w-full flex-col">
             <div className="mx-auto max-w-9xl md:px-6 pb-8 lg:px-8 ">
             
-            <div style={{ position: 'relative', height: '20em' }}>
+            <div style={{ position: 'relative', height: '15em' }}>
 					<img
 						className="w-full object-cover border-black"
-						style={{ opacity: 0.75, height: '20em' }}
+						style={{ opacity: 0.75, height: '15em' }}
 						src="./images/a6.png"
 						alt="Background Image"
 					/>
@@ -145,10 +145,10 @@ export default function AboutFooter() {
 
 				<div className="border-4 border-black"></div>
 <div className="grid grid-cols-2 gap-2">
-<div style={{ position: 'relative', height: '20em' }}>
+<div style={{ position: 'relative', height: '15em' }}>
     <img
         className="w-full object-cover border-black"
-        style={{ opacity: 0.75, height: '20em' }}
+        style={{ opacity: 0.75, height: '15em' }}
         src="./images/g1.jpg"
         alt="Background Image"
     />
@@ -190,10 +190,10 @@ export default function AboutFooter() {
 
     </div>
 </div>
-<div style={{ position: 'relative', height: '20em' }}>
+<div style={{ position: 'relative', height: '15em' }}>
     <img
         className="w-full object-cover border-black"
-        style={{ opacity: 0.75, height: '20em' }}
+        style={{ opacity: 0.75, height: '15em' }}
         src="./images/p1.jpg"
         alt="Background Image"
     />
