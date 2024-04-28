@@ -1,6 +1,7 @@
 'use client';
 
 import Footer2 from "@/components/foot2";
+import Footer3 from "@/components/foot3";
 import BasicFooter from "@/components/footer";
 import Tab2 from "@/components/tabs2";
 import { Tab } from "@nextui-org/react";
@@ -29,7 +30,7 @@ export default function MenuLayout({
 		};
 	}, []);
 	return (
-		<Tab2/>
+		<Footer2/>
 		
 
 		
