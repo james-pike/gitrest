@@ -83,16 +83,12 @@ export default function AboutFooter() {
 
     return (
         <footer className="flex w-full flex-col">
-            <div className="mx-auto  px-6 pb-8 lg:px-8 ">
-                
-
-
-
-
-            <div style={{ position: 'relative', height: '50vh' }}>
+            <div className="mx-auto max-w-8xl px-6 pb-8 lg:px-8 ">
+            
+            <div style={{ position: 'relative', height: '20em' }}>
 					<img
 						className="w-full object-cover border-black"
-						style={{ opacity: 0.75, height: '50vh' }}
+						style={{ opacity: 0.75, height: '20em' }}
 						src="./images/a6.png"
 						alt="Background Image"
 					/>
@@ -149,10 +145,10 @@ export default function AboutFooter() {
 
 				<div className="border-4 border-black"></div>
 <div className="grid grid-cols-2 gap-2">
-<div style={{ position: 'relative', height: '40vh' }}>
+<div style={{ position: 'relative', height: '20em' }}>
     <img
         className="w-full object-cover border-black"
-        style={{ opacity: 0.75, height: '40vh' }}
+        style={{ opacity: 0.75, height: '20em' }}
         src="./images/g1.jpg"
         alt="Background Image"
     />
@@ -194,10 +190,10 @@ export default function AboutFooter() {
 
     </div>
 </div>
-<div style={{ position: 'relative', height: '40vh' }}>
+<div style={{ position: 'relative', height: '20em' }}>
     <img
         className="w-full object-cover border-black"
-        style={{ opacity: 0.75, height: '40vh' }}
+        style={{ opacity: 0.75, height: '20em' }}
         src="./images/p1.jpg"
         alt="Background Image"
     />
@@ -242,7 +238,7 @@ export default function AboutFooter() {
 
 
 </div>
-<div style={{ position: 'relative', height: '40vh' }}>
+{/* <div style={{ position: 'relative', height: '40vh' }}>
     <img
         className="w-full object-cover border-black"
         style={{ opacity: 0.75, height: '40vh' }}
@@ -286,7 +282,7 @@ export default function AboutFooter() {
         </div>
 
     </div>
-</div>
+</div> */}
 
 
 

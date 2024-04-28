@@ -62,7 +62,7 @@ const footerNavigation = {
     ],
 };
 
-export default function Footer2() {
+export default function AF1() {
     const renderList = React.useCallback(
         ({ title, items }: { title: string; items: { name: string; href: string }[] }) => (
             <div>
