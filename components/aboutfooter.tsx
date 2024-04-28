@@ -83,12 +83,12 @@ export default function AboutFooter() {
 
     return (
         <footer className="flex w-full flex-col">
-            <div className="mx-auto max-w-9xl md:px-6 pb-8 lg:px-8 ">
+           <div className="  " style={{ padding: '1%' }}>
             
-            <div style={{ position: 'relative', height: '15em' }}>
+            <div style={{ position: 'relative', height: '20em' }}>
 					<img
 						className="w-full object-cover border-black"
-						style={{ opacity: 0.75, height: '15em' }}
+						style={{ opacity: 0.75, height: '20em' }}
 						src="./images/a6.png"
 						alt="Background Image"
 					/>
