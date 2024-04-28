@@ -30,7 +30,9 @@ export default function MenuLayout({
 		};
 	}, []);
 	return (
-		<Footer2/>
+		// <Footer2/>
+	
+		<Tab2	/>
 		
 
 		
