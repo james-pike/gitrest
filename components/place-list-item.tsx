@@ -68,7 +68,7 @@ const PlaceListItem = React.forwardRef<HTMLDivElement, PlaceListItemProps>(
           isBlurred
           isZoomed
           alt={name}
-          className="aspect-square w-full hover:scale-110"
+          className="aspect-square w-full hover:scale-100"
           isLoading={isLoading}
           src={imageSrc}
         />
