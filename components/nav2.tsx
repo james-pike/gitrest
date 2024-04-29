@@ -50,14 +50,7 @@ export default function Nav2(props: NavbarProps) {
           "focus:outline-none",
           "items-center", 
          
-          "data-[active=true]:after:content-['']", 
-          "data-[active=true]:after:absolute", 
-          "data-[active=true]:after:bottom-0", 
-          "data-[active=true]:after:left-0", 
-          "data-[active=true]:after:right-0", 
-          "data-[active=true]:after:h-[2px]", 
-          "data-[active=true]:after:rounded-[2px]", 
-          "data-[active=true]:after:bg-red-700"],
+  ],
         }}
         className="lg:px-10 border-y-1 focus:outline-none"
         height="60px"
