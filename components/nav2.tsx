@@ -251,8 +251,9 @@ export default function Nav2(props: NavbarProps) {
         <NavbarMenuItem className="mb-4 focus:outline-none">
           <Button fullWidth as={Link} className="bg-foreground focus:outline-none text-background" href="/#"
              onClick={() => {
+              onOpen();  
               setIsMenuOpen(false)
-                  onOpen();  
+                  
                   
                 }
             }>
