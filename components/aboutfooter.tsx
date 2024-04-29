@@ -83,12 +83,12 @@ export default function AboutFooter() {
 
     return (
         <div>
-        <footer className="flex w-full flex-col md:hidden pb-4">
+        <footer className="flex w-full flex-col md:hidden pb-3">
             <div className="" >
                 <div style={{ position: 'relative', height: '12em' }}>
                     <video
                         style={{ opacity: 0.75, height: '12em' }}
-                        className="w-full h-60 object-cover border-b-8 border-black"
+                        className="w-full object-cover border-b-8 border-black"
                         src="./video/almonte1.mp4"
                         controls
                         loop
@@ -197,13 +197,13 @@ export default function AboutFooter() {
                 <div className="border-4 border-black"></div>
 
 
-                <div className="xl:grid xl:grid-cols-3 pt-4 xl:gap-8 pb-4 px-3">
+                <div className="xl:grid xl:grid-cols-3 pt-4 xl:gap-8 pb-4 px-4">
                     <div className="space-y-8 md:pr-8">
                         <div className="flex items-center justify-start">
                             <AcmeIcon size={44} />
                             <span className="text-medium font-medium">ABOUT</span>
                         </div>
-                        <p className="text-small text-default-500">
+                        <p className="text-small text-default-500 px-1">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique
                         </p>
                         <div className="flex space-x-6">
@@ -215,7 +215,7 @@ export default function AboutFooter() {
                             ))}
                         </div>
                     </div>
-                    <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+                    {/* <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
                         <div className="md:grid md:grid-cols-2 md:gap-8">
                             <div>{renderList({ title: "Services", items: footerNavigation.services })}</div>
                             <div className="mt-10 md:mt-0">
@@ -228,11 +228,11 @@ export default function AboutFooter() {
                                 {renderList({ title: "Legal", items: footerNavigation.legal })}
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
 
-                <div className="flex flex-wrap justify-between gap-2 pt-8 px-3">
+                <div className="flex flex-wrap justify-between gap-2 pt-5 px-3">
                     <p className="text-small text-default-400">&copy; 2024 Acme Inc. All rights reserved.</p>
                     <ThemeSwitch />
                 </div>
