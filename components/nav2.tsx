@@ -265,7 +265,7 @@ export default function Nav2(props: NavbarProps) {
                     <ModalHeader className="flex flex-col gap-1 focus:outline-none">RESERVATIONS</ModalHeader>
                     <ModalBody>
                       <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus atque integra connect Open Table
+                        Lorem ipsum dolor sit amet consectetur adipisicing lorem ipsum dolor sit amet consectetur electus atque integra connect Open Table
                       </p>
                     </ModalBody>
                     <ModalFooter>
