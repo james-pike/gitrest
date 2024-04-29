@@ -85,9 +85,9 @@ export default function AboutFooter() {
         <div>
         <footer className="flex w-full flex-col md:hidden pb-4">
             <div className="" >
-                <div style={{ position: 'relative', height: '11em' }}>
+                <div style={{ position: 'relative', height: '12em' }}>
                     <video
-                        style={{ opacity: 0.75, height: '11em' }}
+                        style={{ opacity: 0.75, height: '12em' }}
                         className="w-full h-60 object-cover border-b-8 border-black"
                         src="./video/almonte1.mp4"
                         controls
