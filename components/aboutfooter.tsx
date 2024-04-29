@@ -200,8 +200,12 @@ export default function AboutFooter() {
                 <div className=" pt-4  pb-3 px-4">
                     <div className="space-y-2 ">
                         <div className="flex items-center justify-start">
-                            <AcmeIcon size={44} />
-                            <span className="text-medium font-medium">ABOUT</span>
+                            <img    
+                                className="h-10 w-auto"
+                                src="./images/logo.png"
+                                alt="Logo"
+                            />
+                            <span className="text-medium font-medium px-3">JOES ITALIAN KITCHEN</span>
                         </div>
                         <p className="text-small text-default-500 px-1">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique
@@ -220,7 +224,7 @@ export default function AboutFooter() {
 
 
                 <div className="flex flex-wrap justify-between gap-2 pt-3 px-3">
-                    <p className="text-small text-default-400">&copy; 2024 Acme Inc. All rights reserved.</p>
+                    <p className="text-small text-default-400">&copy; 2024 All rights reserved.</p>
                     <ThemeSwitch />
                 </div>
             </div>
@@ -357,8 +361,12 @@ export default function AboutFooter() {
       <div className="xl:grid xl:grid-cols-3 pt-4 xl:gap-8">
           <div className="space-y-8 md:pr-8">
               <div className="flex items-center justify-start">
-                  <AcmeIcon size={44} />
-                  <span className="text-medium font-medium">ABOUT</span>
+                  <img
+                        className="h-10 w-auto"
+                        src="./images/logo.png"
+                        alt="Logo"
+                  />
+                  <span className="text-medium font-medium px-3">JOES ITALIAN KITCHEN</span>
               </div>
               <p className="text-small text-default-500">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique
