@@ -44,8 +44,8 @@ export default function Nav2(props: NavbarProps) {
         onMenuOpenChange={setIsMenuOpen}
         isBordered
         classNames={{
-          base: "border-default-100",
-          wrapper: "justify-between",
+          base: "border-default-100 focus:outline-none",
+          wrapper: "justify-between focus:outline-none",
           item: ["hidden md:flex", "flex", "relative", 
           "focus:outline-none",
           "items-center", 
