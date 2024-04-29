@@ -100,7 +100,7 @@ export default function Nav2(props: NavbarProps) {
               onClick={() =>
                 window.open("https://joesitaliankitchen-1asc.mobi2go.com")
               }
-              onPress={() => setIsMenuOpen(false)}
+              onPress={() => handleMenuItemClick}
             >
               Orders
             </Button>
@@ -302,7 +302,7 @@ export default function Nav2(props: NavbarProps) {
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link className="mb-2 w-full text-default-500 focus:outline-none" href={item.route} size="md"
-              onClick={() => setIsMenuOpen(false)}>
+              onClick={() => handleMenuItemClick}>
               {item.name}
             </Link>
             {index < menuItems.length - 1 && <Divider className="opacity-50" />}
