@@ -85,9 +85,9 @@ export default function AboutFooter() {
         <div>
         <footer className="flex w-full flex-col md:hidden pb-4">
             <div className="" >
-                <div style={{ position: 'relative', height: '15em' }}>
+                <div style={{ position: 'relative', height: '11em' }}>
                     <video
-                        style={{ opacity: 0.75, height: '15em' }}
+                        style={{ opacity: 0.75, height: '11em' }}
                         className="w-full h-60 object-cover "
                         src="./video/almonte1.mp4"
                         controls
@@ -96,9 +96,6 @@ export default function AboutFooter() {
                         playsInline
                         poster="./images/a6.png">
                     </video>
-                 
-
-                   
                 </div>
 
                 <div className=" border-black "></div>

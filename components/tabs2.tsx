@@ -29,7 +29,7 @@ export default function Tab2({ initialLocation = "Wellington", ...props }: { ini
 
   return (
     <Card {...props}>
-      <div className="md:mx-auto" style={{ overflowX: 'auto', paddingLeft: '5%', paddingRight: '5%', paddingTop: '1%' }}>
+      <div className="md:mx-auto block md:hidden" style={{ overflowX: 'auto', paddingLeft: '2%', paddingRight: '2%', paddingTop: '1%' }}>
         {/* <img src="/images/a1.jpg" alt="menu" className="w-full h-32 object-cover" /> */}
         <header className="mb-3 flex w-full items-center  justify-between mt-5 pl-5 pr-3">
           <div className="flex flex-col ">
@@ -59,14 +59,53 @@ export default function Tab2({ initialLocation = "Wellington", ...props }: { ini
               >
                 Almonte
               </DropdownItem>
-              {/* <DropdownItem
-                key="nepean"
-                shortcut={selectedLocation === "Nepean" && <FiCheck />}
-                onClick={() => handleLocationChange("Nepean")}
+              <DropdownItem
+                key="wellington"
+                shortcut={selectedLocation === "Wellington" && <FiCheck />}
+                onClick={() => handleLocationChange("Wellington")}
                 startContent={<SlLocationPin />}
               >
-                Nepean
-              </DropdownItem> */}
+                Wellington
+              </DropdownItem>
+            </DropdownMenu>
+          </Dropdown>
+        </header>
+        <div>
+          {selectedLocation === "Wellington" ? <Primtab /> :
+          selectedLocation === "Almonte" ? <Primtab /> : <Nepeantab />}
+        </div>
+      </div>
+
+      <div className="md:mx-auto hidden md:block" style={{ overflowX: 'auto', paddingLeft: '5%', paddingRight: '5%', paddingTop: '1%' }}>
+        {/* <img src="/images/a1.jpg" alt="menu" className="w-full h-32 object-cover" /> */}
+        <header className="mb-3 flex w-full items-center  justify-between mt-5 pl-5 pr-3">
+          <div className="flex flex-col ">
+            <h1 className="text-2xl font-bold text-default-900  lg:text-3xl">Menu</h1>
+            <p className="text-medium text-default-400 lg:text-medium">{selectedLocation} {selectedLocation === "Nepean" ? "Express" : ""} Menu</p>
+          </div>
+          <Dropdown>
+            <DropdownTrigger>
+              <Button
+       
+                variant="bordered" className=" bg-foreground-100 hover:bg-foreground-200 px-1.5 h-11 focus:outline-none">
+                <div className="flex items-center gap-1.5 text-large focus:outline-none">
+                  <SlLocationPin />
+                  <div className="md:flex text-small text-gray-200">
+                    <p>{selectedLocation}</p>
+                  </div>
+                  <Icon className="flex-none text-white" icon="lucide:arrow-down" width={13} />
+                </div>
+              </Button>
+            </DropdownTrigger>
+            <DropdownMenu variant="faded" aria-label="Dropdown menu with icons">
+              <DropdownItem
+                key="almonte"
+                shortcut={selectedLocation === "Almonte" && <FiCheck />}
+                onClick={() => handleLocationChange("Almonte")}
+                startContent={<SlLocationPin />}
+              >
+                Almonte
+              </DropdownItem>
               <DropdownItem
                 key="wellington"
                 shortcut={selectedLocation === "Wellington" && <FiCheck />}
