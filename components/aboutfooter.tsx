@@ -197,8 +197,8 @@ export default function AboutFooter() {
                 <div className="border-4 border-black"></div>
 
 
-                <div className="xl:grid xl:grid-cols-3 pt-4 xl:gap-8 pb-4 px-4">
-                    <div className="space-y-8 md:pr-8">
+                <div className=" pt-4  pb-3 px-4">
+                    <div className="space-y-2 ">
                         <div className="flex items-center justify-start">
                             <AcmeIcon size={44} />
                             <span className="text-medium font-medium">ABOUT</span>
@@ -206,7 +206,7 @@ export default function AboutFooter() {
                         <p className="text-small text-default-500 px-1">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique
                         </p>
-                        <div className="flex space-x-6">
+                        <div className="flex space-x-6 pt-3">
                             {footerNavigation.social.map((item) => (
                                 <Link key={item.name} isExternal className="text-default-400" href={item.href}>
                                     <span className="sr-only">{item.name}</span>
@@ -215,24 +215,11 @@ export default function AboutFooter() {
                             ))}
                         </div>
                     </div>
-                    {/* <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-                        <div className="md:grid md:grid-cols-2 md:gap-8">
-                            <div>{renderList({ title: "Services", items: footerNavigation.services })}</div>
-                            <div className="mt-10 md:mt-0">
-                                {renderList({ title: "Support", items: footerNavigation.supportOptions })}
-                            </div>
-                        </div>
-                        <div className="md:grid md:grid-cols-2 md:gap-8">
-                            <div>{renderList({ title: "About Us", items: footerNavigation.aboutUs })}</div>
-                            <div className="mt-10 md:mt-0">
-                                {renderList({ title: "Legal", items: footerNavigation.legal })}
-                            </div>
-                        </div>
-                    </div> */}
+            
                 </div>
 
 
-                <div className="flex flex-wrap justify-between gap-2 pt-5 px-3">
+                <div className="flex flex-wrap justify-between gap-2 pt-3 px-3">
                     <p className="text-small text-default-400">&copy; 2024 Acme Inc. All rights reserved.</p>
                     <ThemeSwitch />
                 </div>
