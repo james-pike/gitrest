@@ -253,7 +253,8 @@ export default function Nav2(props: NavbarProps) {
         </NavbarMenuItem>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link className="mb-2 w-full text-default-500" href="#" size="md">
+            <Link className="mb-2 w-full text-default-500" href={item.route} size="md"
+              onClick={() => setIsMenuOpen(false)}>
               {item.name}
             </Link>
             {index < menuItems.length - 1 && <Divider className="opacity-50" />}
