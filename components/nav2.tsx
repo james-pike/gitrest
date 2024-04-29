@@ -258,8 +258,8 @@ export default function Nav2(props: NavbarProps) {
           onClick={onOpen}  >
             Reservations
           </Button>
-          <Modal isOpen={isOpen} onOpenChange={onOpenChange} placement="top">
-              <ModalContent>
+          <Modal isOpen={isOpen} onOpenChange={onOpenChange} placement="top" className="focus:outline-none">
+              <ModalContent className="focus:outline-none">
                 {(onClose) => (
                   <>
                     <ModalHeader className="flex flex-col gap-1 focus:outline-none">RESERVATIONS</ModalHeader>
