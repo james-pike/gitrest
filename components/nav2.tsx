@@ -303,7 +303,7 @@ export default function Nav2(props: NavbarProps) {
         </NavbarMenuItem>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link className="mb-2 w-full text-default-500 focus:outline-none" href={item.route} size="md"
+            <Link className="mb-2 w-full text-default-500 focus:outline-none" href={item.route} size="lg"
               onClick={() => setIsMenuOpen(false)}>
               {item.name}
             </Link>
