@@ -98,7 +98,7 @@ export default function AboutFooter() {
        
       >
       </video>
-					<h1
+					{/* <h1
 						// className={title()}
 						style={{
 							position: 'absolute',
@@ -114,7 +114,7 @@ export default function AboutFooter() {
 						<span style={{ display: 'block' }}>JOES</span>
 						<span style={{ display: 'block' }}>ITALIAN</span>
 						<span style={{ display: 'block' }}>KITCHEN</span>
-					</h1>
+					</h1> */}
 					<div className="pt-6"
 						style={{
 							position: 'absolute',
