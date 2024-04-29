@@ -44,13 +44,20 @@ export default function Nav2(props: NavbarProps) {
         onMenuOpenChange={setIsMenuOpen}
         isBordered
         classNames={{
-          base: "border-default-100 focus:outline-none",
-          wrapper: "justify-between focus:outline-none",
+          base: "border-default-100",
+          wrapper: "justify-between",
           item: ["hidden md:flex", "flex", "relative", 
           "focus:outline-none",
           "items-center", 
          
-  ],
+          "data-[active=true]:after:content-['']", 
+          "data-[active=true]:after:absolute", 
+          "data-[active=true]:after:bottom-0", 
+          "data-[active=true]:after:left-0", 
+          "data-[active=true]:after:right-0", 
+          "data-[active=true]:after:h-[2px]", 
+          "data-[active=true]:after:rounded-[2px]", 
+          "data-[active=true]:after:bg-red-700"],
         }}
         className="lg:px-10 border-y-1 focus:outline-none"
         height="60px"
@@ -250,13 +257,7 @@ export default function Nav2(props: NavbarProps) {
         </NavbarMenuItem>
         <NavbarMenuItem className="mb-4 focus:outline-none">
           <Button fullWidth as={Link} className="bg-foreground focus:outline-none text-background" href="/#"
-             onClick={() => {
-              onOpen();  
-              setIsMenuOpen(false)
-                  
-                  
-                }
-            }>
+          onClick={onOpen}  >
             Reservations
           </Button>
           <Modal isOpen={isOpen} onOpenChange={onOpenChange} placement="top" className="focus:outline-none">
