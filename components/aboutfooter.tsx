@@ -208,7 +208,7 @@ export default function AboutFooter() {
                             <span className="text-medium font-medium px-3">JOES ITALIAN KITCHEN</span>
                         </div>
                         <p className="text-small text-default-500 px-1">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique
+                            Lorem ipsum dolor sit amets, consectetur adipiscing elit. Sed neque elit, tristique
                         </p>
                         <div className="flex space-x-6 pt-3">
                             {footerNavigation.social.map((item) => (
