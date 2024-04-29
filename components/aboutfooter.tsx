@@ -83,8 +83,8 @@ export default function AboutFooter() {
 
     return (
         <div>
-        <footer className="flex w-full flex-col md:hidden">
-            <div className="  " >
+        <footer className="flex w-full flex-col md:hidden pb-4">
+            <div className="" >
                 <div style={{ position: 'relative', height: '15em' }}>
                     <video
                         style={{ opacity: 0.75, height: '15em' }}
@@ -92,25 +92,17 @@ export default function AboutFooter() {
                         src="./video/almonte1.mp4"
                         controls
                         loop
-                        autoPlay
+                    
                         playsInline
                         poster="./images/a6.png">
                     </video>
-                    <div className="pt-6"
-                        style={{
-                            position: 'absolute',
-                            top: '60%', // Position the buttons below the subtitle
-                            left: '20%', // Position the buttons in the middle horizontally
-                            transform: 'translateX(-20%)', // Center the buttons horizontally
-                            zIndex: 10, // Ensure it's above the image
-                        }}
-                    >
+                 
 
-                    </div>
+                   
                 </div>
 
-                <div className="border-4 border-black"></div>
-                <div className="md:grid md:grid-cols-2 gap-2">
+                <div className=" border-black "></div>
+                <div className="grid grid-cols-1 gap-2">
                     <div style={{ position: 'relative', height: '15em' }}>
                         <img
                             className="w-full object-cover border-black"
@@ -208,7 +200,7 @@ export default function AboutFooter() {
                 <div className="border-4 border-black"></div>
 
 
-                <div className="xl:grid xl:grid-cols-3 pt-4 xl:gap-8">
+                <div className="xl:grid xl:grid-cols-3 pt-4 xl:gap-8 pb-4 px-3">
                     <div className="space-y-8 md:pr-8">
                         <div className="flex items-center justify-start">
                             <AcmeIcon size={44} />
@@ -243,13 +235,17 @@ export default function AboutFooter() {
                 </div>
 
 
-                <div className="flex flex-wrap justify-between gap-2 pt-8">
+                <div className="flex flex-wrap justify-between gap-2 pt-8 px-3">
                     <p className="text-small text-default-400">&copy; 2024 Acme Inc. All rights reserved.</p>
                     <ThemeSwitch />
                 </div>
             </div>
         </footer>
-  <footer className="flex w-full flex-col md:block">
+
+
+
+        
+  <footer className="flex w-full flex-col hidden  md:block">
   <div className="  " style={{ paddingLeft: '2%', paddingRight: '2%' }}>
       <div style={{ position: 'relative', height: '15em' }}>
           <video
