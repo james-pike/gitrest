@@ -9,6 +9,7 @@ import { Icon } from "@iconify/react";
 import { AcmeIcon } from "./social";
 import ThemeSwitch from "@/theme-switch";
 import Tab2 from "./tabs2";
+import { ThemeButton } from "./theme-button";
 
 type SocialIconProps = Omit<IconProps, "icon">;
 
@@ -225,7 +226,7 @@ export default function AboutFooter() {
 
                 <div className="flex flex-wrap justify-between gap-2 pt-3 px-3">
                     <p className="text-small text-default-400">&copy; 2024 All rights reserved.</p>
-                    <ThemeSwitch />
+                    <ThemeButton />
                 </div>
             </div>
         </footer>
@@ -399,7 +400,7 @@ export default function AboutFooter() {
 
       <div className="flex flex-wrap justify-between gap-2 pt-8">
           <p className="text-small text-default-400">&copy; 2024 Acme Inc. All rights reserved.</p>
-          <ThemeSwitch />
+          <ThemeButton      />
       </div>
   </div>
 </footer>

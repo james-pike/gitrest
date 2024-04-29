@@ -41,7 +41,7 @@ export const ThemeButton = (props: UseSwitchProps | undefined) => {
                 "rounded-lg  hover:bg-default-200",
               ],
             })}
-            // onClick={() => theme == 'dark' ? setTheme('light') : setTheme('dark')}
+            onClick={() => theme == 'dark' ? setTheme('light') : setTheme('dark')}
           >
             {theme == 'light' ? <SunIcon /> : <MoonIcon />}
             

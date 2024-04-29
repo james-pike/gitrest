@@ -8,6 +8,7 @@ import {useIsSSR} from "@react-aria/ssr";
 import clsx from "clsx";
 
 import { SunFilledIcon, MoonFilledIcon } from "@/components/icons";
+import { ThemeButton } from "./theme-button";
 
 export interface ThemeSwitchProps {
 	className?: string;
@@ -52,6 +53,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
 				<input {...getInputProps()} />
 			</VisuallyHidden>
 			<div
+			
 				{...getWrapperProps()}
 				className={slots.wrapper({
 					class: clsx(
@@ -70,8 +72,16 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
 					),
 				})}
 			>
-			 {!isSelected || isSSR ? <SunFilledIcon size={22} /> : <MoonFilledIcon size={22} />}
+				
+			 {!isSelected || isSSR ? 
+			 
+			 <SunFilledIcon size={22} /> : <MoonFilledIcon size={22} />
+			 }
+			 
 			</div>
+			
 		</Component>
+		
+		
 	);
 };
