@@ -21,10 +21,10 @@ import {
 import { usePathname } from "next/navigation";
 
 const menuItems = [
-  { name: "HOME", route: "/" },
-  { name: "MENU", route: "/menu" },
-  { name: "LOCATIONS", route: "/locations" },
-  { name: "ABOUT", route: "/about" },
+  { name: "Home", route: "/" },
+  { name: "Menu", route: "/menu" },
+  { name: "Locations", route: "/locations" },
+  { name: "About", route: "/about" },
 ];
 
 export default function Nav2(props: NavbarProps) {
@@ -93,6 +93,7 @@ export default function Nav2(props: NavbarProps) {
               onClick={() =>
                 window.open("https://joesitaliankitchen-1asc.mobi2go.com")
               }
+              onPress={() => setIsMenuOpen(false)}
             >
               Orders
             </Button>
@@ -113,7 +114,7 @@ export default function Nav2(props: NavbarProps) {
           </NavbarItem>
         </NavbarContent>
         <NavbarMenuToggle className="text-default-400 md:hidden" />
-        <NavbarMenu
+        {/* <NavbarMenu
           className="top-[calc(var(--navbar-height)_-_1px)] grid grid-cols-2 max-h-fit bg-default-200/50 pb-4 pt-6 shadow-medium backdrop-blur-md backdrop-saturate-150 dark:bg-default-100/50"
           motionProps={{
             initial: { opacity: 0, y: -20 },
@@ -222,7 +223,43 @@ export default function Nav2(props: NavbarProps) {
               </ModalContent>
             </Modal>
           </NavbarMenuItem>
-        </NavbarMenu>
+        </NavbarMenu> */}
+        <NavbarMenu
+        className="top-[calc(var(--navbar-height)_-_1px)] max-h-fit bg-default-200/50 pb-6 pt-6 shadow-medium backdrop-blur-md backdrop-saturate-150 dark:bg-default-100/50"
+        motionProps={{
+          initial: {opacity: 0, y: -20},
+          animate: {opacity: 1, y: 0},
+          exit: {opacity: 0, y: -20},
+          transition: {
+            ease: "easeInOut",
+            duration: 0.2,
+          },
+        }}
+      >
+        <NavbarMenuItem>
+          <Button fullWidth as={Link} href="/#" variant="faded"
+           onClick={() =>
+            window.open(
+              "https://joesitaliankitchen-1asc.mobi2go.com"
+            )
+          }>
+            Orders
+          </Button>
+        </NavbarMenuItem>
+        <NavbarMenuItem className="mb-4">
+          <Button fullWidth as={Link} className="bg-foreground text-background" href="/#">
+            Reservations
+          </Button>
+        </NavbarMenuItem>
+        {menuItems.map((item, index) => (
+          <NavbarMenuItem key={`${item}-${index}`}>
+            <Link className="mb-2 w-full text-default-500" href="#" size="md">
+              {item.name}
+            </Link>
+            {index < menuItems.length - 1 && <Divider className="opacity-50" />}
+          </NavbarMenuItem>
+        ))}
+      </NavbarMenu>
       </Navbar>
     </>
   );
