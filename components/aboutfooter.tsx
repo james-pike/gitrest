@@ -88,7 +88,7 @@ export default function AboutFooter() {
                 <div style={{ position: 'relative', height: '11em' }}>
                     <video
                         style={{ opacity: 0.75, height: '11em' }}
-                        className="w-full h-60 object-cover "
+                        className="w-full h-60 object-cover border-b-8 border-black"
                         src="./video/almonte1.mp4"
                         controls
                         loop
