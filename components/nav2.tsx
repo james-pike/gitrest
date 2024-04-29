@@ -97,10 +97,11 @@ export default function Nav2(props: NavbarProps) {
               radius="full"
               variant="light"
               href=""
-              onClick={() =>
+              onClick={() => {
                 window.open("https://joesitaliankitchen-1asc.mobi2go.com")
+                setIsMenuOpen(false)
               }
-              onPress={() => setIsMenuOpen(false)}
+              }
             >
               Orders
             </Button>
@@ -245,17 +246,23 @@ export default function Nav2(props: NavbarProps) {
       >
         <NavbarMenuItem>
           <Button fullWidth as={Link} href="/#" variant="faded" className="focus:outline-none"
-           onClick={() =>
-            window.open(
-              "https://joesitaliankitchen-1asc.mobi2go.com"
-            )
+          onClick={() => {
+            setIsMenuOpen(false)
+                window.open("https://joesitaliankitchen-1asc.mobi2go.com")
+                
+              }
           }>
             Orders
           </Button>
         </NavbarMenuItem>
         <NavbarMenuItem className="mb-4 focus:outline-none">
           <Button fullWidth as={Link} className="bg-foreground focus:outline-none text-background" href="/#"
-          onClick={onOpen}  >
+             onClick={() => {
+              setIsMenuOpen(false)
+                  onOpen
+                  
+                }
+            }>
             Reservations
           </Button>
           <Modal isOpen={isOpen} onOpenChange={onOpenChange} placement="top" className="focus:outline-none">
