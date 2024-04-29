@@ -13,6 +13,7 @@ import Navbar2 from "@/components/navbar2";
 import { useState } from "react";
 import Nav2 from "@/components/nav2";
 import Nav3 from "@/components/nav3";
+import Nav4 from "@/components/nav4";
 
 
 
@@ -64,19 +65,12 @@ export default function RootLayout({
 				)}
 			>
 				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-
 					<div className="">
-				
-					
-						<Nav3 />
-					
-					    
+						<Nav4 />
 						<main className="">
 							{children}
 						</main>
-						
 					</div>
-					
 				</Providers>
 			</body>
 		</html>
