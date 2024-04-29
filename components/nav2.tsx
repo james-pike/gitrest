@@ -247,9 +247,50 @@ export default function Nav2(props: NavbarProps) {
           </Button>
         </NavbarMenuItem>
         <NavbarMenuItem className="mb-4">
-          <Button fullWidth as={Link} className="bg-foreground text-background" href="/#">
+          <Button fullWidth as={Link} className="bg-foreground text-background" href="/#"
+          onClick={onOpen}  >
             Reservations
           </Button>
+          <Modal isOpen={isOpen} onOpenChange={onOpenChange} placement="top">
+              <ModalContent>
+                {(onClose) => (
+                  <>
+                    <ModalHeader className="flex flex-col gap-1">RESERVATIONS</ModalHeader>
+                    <ModalBody>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus atque integra connect Open Table
+                      </p>
+                    </ModalBody>
+                    <ModalFooter>
+                      <Button
+                        color="default"
+                        className="border-white border"
+                        onClick={() =>
+                          window.open(
+                            "https://booking.resdiary.com/widget/Standard/JoesItalianKitchen/364"
+                          )
+                        }
+                        onPress={onClose}
+                      >
+                        Almonte
+                      </Button>
+                      <Button
+                        color="default"
+                        className="border-white border"
+                        onClick={() =>
+                          window.open(
+                            "https://booking.resdiary.com/widget/Standard/JoesItalianKitchenWellington/438"
+                          )
+                        }
+                        onPress={onClose}
+                      >
+                        Wellington
+                      </Button>
+                    </ModalFooter>
+                  </>
+                )}
+              </ModalContent>
+            </Modal>
         </NavbarMenuItem>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
