@@ -86,12 +86,18 @@ export default function AboutFooter() {
            <div className="  " style={{ paddingLeft: '2%', paddingRight: '2%' }}>
             
             <div style={{ position: 'relative', height: '20em' }}>
-					<img
-						className="w-full object-cover border-black"
-						style={{ opacity: 0.75, height: '20em' }}
-						src="./images/a6.png"
-						alt="Background Image"
-					/>
+            <video
+            style={{ opacity: 0.75, height: '20em' }}
+        className="w-full h-60 object-cover "
+        src="./video/almonte1.mp4"
+        controls
+        loop
+        autoPlay
+        playsInline
+        poster="./images/a6.png"
+       
+      >
+      </video>
 					<h1
 						// className={title()}
 						style={{
@@ -118,7 +124,7 @@ export default function AboutFooter() {
 							zIndex: 10, // Ensure it's above the image
 						}}
 					>
-						<div style={{ display: 'flex', alignItems: 'center' }}>
+						{/* <div style={{ display: 'flex', alignItems: 'center' }}>
 							<a href="https://joesitaliankitchen-1asc.mobi2go.com">
 								<button className="bg-black text-white font-bold py-2 border-white border-2 px-4 text-xs rounded mr-2">
 									ORDERS
@@ -130,7 +136,7 @@ export default function AboutFooter() {
 									RESERVATIONS
 								</button>
 							</a>
-						</div>
+						</div> */}
 
 					</div>
 				</div>
@@ -144,7 +150,7 @@ export default function AboutFooter() {
             
 
 				<div className="border-4 border-black"></div>
-<div className="grid grid-cols-2 gap-2">
+<div className="md:grid md:grid-cols-2 gap-2">
 <div style={{ position: 'relative', height: '15em' }}>
     <img
         className="w-full object-cover border-black"
