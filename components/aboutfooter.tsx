@@ -83,7 +83,7 @@ export default function AboutFooter() {
 
     return (
         <footer className="flex w-full flex-col">
-           <div className="  " style={{ padding: '1%' }}>
+           <div className="  " style={{ paddingLeft: '2%', paddingRight: '2%' }}>
             
             <div style={{ position: 'relative', height: '20em' }}>
 					<img
@@ -100,7 +100,7 @@ export default function AboutFooter() {
 							left: '20%', // Position the h1 in the middle horizontally
 							transform: 'translate(-20%, -50%)', // Center the h1
 							color: 'white', // Text color
-							fontSize: '4rem', // Font size
+							fontSize: '3rem', // Font size
 							zIndex: 10, // Ensure it's above the image
 							lineHeight: '1', // Increase line height for better spacing between lines
 						}}
@@ -120,13 +120,13 @@ export default function AboutFooter() {
 					>
 						<div style={{ display: 'flex', alignItems: 'center' }}>
 							<a href="https://joesitaliankitchen-1asc.mobi2go.com">
-								<button className="bg-black text-white font-bold py-2 border-white border-2 px-4 rounded mr-2">
+								<button className="bg-black text-white font-bold py-2 border-white border-2 px-4 text-xs rounded mr-2">
 									ORDERS
 								</button>
 							</a>
 							<div className="pt-2"></div>
 							<a href="https://booking.resdiary.com/widget/Standard/JoesItalianKitchen/364">
-								<button className="bg-white  text-black font-bold py-2 px-4 border-black border-2 rounded">
+								<button className="bg-white  text-black font-bold py-2 px-4 border-black border-2 rounded text-xs">
 									RESERVATIONS
 								</button>
 							</a>
@@ -160,7 +160,7 @@ export default function AboutFooter() {
             left: '20%', // Position the h1 in the middle horizontally
             transform: 'translate(-20%, -50%)', // Center the h1
             color: 'white', // Text color
-            fontSize: '2.8rem', // Font size
+            fontSize: '2.2rem', // Font size
             zIndex: 10, // Ensure it's above the image
             lineHeight: '1', // Increase line height for better spacing between lines
         }}
@@ -180,7 +180,7 @@ export default function AboutFooter() {
     >
         <div className="pt-1" style={{ display: 'flex', alignItems: 'center' }}>
             <a href="/menu">
-                <button className="bg-black text-white font-bold py-3 border-white border-1 px-4 rounded mr-2">
+                <button className="bg-black text-white font-bold py-3 border-white border-1 px-4 rounded mr-2 text-xs">
                     BROWSE PINSAS
                 </button>
             </a>
@@ -205,7 +205,7 @@ export default function AboutFooter() {
             left: '20%', // Position the h1 in the middle horizontally
             transform: 'translate(-20%, -50%)', // Center the h1
             color: 'white', // Text color
-            fontSize: '2.8rem', // Font size
+            fontSize: '2.2rem', // Font size
             zIndex: 10, // Ensure it's above the image
             lineHeight: '1', // Increase line height for better spacing between lines
         }}
@@ -225,7 +225,7 @@ export default function AboutFooter() {
     >
         <div className="pt-1" style={{ display: 'flex', alignItems: 'center' }}>
             <a href="/menu">
-                <button className="bg-black text-white font-bold py-3 border-white border-1 px-4 rounded mr-2">
+                <button className="bg-black text-white font-bold py-3 border-white border-1 px-4 text-xs rounded mr-2">
                     BROWSE PINSAS
                 </button>
             </a>
