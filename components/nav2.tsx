@@ -49,27 +49,34 @@ export default function Nav2(props: NavbarProps) {
           item: ["hidden md:flex", "flex", "relative", 
           "focus:outline-none",
           "items-center", 
-          "focus:outline-none",
-          "data-[active=true]:after:content-['']", "data-[active=true]:after:absolute", "data-[active=true]:after:bottom-0", "data-[active=true]:after:left-0", "data-[active=true]:after:right-0", "data-[active=true]:after:h-[2px]", "data-[active=true]:after:rounded-[2px]", "data-[active=true]:after:bg-red-700"],
+         
+          "data-[active=true]:after:content-['']", 
+          "data-[active=true]:after:absolute", 
+          "data-[active=true]:after:bottom-0", 
+          "data-[active=true]:after:left-0", 
+          "data-[active=true]:after:right-0", 
+          "data-[active=true]:after:h-[2px]", 
+          "data-[active=true]:after:rounded-[2px]", 
+          "data-[active=true]:after:bg-red-700"],
         }}
-        className="lg:px-10 border-y-1"
+        className="lg:px-10 border-y-1 focus:outline-none"
         height="60px"
       >
         <NavbarBrand>
           <a href="/" style={{ textDecoration: 'none' }}>
-            <div className="rounded-full mt-3 py-0 text-background -ml-3">
+            <div className="rounded-full mt-3 py-0 text-background -ml-3 focus:outline-none">
               <img className="h-16 w-auto" src="./images/logo.png" alt="Logo" />
             </div>
           </a>
         </NavbarBrand>
 
-        <NavbarContent className="hidden sm:flex gap-4" justify="center">
+        <NavbarContent className="hidden sm:flex gap-4 focus:outline-none" justify="center">
           {menuItems.map((item, index) => (
             <React.Fragment key={index}>
               <NavbarItem isActive={path === item.route}>
                 <Link
                   color={path === item.route ? "foreground" : "foreground"}
-                  className="w-full"
+                  className="w-full focus:outline-none"
                   href={item.route}
                   size="md"
                   onClick={handleMenuItemClick} // Close menu when clicked
@@ -78,15 +85,15 @@ export default function Nav2(props: NavbarProps) {
                 </Link>
               </NavbarItem>
               {index < menuItems.length - 1 && (
-                <div className="h-1 w-1 bg-white rounded-full"></div>
+                <div className="h-1 w-1 bg-white rounded-full focus:outline-none"></div>
               )}
             </React.Fragment>
           ))}
         </NavbarContent>
-        <NavbarContent className="hidden md:flex" justify="end">
+        <NavbarContent className="hidden md:flex focus:outline-none" justify="end">
           <NavbarItem className="ml-2 !flex gap-2">
             <Button
-              className="text-default-500"
+              className="text-default-500 focus:outline-none"
               radius="full"
               variant="light"
               href=""
@@ -104,7 +111,7 @@ export default function Nav2(props: NavbarProps) {
                   "_blank"
                 )
               }
-              className="dark:bg-foreground bg-red-800 font-medium text-background"
+              className="dark:bg-foreground bg-red-800 font-medium text-background focus:outline-none"
               color="secondary"
               radius="full"
               variant="flat"
@@ -113,7 +120,7 @@ export default function Nav2(props: NavbarProps) {
             </Button>
           </NavbarItem>
         </NavbarContent>
-        <NavbarMenuToggle className="text-default-400 md:hidden" />
+        <NavbarMenuToggle className="text-default-400 md:hidden focus:outline-none" />
         {/* <NavbarMenu
           className="top-[calc(var(--navbar-height)_-_1px)] grid grid-cols-2 max-h-fit bg-default-200/50 pb-4 pt-6 shadow-medium backdrop-blur-md backdrop-saturate-150 dark:bg-default-100/50"
           motionProps={{
@@ -225,7 +232,7 @@ export default function Nav2(props: NavbarProps) {
           </NavbarMenuItem>
         </NavbarMenu> */}
         <NavbarMenu
-        className="top-[calc(var(--navbar-height)_-_1px)] max-h-fit bg-default-200/50 pb-6 pt-6 shadow-medium backdrop-blur-md backdrop-saturate-150 dark:bg-default-100/50"
+        className="top-[calc(var(--navbar-height)_-_1px)] focus:outline-none max-h-fit bg-default-200/50 pb-6 pt-6 shadow-medium backdrop-blur-md backdrop-saturate-150 dark:bg-default-100/50"
         motionProps={{
           initial: {opacity: 0, y: -20},
           animate: {opacity: 1, y: 0},
@@ -237,7 +244,7 @@ export default function Nav2(props: NavbarProps) {
         }}
       >
         <NavbarMenuItem>
-          <Button fullWidth as={Link} href="/#" variant="faded"
+          <Button fullWidth as={Link} href="/#" variant="faded" className="focus:outline-none"
            onClick={() =>
             window.open(
               "https://joesitaliankitchen-1asc.mobi2go.com"
@@ -246,8 +253,8 @@ export default function Nav2(props: NavbarProps) {
             Orders
           </Button>
         </NavbarMenuItem>
-        <NavbarMenuItem className="mb-4">
-          <Button fullWidth as={Link} className="bg-foreground text-background" href="/#"
+        <NavbarMenuItem className="mb-4 focus:outline-none">
+          <Button fullWidth as={Link} className="bg-foreground focus:outline-none text-background" href="/#"
           onClick={onOpen}  >
             Reservations
           </Button>
@@ -255,7 +262,7 @@ export default function Nav2(props: NavbarProps) {
               <ModalContent>
                 {(onClose) => (
                   <>
-                    <ModalHeader className="flex flex-col gap-1">RESERVATIONS</ModalHeader>
+                    <ModalHeader className="flex flex-col gap-1 focus:outline-none">RESERVATIONS</ModalHeader>
                     <ModalBody>
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus atque integra connect Open Table
@@ -264,7 +271,7 @@ export default function Nav2(props: NavbarProps) {
                     <ModalFooter>
                       <Button
                         color="default"
-                        className="border-white border"
+                        className="border-white border focus:outline-none"
                         onClick={() =>
                           window.open(
                             "https://booking.resdiary.com/widget/Standard/JoesItalianKitchen/364"
@@ -276,7 +283,7 @@ export default function Nav2(props: NavbarProps) {
                       </Button>
                       <Button
                         color="default"
-                        className="border-white border"
+                        className="border-white border focus:outline-none"
                         onClick={() =>
                           window.open(
                             "https://booking.resdiary.com/widget/Standard/JoesItalianKitchenWellington/438"
@@ -294,7 +301,7 @@ export default function Nav2(props: NavbarProps) {
         </NavbarMenuItem>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link className="mb-2 w-full text-default-500" href={item.route} size="md"
+            <Link className="mb-2 w-full text-default-500 focus:outline-none" href={item.route} size="md"
               onClick={() => setIsMenuOpen(false)}>
               {item.name}
             </Link>

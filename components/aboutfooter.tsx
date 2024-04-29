@@ -233,7 +233,7 @@ export default function AboutFooter() {
 
 
         
-  <footer className="flex w-full flex-col hidden  md:block">
+  <footer className="flex w-full flex-col hidden md:block">
   <div className="  " style={{ paddingLeft: '2%', paddingRight: '2%' }}>
       <div style={{ position: 'relative', height: '15em' }}>
           
