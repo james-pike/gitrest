@@ -66,7 +66,7 @@ export default function RootLayout({
 			>
 				<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
 					<div className="">
-						<Nav4 />
+						<Nav2 />
 						<main className="">
 							{children}
 						</main>
