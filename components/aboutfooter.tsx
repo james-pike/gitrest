@@ -225,7 +225,7 @@ export default function AboutFooter() {
 
                 <div className="flex flex-wrap justify-between gap-2 pt-3 px-3">
                     <p className="text-small text-default-400">&copy; 2024 All rights reserved.</p>
-                    <ThemeButton />
+                    <ThemeSwitch />
                 </div>
             </div>
         </footer>
