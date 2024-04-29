@@ -236,16 +236,7 @@ export default function AboutFooter() {
   <footer className="flex w-full flex-col hidden  md:block">
   <div className="  " style={{ paddingLeft: '2%', paddingRight: '2%' }}>
       <div style={{ position: 'relative', height: '15em' }}>
-          <video
-              style={{ opacity: 0.75, height: '15em' }}
-              className="w-full h-60 object-cover "
-              src="./video/almonte1.mp4"
-              controls
-              loop
-              autoPlay
-              playsInline
-              poster="./images/a6.png">
-          </video>
+          
           <div className="pt-6"
               style={{
                   position: 'absolute',
