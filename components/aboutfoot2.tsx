@@ -103,7 +103,7 @@ export default function AboutFooter2() {
                                 zIndex: 10, // Ensure it's above the image
                             }}
                         >
-                            <div className="pt-1" style={{ display: 'flex', alignItems: 'center' }}>
+                            <div className="pt-2" style={{ display: 'flex', alignItems: 'center' }}>
                                 <a href="/menu">
                                     <button className="bg-black text-white font-bold py-3 border-white border-1 px-4 rounded mr-2 text-xs">
                                         ORDERS
