@@ -66,12 +66,11 @@ const PlaceListItem = React.forwardRef<HTMLDivElement, PlaceListItemProps>(
           />
         </Button>
      <Image
-     className="aspect-square object-cover rounded-lg"
+
   src={imageSrc}
   alt={name}
-  quality={50}
-  width={500}
-  height={500}
+  quality={20}
+  fill
 />
 
         <div className="mt-1 flex flex-col gap-2 px-1">
