@@ -66,7 +66,7 @@ const PlaceListItem = React.forwardRef<HTMLDivElement, PlaceListItemProps>(
           />
         </Button>
      <Image
-     className="aspect-square object-cover"
+     className="aspect-square object-cover rounded-lg"
   src={imageSrc}
   alt={name}
   width={500}
@@ -76,15 +76,7 @@ const PlaceListItem = React.forwardRef<HTMLDivElement, PlaceListItemProps>(
         <div className="mt-1 flex flex-col gap-2 px-1">
           {isLoading ? (
             <div className="my-1 flex flex-col gap-3">
-              <Skeleton className="w-3/5 rounded-lg">
-                <div className="h-3 w-3/5 rounded-lg bg-default-200" />
-              </Skeleton>
-              <Skeleton className="mt-3 w-4/5 rounded-lg">
-                <div className="h-3 w-4/5 rounded-lg bg-default-200" />
-              </Skeleton>
-              <Skeleton className="mt-4 w-2/5 rounded-lg">
-                <div className="h-3 w-2/5 rounded-lg bg-default-300" />
-              </Skeleton>
+            
             </div>
           ) : (
             <>
