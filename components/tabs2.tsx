@@ -30,7 +30,7 @@ export default function Tab2({ initialLocation = "Wellington", ...props }: { ini
   return (
     <Card {...props}>
       <div className="md:mx-auto block md:hidden" style={{ overflowX: 'auto', paddingLeft: '2%', paddingRight: '2%', paddingTop: '1%' }}>
-        {/* <img src="/images/a1.jpg" alt="menu" className="w-full h-32 object-cover" /> */}
+    
         <header className="mb-3 flex w-full items-center  justify-between mt-5 pl-5 pr-3">
           <div className="flex flex-col ">
             <h1 className="text-2xl font-bold text-default-900  lg:text-3xl">Menu</h1>
@@ -71,13 +71,12 @@ export default function Tab2({ initialLocation = "Wellington", ...props }: { ini
           </Dropdown>
         </header>
         <div>
-          {selectedLocation === "Wellington" ? <Primtab /> :
-          selectedLocation === "Almonte" ? <Primtab /> : <Nepeantab />}
+        <Primtab/>
         </div>
       </div>
 
       <div className="md:mx-auto hidden md:block" style={{ overflowX: 'auto', paddingLeft: '5%', paddingRight: '5%', paddingTop: '1%' }}>
-        {/* <img src="/images/a1.jpg" alt="menu" className="w-full h-32 object-cover" /> */}
+        
         <header className="mb-3 flex w-full items-center  justify-between mt-5 pl-5 pr-3">
           <div className="flex flex-col ">
             <h1 className="text-2xl font-bold text-default-900  lg:text-3xl">Menu</h1>

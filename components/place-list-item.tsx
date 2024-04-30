@@ -69,6 +69,7 @@ const PlaceListItem = React.forwardRef<HTMLDivElement, PlaceListItemProps>(
      className="aspect-square object-cover rounded-lg"
   src={imageSrc}
   alt={name}
+  quality={50}
   width={500}
   height={500}
 />
