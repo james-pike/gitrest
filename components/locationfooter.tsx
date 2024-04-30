@@ -66,17 +66,16 @@ export default function LocationFooter() {
   return (
     <footer className="flex w-full flex-col  border-white">
 
-      {/* <video
-        className="w-full h-60 object-cover "
-        src="./video/almonte1.mp4"
-       
-        loop
-     
-        playsInline
-        poster="./images/a6.png"
-        controls
-      >
-      </video> */}
+<video width="440" height="240" controls preload="none">
+      <source src="/video/almonte1.mp4" type="video/mp4" />
+      <track
+        src="/path/to/captions.vtt"
+        kind="subtitles"
+        srcLang="en"
+        label="English"
+      />
+      Your browser does not support the video tag.
+    </video>
 
 
       <div className="mx-auto px-5 pb-8 pt-6 sm:pt-24 lg:px-8 lg:pt-32">

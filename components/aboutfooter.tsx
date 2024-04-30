@@ -6,10 +6,11 @@ import React from "react";
 import { Button, Input, Link } from "@nextui-org/react";
 import { Icon } from "@iconify/react";
 
-import { AcmeIcon } from "./social";
+
 import ThemeSwitch from "@/theme-switch";
-import Tab2 from "./tabs2";
+
 import { ThemeButton } from "./theme-button";
+import  Image  from "next/image";
 
 type SocialIconProps = Omit<IconProps, "icon">;
 
@@ -86,19 +87,21 @@ export default function AboutFooter() {
         <div>
         <footer className="flex w-full flex-col md:hidden pb-3">
             <div className="" >
-                <div style={{ position: 'relative', height: '12em' }}>
-                    <img
-                        style={{ opacity: 0.75, height: '12em' }}
-                        className="w-full object-cover border-b-8 border-black"
-                        src="./images/poster.png"/>
-               
-                    
-                     
-                        
-                   
-                </div>
+              
 
-                <div className=" border-black "></div>
+            <Image
+     className=" object-cover w-full "
+  src="/images/a5.jpg"
+  alt="{name}"
+  quality={50}
+  width={300}
+  height={300}
+  priority
+/>
+
+
+
+                <div className=" border-black border-4"></div>
                 <div className="grid grid-cols-1 gap-2">
                     <div style={{ position: 'relative', height: '15em' }}>
                         <img
