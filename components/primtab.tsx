@@ -8,6 +8,7 @@ import List5 from "./list5";
 import List6 from "./list6";
 import List7 from "./list7";
 
+
 export default function Primtab() {
   const [selected, setSelected] = React.useState("pinsa");
 

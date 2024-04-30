@@ -8,6 +8,8 @@ import {Icon} from "@iconify/react";
 
 import {AcmeIcon} from "../social";
 
+import Image from "next/image";
+
 
 type SocialIconProps = Omit<IconProps, "icon">;
 
@@ -66,17 +68,18 @@ export default function AboutFooter2() {
   return (
     <footer className="flex w-full flex-col  border-white">
 
-      {/* <video
-        className="w-full h-60 object-cover "
-        src="./video/almonte1.mp4"
-       
-        loop
-     
-        playsInline
-        poster="./images/a6.png"
-        controls
-      >
-      </video> */}
+<Image
+     className=" object-cover w-full "
+  src="/images/a5.jpg"
+  alt="{name}"
+  quality={50}
+  width={440}
+  height={0}
+  style={{ width: 'full', height: '35vh' }} // optional
+  priority
+/>
+
+
 
 
       <div className="mx-auto px-5 pb-8 pt-6 sm:pt-24 lg:px-8 lg:pt-32">
