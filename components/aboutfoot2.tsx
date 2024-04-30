@@ -67,7 +67,7 @@ export default function AboutFooter2() {
   
   return (
     <footer className="flex w-full flex-col  border-white">
-<div style={{ position: 'relative', height: '50vh' }}>
+<div style={{ position: 'relative', height: '45vh' }}>
 <Image
      className=" object-cover w-full "
   src="/images/a6.png"
@@ -75,7 +75,7 @@ export default function AboutFooter2() {
   quality={50}
   width={440}
   height={0}
-  style={{ width: 'full', height: '50vh' }} // optional
+  style={{ width: 'full', height: '45vh' }} // optional
   priority
 />
                         <h1
