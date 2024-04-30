@@ -8,7 +8,7 @@ const insalata: PlaceItem[] = [
     href: "#",
     price: 9.00,
     description: "Seasonal greens, tomatoes, red onions,parmigiano, house vinaigrette.",
-    imageSrc: "./images/insa1.jpg"
+    imageSrc: "/images/insa1.jpg"
   },
   {
     id: "2",
@@ -17,7 +17,7 @@ const insalata: PlaceItem[] = [
     href: "#",
     price: 10.00,
     description: "Crispy romaine, traditional caesar dressing, herbed croutons, crispy bacon, & parmigiano.",
-    imageSrc: "./images/insa2.jpg"
+    imageSrc: "/images/insa2.jpg"
   },
   {
     id: "3",
@@ -26,7 +26,7 @@ const insalata: PlaceItem[] = [
     href: "#",
     price: 18.00,
     description: "Peppered arugula, Grana Padano, merlot-poached pears, candied pecans, white balsamic vinaigrette.",
-    imageSrc: "./images/insa5.jpg"
+    imageSrc: "/images/insa5.jpg"
   },
   {
     id: "4",
@@ -35,7 +35,7 @@ const insalata: PlaceItem[] = [
     href: "#",
     price: 14,
     description: "Seasonal greens, tomatoes, red onions, parmigiano, house vinaigrette.",
-    imageSrc: "./images/insa3.jpg"
+    imageSrc: "/images/insa3.jpg"
   },
   {
     id: "5",
@@ -44,7 +44,7 @@ const insalata: PlaceItem[] = [
     href: "#",
     price: 15.00,
     description: "Romaine Lettuce, Traditional Caesar Dressing, Herbed Croutons, Crispy Bacon, Parmigiano.",
-    imageSrc: "./images/insa4.jpg"
+    imageSrc: "/images/insa4.jpg"
   },
 
   {
@@ -54,7 +54,7 @@ const insalata: PlaceItem[] = [
     href: "#",
     price: 24,
     description: "Burratta cheese, peppered arugula , Roma tomatoes, extra virgin olive oil, balsamic glaze.",
-    imageSrc: "./images/insa0.jpg"
+    imageSrc: "/images/insa0.jpg"
   },
   
   {
@@ -64,7 +64,7 @@ const insalata: PlaceItem[] = [
     href: "#",
     price: 23.00,
     description: "Ruby beets, spinach, baby arugula, pickled red onions, tomatoes, candied pecans, goat cheese, house vinaigrette.",
-    imageSrc: "./images/insa6.jpg"
+    imageSrc: "/images/insa6.jpg"
   },
 
 ];

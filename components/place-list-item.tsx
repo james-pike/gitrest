@@ -1,9 +1,10 @@
 "use client";
 
 import React from "react";
-import {Button, Image, Skeleton} from "@nextui-org/react";
+import {Button, Skeleton} from "@nextui-org/react";
 import {Icon} from "@iconify/react";
 import { cn } from "@/cn";
+import Image from "next/image";
 
 
 export type PlaceListItemColor = {
@@ -64,14 +65,13 @@ const PlaceListItem = React.forwardRef<HTMLDivElement, PlaceListItemProps>(
             width={16}
           />
         </Button>
-        <Image
-          isBlurred
-          isZoomed
-          alt={name}
-          className="aspect-square w-full hover:scale-100"
-          isLoading={isLoading}
-          src={imageSrc}
-        />
+     <Image
+     className="aspect-square object-cover"
+  src={imageSrc}
+  alt={name}
+  width={500}
+  height={500}
+/>
 
         <div className="mt-1 flex flex-col gap-2 px-1">
           {isLoading ? (
