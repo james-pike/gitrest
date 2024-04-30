@@ -72,7 +72,7 @@ const PlaceListItem = React.forwardRef<HTMLDivElement, PlaceListItemProps>(
   width={240}
   height={240}
   placeholder="blur"
-  blurDataURL="mages/placeholder.jpg"
+  blurDataURL="/images/a1.jpg"
 />
 
         <div className="mt-1 flex flex-col gap-2 px-1">
