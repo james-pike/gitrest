@@ -66,7 +66,9 @@ export default function LocationFooter() {
   return (
     <footer className="flex w-full flex-col  border-white">
 
-<video width="440" height="240" playsInline controls preload="none">
+<video width="440" height="240"  
+poster="/images/a6.png"
+playsInline controls preload="none">
       <source src="/video/almonte1.mp4" type="video/mp4" />
       <track
         src="/path/to/captions.vtt"
