@@ -67,7 +67,7 @@ export default function AboutFooter2() {
   
   return (
     <footer className="flex w-full flex-col  border-white">
-<div style={{ position: 'relative', height: '40vh' }}>
+<div style={{ position: 'relative', height: '50vh' }}>
 <Image
      className=" object-cover w-full "
   src="/images/a6.png"
@@ -75,7 +75,7 @@ export default function AboutFooter2() {
   quality={50}
   width={440}
   height={0}
-  style={{ width: 'full', height: '40vh' }} // optional
+  style={{ width: 'full', height: '50vh' }} // optional
   priority
 />
                         <h1
@@ -103,7 +103,7 @@ export default function AboutFooter2() {
                                 zIndex: 10, // Ensure it's above the image
                             }}
                         >
-                            <div className="pt-5" style={{ display: 'flex', alignItems: 'center' }}>
+                            <div className="pt-3" style={{ display: 'flex', alignItems: 'center' }}>
                                 <a href="/menu">
                                     <button className="bg-black text-white font-bold py-3 border-white border-1 px-4 rounded mr-2 text-xs">
                                         ORDERS
@@ -165,7 +165,7 @@ export default function AboutFooter2() {
                             <div className="pt-1" style={{ display: 'flex', alignItems: 'center' }}>
                                 <a href="/menu">
                                     <button className="bg-black text-white font-bold py-3 border-white border-1 px-4 rounded mr-2 text-xs">
-                                        BROWSE PINSAS
+                                        BROWSE MENU
                                     </button>
                                 </a>
                                 <div className="pt-2"></div>
@@ -176,26 +176,27 @@ export default function AboutFooter2() {
                     </div>
 
 
-
-
                     <div className="border-4 border-black"></div>
 
-                    <div style={{ position: 'relative', height: '15em' }}>
-                        <img
-                            className="w-full object-cover border-black"
-                            style={{ opacity: 0.75, height: '15em' }}
-                            src="./images/p1.jpg"
-                            alt="Background Image"
-                        />
+                    <div style={{ position: 'relative', height: '30vh' }}>
+<Image
+     className=" object-cover w-full "
+  src="/images/p1.jpg"
+  alt="{name}"
+  quality={50}
+  width={440}
+  height={0}
+  style={{ width: 'full', height: '30vh', opacity: 0.75 }} // optional
+  priority
+/>
                         <h1
-                            // className={title()}
                             style={{
                                 position: 'absolute',
                                 top: '40%', // Position the h1 in the middle vertically
                                 left: '20%', // Position the h1 in the middle horizontally
                                 transform: 'translate(-20%, -50%)', // Center the h1
                                 color: 'white', // Text color
-                                fontSize: '2.2rem', // Font size
+                                fontSize: '2.4rem', // Font size
                                 zIndex: 10, // Ensure it's above the image
                                 lineHeight: '1', // Increase line height for better spacing between lines
                             }}
@@ -215,7 +216,7 @@ export default function AboutFooter2() {
                         >
                             <div className="pt-1" style={{ display: 'flex', alignItems: 'center' }}>
                                 <a href="/menu">
-                                    <button className="bg-black text-white font-bold py-3 border-white border-1 px-4 text-xs rounded mr-2">
+                                    <button className="bg-black text-white font-bold py-3 border-white border-1 px-4 rounded mr-2 text-xs">
                                         BROWSE PINSAS
                                     </button>
                                 </a>
@@ -225,6 +226,9 @@ export default function AboutFooter2() {
 
                         </div>
                     </div>
+
+
+
 
 
 
