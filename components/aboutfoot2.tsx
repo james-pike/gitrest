@@ -67,10 +67,10 @@ export default function AboutFooter2() {
   
   return (
     <footer className="flex w-full flex-col  border-white">
-
+<div style={{ position: 'relative', height: '35vh' }}>
 <Image
      className=" object-cover w-full "
-  src="/images/a5.jpg"
+  src="/images/a6.png"
   alt="{name}"
   quality={50}
   width={440}
@@ -78,6 +78,44 @@ export default function AboutFooter2() {
   style={{ width: 'full', height: '35vh' }} // optional
   priority
 />
+                        <h1
+                            style={{
+                                position: 'absolute',
+                                top: '40%', // Position the h1 in the middle vertically
+                                left: '20%', // Position the h1 in the middle horizontally
+                                transform: 'translate(-20%, -50%)', // Center the h1
+                                color: 'white', // Text color
+                                fontSize: '3rem', // Font size
+                                zIndex: 10, // Ensure it's above the image
+                                lineHeight: '1', // Increase line height for better spacing between lines
+                            }}
+                        >
+                            <span style={{ display: 'block' }}>JOES</span>
+                            <span style={{ display: 'block' }}>ITALIAN</span>
+                            <span style={{ display: 'block' }}>KITCHEN</span>
+                        </h1>
+                        <div className="pt-6"
+                            style={{
+                                position: 'absolute',
+                                top: '60%', // Position the buttons below the subtitle
+                                left: '20%', // Position the buttons in the middle horizontally
+                                transform: 'translateX(-20%)', // Center the buttons horizontally
+                                zIndex: 10, // Ensure it's above the image
+                            }}
+                        >
+                            <div className="pt-1" style={{ display: 'flex', alignItems: 'center' }}>
+                                <a href="/menu">
+                                    <button className="bg-black text-white font-bold py-3 border-white border-1 px-4 rounded mr-2 text-xs">
+                                        BROWSE PINSAS
+                                    </button>
+                                </a>
+                                <div className="pt-2"></div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
 
 
 
