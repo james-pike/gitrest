@@ -304,7 +304,7 @@ export default function AboutFooter() {
 
 
 
-      <div style={{ position: 'relative', height: '33vh' }}>
+      <div style={{ position: 'relative', height: '42vh' }}>
           <Image
                 className=" object-cover w-full "
                 src="/images/a6.png"
@@ -312,7 +312,7 @@ export default function AboutFooter() {
                 quality={50}
                 width={440}
                 height={0}
-                style={{ width: 'full', height: '33vh' }} // optional
+                style={{ width: 'full', height: '42vh' }} // optional
                 priority
             />
           <div className="pt-6"
