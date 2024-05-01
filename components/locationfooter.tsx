@@ -300,7 +300,7 @@ export default function LocationFooter() {
         
   <footer className="flex w-full pb-7 flex-col max-w-9xl  mx-auto hidden md:block">
   <div className="  " style={{ paddingLeft: '1%', paddingRight: '1%' }}>
-      <div style={{ position: 'relative', height: '40vh' }}>
+      <div style={{ position: 'relative', height: '42vh' }}>
           <video
                 className=" object-cover w-full "
                 src="/video/almonte1.mp4"
@@ -309,7 +309,7 @@ export default function LocationFooter() {
                 
                 poster="/images/a6.png"
                 
-                style={{ width: 'full', height: '40vh' }} // optional
+                style={{ width: 'full', height: '42vh' }} // optional
                
             />
           <div className="pt-6"
