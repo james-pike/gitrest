@@ -124,7 +124,7 @@ export default function AboutFooter2() {
 
 
 
-                    <div className="border-2 border-black"></div>
+                    <div className="border-3 border-black"></div>
 
                     <div style={{ position: 'relative', height: '30vh' }}>
 <Image
