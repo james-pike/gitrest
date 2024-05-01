@@ -71,7 +71,7 @@ const PlaceListItem = React.forwardRef<HTMLDivElement, PlaceListItemProps>(
   quality={50}
   width={240}
   height={240}
-  loading="lazy"
+
   layout="responsive"
   priority
 />
