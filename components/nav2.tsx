@@ -42,11 +42,13 @@ export default function Nav2(props: NavbarProps) {
         {...props}
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}
+        maxWidth="xl"
         isBordered
         classNames={{
-          base: "border-default-100",
+          base: "border-default-100 mx-auto max-w-9xl",
           wrapper: "justify-between",
-          item: ["hidden md:flex", "flex", "relative", 
+          item: ["hidden md:flex", "flex", 
+          "relative", 
           "focus:outline-none",
           "items-center", 
          
@@ -58,6 +60,7 @@ export default function Nav2(props: NavbarProps) {
           "data-[active=true]:after:h-[2px]", 
           "data-[active=true]:after:rounded-[2px]", 
           "data-[active=true]:after:bg-red-700"],
+          
         }}
         className="lg:px-10 border-y-1 focus:outline-none"
         height="60px"
@@ -122,116 +125,7 @@ export default function Nav2(props: NavbarProps) {
           </NavbarItem>
         </NavbarContent>
         <NavbarMenuToggle className="text-default-400 md:hidden focus:outline-none" />
-        {/* <NavbarMenu
-          className="top-[calc(var(--navbar-height)_-_1px)] grid grid-cols-2 max-h-fit bg-default-200/50 pb-4 pt-6 shadow-medium backdrop-blur-md backdrop-saturate-150 dark:bg-default-100/50"
-          motionProps={{
-            initial: { opacity: 0, y: -20 },
-            animate: { opacity: 1, y: 0 },
-            exit: { opacity: 0, y: -20 },
-            transition: {
-              ease: "easeInOut",
-              duration: 0.2,
-            },
-          }}
-        >
-          {menuItems.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`}>
-              <div>
-                <Link
-                  className="mb-2 w-full text-default-500 text-lg px-1"
-                  href={item.route}
-                
-                  onClick={() => setIsMenuOpen(false)} // Close menu on click
-                >
-                  {item.name}
-                </Link>
-              </div>
-              {index < menuItems.length - 1 && <Divider className="opacity-50" />}
-            </NavbarMenuItem>
-          ))}
-          <NavbarMenuItem className="col-span-2 pt-1">
-            <div className="flex justify-between w-full gap-3">
-              <Button
-              size="sm"
-                as={Link}
-                href="/#"
-                variant="faded"
-                className="flex-1 mr-2 text-xs rounded-xl hover:bg-green-700 hover:border-white bg-default-400 border-green-800 border-2"
-                onClick={() =>
-                  window.open(
-                    "https://www.ubereats.com/ca/store/joes-italian-kitchen/Z4rz0qIwTSq1vaWJQSrLRw "
-                  )
-                }
-              >
-                UBER EATS
-              </Button>
-              <Button
-              size="sm"
-                as={Link}
-                href="/"
-                variant="faded"
-                className="flex-1 hover:border-white text-xs rounded-xl bg-default-200 border-1.5 border-default-500"
-                onClick={() =>
-                  window.open(
-                    "https://joesitaliankitchen-1asc.mobi2go.com"
-                  )
-                }
-              >
-                ORDERS
-              </Button>
-              <Button
-              size="sm"
-                as={Link}
-                href=""
-                variant="faded"
-                className="flex-1 ml-2 hover:border-white text-xs rounded-xl bg-default-50 border-default-500 border-1.5"
-                onClick={onOpen}
-              >
-                RESERVATIONS
-              </Button>
-            </div>
-            <Modal isOpen={isOpen} onOpenChange={onOpenChange} placement="center">
-              <ModalContent>
-                {(onClose) => (
-                  <>
-                    <ModalHeader className="flex flex-col gap-1">RESERVATIONS</ModalHeader>
-                    <ModalBody>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus atque integra connect Open Table
-                      </p>
-                    </ModalBody>
-                    <ModalFooter>
-                      <Button
-                        color="default"
-                        className="border-white border"
-                        onClick={() =>
-                          window.open(
-                            "https://booking.resdiary.com/widget/Standard/JoesItalianKitchen/364"
-                          )
-                        }
-                        onPress={onClose}
-                      >
-                        Almonte
-                      </Button>
-                      <Button
-                        color="default"
-                        className="border-white border"
-                        onClick={() =>
-                          window.open(
-                            "https://booking.resdiary.com/widget/Standard/JoesItalianKitchenWellington/438"
-                          )
-                        }
-                        onPress={onClose}
-                      >
-                        Wellington
-                      </Button>
-                    </ModalFooter>
-                  </>
-                )}
-              </ModalContent>
-            </Modal>
-          </NavbarMenuItem>
-        </NavbarMenu> */}
+        
         <NavbarMenu
         className="top-[calc(var(--navbar-height)_-_1px)] focus:outline-none max-h-fit bg-default-200/50 pb-6 pt-6 shadow-medium backdrop-blur-md backdrop-saturate-150 dark:bg-default-100/50"
         motionProps={{

@@ -301,9 +301,6 @@ export default function AboutFooter() {
   <footer className="flex w-full pb-7 flex-col max-w-9xl  mx-auto hidden md:block">
   <div className="  " style={{ paddingLeft: '1%', paddingRight: '1%' }}>
      
-
-
-
       <div style={{ position: 'relative', height: '42vh' }}>
           <Image
                 className=" object-cover w-full "
