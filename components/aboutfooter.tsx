@@ -294,9 +294,9 @@ export default function AboutFooter() {
 
 
         
-  <footer className="flex w-full pb-7 flex-col hidden md:block">
-  <div className="  " style={{ paddingLeft: '3%', paddingRight: '3%' }}>
-      <div style={{ position: 'relative', height: '20em' }}>
+  <footer className="flex w-full pb-7 flex-col max-w-9xl  mx-auto hidden md:block">
+  <div className="  " style={{ paddingLeft: '1.5%', paddingRight: '1.5%' }}>
+      <div style={{ position: 'relative', height: '42vh' }}>
           <Image
                 className=" object-cover w-full "
                 src="/images/a6.png"
@@ -304,7 +304,7 @@ export default function AboutFooter() {
                 quality={50}
                 width={440}
                 height={0}
-                style={{ width: 'full', height: '20em' }} // optional
+                style={{ width: 'full', height: '42vh' }} // optional
                 priority
             />
           <div className="pt-6"
@@ -322,10 +322,10 @@ export default function AboutFooter() {
 
       <div className="border-6 border-black"></div>
       <div className="md:grid md:grid-cols-2 gap-4">
-          <div style={{ position: 'relative', height: '15em' }}>
+          <div style={{ position: 'relative', height: '20em' }}>
               <img
                   className="w-full object-cover border-black"
-                  style={{ opacity: 0.75, height: '15em' }}
+                  style={{ opacity: 0.75, height: '20em' }}
                   src="./images/g1.jpg"
                   alt="Background Image"
               />
@@ -366,10 +366,10 @@ export default function AboutFooter() {
 
               </div>
           </div>
-          <div style={{ position: 'relative', height: '15em' }}>
+          <div style={{ position: 'relative', height: '20em' }}>
               <img
                   className="w-full object-cover border-black"
-                  style={{ opacity: 0.75, height: '15em' }}
+                  style={{ opacity: 0.75, height: '20em' }}
                   src="./images/p1.jpg"
                   alt="Background Image"
               />
