@@ -300,37 +300,11 @@ export default function AboutFooter() {
         
   <footer className="flex w-full pb-7 flex-col max-w-9xl  mx-auto hidden md:block">
   <div className="  " style={{ paddingLeft: '1%', paddingRight: '1%' }}>
+     
+
+
+
       <div style={{ position: 'relative', height: '33vh' }}>
-          <video
-                className=" object-cover w-full "
-                src="/video/almonte1.mp4"
-                playsInline
-                controls
-                
-                poster="/images/a6.png"
-                
-                style={{ width: 'full', height: '33vh' }} // optional
-               
-            />
-          <div className="pt-6"
-              style={{
-                  position: 'absolute',
-                  top: '60%', // Position the buttons below the subtitle
-                  left: '20%', // Position the buttons in the middle horizontally
-                  transform: 'translateX(-20%)', // Center the buttons horizontally
-                  zIndex: 10, // Ensure it's above the image
-              }}
-          >
-
-          </div>
-      </div>
-
-      <div className="border-6 border-black"></div>
-
-
-
-
-      {/* <div style={{ position: 'relative', height: '33vh' }}>
           <Image
                 className=" object-cover w-full "
                 src="/images/a6.png"
@@ -354,7 +328,7 @@ export default function AboutFooter() {
           </div>
       </div>
 
-      <div className="border-6 border-black"></div> */}
+      <div className="border-6 border-black"></div>
 
 
 
