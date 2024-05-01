@@ -21,10 +21,10 @@ import {
 import { usePathname } from "next/navigation";
 
 const menuItems = [
-  { name: "Home", route: "/" },
-  { name: "Menu", route: "/menu" },
-  { name: "Locations", route: "/locations" },
-  { name: "About", route: "/about" },
+  { name: "HOME", route: "/" },
+  { name: "MENU", route: "/menu" },
+  { name: "LOCATIONS", route: "/locations" },
+  { name: "ABOUT", route: "/about" },
 ];
 
 export default function Nav2(props: NavbarProps) {
@@ -81,7 +81,7 @@ export default function Nav2(props: NavbarProps) {
                   color={path === item.route ? "foreground" : "foreground"}
                   className="w-full focus:outline-none"
                   href={item.route}
-                  size="md"
+                  size="lg"
                   onClick={handleMenuItemClick} // Close menu when clicked
                 >
                   {item.name}
