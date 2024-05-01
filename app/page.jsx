@@ -21,6 +21,6 @@ export default function HomePage() {
 	}, []);
 
 	return (
-		<AboutFooter />
+		<AboutFooter2 />
 	);
 }
