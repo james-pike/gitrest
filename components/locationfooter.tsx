@@ -64,7 +64,7 @@ const footerNavigation = {
 export default function LocationFooter() {
   
   return (
-    <footer className="flex w-full flex-col  border-white">
+    <footer className="flex w-full flex-colborder-white">
 
 <video width="440" height="240"  
 poster="/images/a6.png"

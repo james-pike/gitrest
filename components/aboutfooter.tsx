@@ -89,25 +89,176 @@ export default function AboutFooter() {
             <div className="" >
               
 
-            <Image
+            <div style={{ position: 'relative', height: '48vh' }}>
+<Image
      className=" object-cover w-full "
-  src="/images/a5.jpg"
+  src="/images/a6.png"
   alt="{name}"
   quality={50}
-  width={300}
-  height={300}
+  width={440}
+  height={0}
+  style={{ width: 'full', height: '48vh' }} // optional
   priority
 />
+                        <h1
+                            style={{
+                                position: 'absolute',
+                                top: '40%', // Position the h1 in the middle vertically
+                                left: '20%', // Position the h1 in the middle horizontally
+                                transform: 'translate(-20%, -50%)', // Center the h1
+                                color: 'white', // Text color
+                                fontSize: '4rem', // Font size
+                                zIndex: 10, // Ensure it's above the image
+                                lineHeight: '1', // Increase line height for better spacing between lines
+                            }}
+                        >
+                            <span style={{ display: 'block' }}>JOES</span>
+                            <span style={{ display: 'block' }}>ITALIAN</span>
+                            <span style={{ display: 'block' }}>KITCHEN</span>
+                        </h1>
+                        <div className="pt-6"
+                            style={{
+                                position: 'absolute',
+                                top: '60%', // Position the buttons below the subtitle
+                                left: '20%', // Position the buttons in the middle horizontally
+                                transform: 'translateX(-20%)', // Center the buttons horizontally
+                                zIndex: 10, // Ensure it's above the image
+                            }}
+                        >
+                            <div className="pt-2" style={{ display: 'flex', alignItems: 'center' }}>
+                                <a href="/menu">
+                                    <button className="bg-black text-white font-bold py-3 border-white border-1 px-4 rounded mr-2 text-xs">
+                                        ORDERS
+                                    </button>
+                                </a>
+                                <a href="/menu">
+                                    <button className="bg-black text-white font-bold py-3 border-white border-1 px-4 rounded mr-2 text-xs">
+                                        RESERVATIONS
+                                    </button>
+                                </a>
+                                <div className="pt-2"></div>
+
+                            </div>
+
+                        </div>
+                    </div>
 
 
 
-        
+
+                    <div className="border-4 border-black"></div>
+
+                    <div style={{ position: 'relative', height: '30vh' }}>
+<Image
+     className=" object-cover w-full "
+  src="/images/g1.jpg"
+  alt="{name}"
+  quality={50}
+  width={440}
+  height={0}
+  style={{ width: 'full', height: '30vh', opacity: 0.75 }} // optional
+  priority
+/>
+                        <h1
+                            style={{
+                                position: 'absolute',
+                                top: '40%', // Position the h1 in the middle vertically
+                                left: '20%', // Position the h1 in the middle horizontally
+                                transform: 'translate(-20%, -50%)', // Center the h1
+                                color: 'white', // Text color
+                                fontSize: '2.4rem', // Font size
+                                zIndex: 10, // Ensure it's above the image
+                                lineHeight: '1', // Increase line height for better spacing between lines
+                            }}
+                        >
+                            <span style={{ display: 'block' }}>CANADAS</span>
+                            <span style={{ display: 'block' }}>CERTIFIED</span>
+                            <span style={{ display: 'block' }}>PINSARIA</span>
+                        </h1>
+                        <div className="pt-6"
+                            style={{
+                                position: 'absolute',
+                                top: '60%', // Position the buttons below the subtitle
+                                left: '20%', // Position the buttons in the middle horizontally
+                                transform: 'translateX(-20%)', // Center the buttons horizontally
+                                zIndex: 10, // Ensure it's above the image
+                            }}
+                        >
+                            <div className="pt-1" style={{ display: 'flex', alignItems: 'center' }}>
+                                <a href="/menu">
+                                    <button className="bg-black text-white font-bold py-3 border-white border-1 px-4 rounded mr-2 text-xs">
+                                        BROWSE MENU
+                                    </button>
+                                </a>
+                                <div className="pt-2"></div>
+
+                            </div>
+
+                        </div>
+                    </div>
 
 
-                <div className="border-4 border-black"></div>
+                    <div className="border-6 border-black"></div>
 
 
-                <div className=" pt-4  pb-3 px-4">
+
+                    <div style={{ position: 'relative', height: '30vh' }}>
+<Image
+     className=" object-cover w-full "
+  src="/images/p1.jpg"
+  alt="{name}"
+  quality={50}
+  width={440}
+  height={0}
+  style={{ width: 'full', height: '30vh', opacity: 0.75 }} // optional
+  priority
+/>
+                        <h1
+                            style={{
+                                position: 'absolute',
+                                top: '40%', // Position the h1 in the middle vertically
+                                left: '20%', // Position the h1 in the middle horizontally
+                                transform: 'translate(-20%, -50%)', // Center the h1
+                                color: 'white', // Text color
+                                fontSize: '2.4rem', // Font size
+                                zIndex: 10, // Ensure it's above the image
+                                lineHeight: '1', // Increase line height for better spacing between lines
+                            }}
+                        >
+                            <span style={{ display: 'block' }}>CANADAS</span>
+                            <span style={{ display: 'block' }}>CERTIFIED</span>
+                            <span style={{ display: 'block' }}>PINSARIA</span>
+                        </h1>
+                        <div className="pt-6"
+                            style={{
+                                position: 'absolute',
+                                top: '60%', // Position the buttons below the subtitle
+                                left: '20%', // Position the buttons in the middle horizontally
+                                transform: 'translateX(-20%)', // Center the buttons horizontally
+                                zIndex: 10, // Ensure it's above the image
+                            }}
+                        >
+                            <div className="pt-1" style={{ display: 'flex', alignItems: 'center' }}>
+                                <a href="/menu">
+                                    <button className="bg-black text-white font-bold py-3 border-white border-1 px-4 rounded mr-2 text-xs">
+                                        BROWSE PINSAS
+                                    </button>
+                                </a>
+                                <div className="pt-2"></div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div className="border-8 border-black"></div>
+
+
+             
+
+
+                <div className=" pt-2  pb-3 px-4">
                     <div className="space-y-2 ">
                         <div className="flex items-center justify-start">
                             <img    
@@ -117,7 +268,7 @@ export default function AboutFooter() {
                             />
                             <span className="text-medium font-medium px-3">JOES ITALIAN KITCHEN</span>
                         </div>
-                        <p className="text-small text-default-500 px-1">
+                        <p className="text-small text-default-500 px-1 pt-1">
                             Lorem ipsum dolor sit amets, consectetur adipiscing elit. Sed neque elit, tristique
                         </p>
                         <div className="flex space-x-6 pt-3">
@@ -133,7 +284,7 @@ export default function AboutFooter() {
                 </div>
 
 
-                <div className="flex flex-wrap justify-between gap-2 pt-3 px-3">
+                <div className="flex flex-wrap justify-between gap-2 pt-2.5 px-3">
                     <p className="text-small text-default-400">&copy; 2024 All rights reserved.</p>
                     <ThemeSwitch />
                 </div>
@@ -143,10 +294,19 @@ export default function AboutFooter() {
 
 
         
-  <footer className="flex w-full flex-col hidden md:block">
-  <div className="  " style={{ paddingLeft: '2%', paddingRight: '2%' }}>
-      <div style={{ position: 'relative', height: '15em' }}>
-          
+  <footer className="flex w-full pb-7 flex-col hidden md:block">
+  <div className="  " style={{ paddingLeft: '3%', paddingRight: '3%' }}>
+      <div style={{ position: 'relative', height: '20em' }}>
+          <Image
+                className=" object-cover w-full "
+                src="/images/a6.png"
+                alt="{name}"
+                quality={50}
+                width={440}
+                height={0}
+                style={{ width: 'full', height: '20em' }} // optional
+                priority
+            />
           <div className="pt-6"
               style={{
                   position: 'absolute',
@@ -160,8 +320,8 @@ export default function AboutFooter() {
           </div>
       </div>
 
-      <div className="border-4 border-black"></div>
-      <div className="md:grid md:grid-cols-2 gap-2">
+      <div className="border-6 border-black"></div>
+      <div className="md:grid md:grid-cols-2 gap-4">
           <div style={{ position: 'relative', height: '15em' }}>
               <img
                   className="w-full object-cover border-black"
@@ -197,7 +357,7 @@ export default function AboutFooter() {
                   <div className="pt-1" style={{ display: 'flex', alignItems: 'center' }}>
                       <a href="/menu">
                           <button className="bg-black text-white font-bold py-3 border-white border-1 px-4 rounded mr-2 text-xs">
-                              BROWSE PINSAS
+                              BROWSE MENU
                           </button>
                       </a>
                       <div className="pt-2"></div>

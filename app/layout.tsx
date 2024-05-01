@@ -5,19 +5,9 @@ import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Providers } from "./providers";
-
 import clsx from "clsx";
-import BasicNavbar from "@/components/navbar";
-import CombinedNavbar from "@/components/navbar";
-import Navbar2 from "@/components/navbar2";
-import { useState } from "react";
+
 import Nav2 from "@/components/nav2";
-import Nav3 from "@/components/nav3";
-import Nav4 from "@/components/nav4";
-
-
-
-
 
 
  const metadata: Metadata = {
@@ -39,19 +29,13 @@ import Nav4 from "@/components/nav4";
 
 
 
-
 export default function RootLayout({
 	children,
 }: {
 	children: React.ReactNode;
 }) {
 
-	const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-
 	return (
-
-
 		<html lang="en" suppressHydrationWarning>
 			<head>
 			<meta name="viewport" content="width=device-width, initial-scale=1"/>

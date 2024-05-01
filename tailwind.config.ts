@@ -34,6 +34,7 @@ module.exports = {
       },
       
       borderWidth: {
+        '6': '6px',
         '12': '12px', // You can change '12' to any number you need
       },
       keyframes: {

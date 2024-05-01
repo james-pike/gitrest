@@ -1,8 +1,8 @@
-import AboutFooter2 from "@/components/aboutfoot2";
+import AboutFooter from "@/components/aboutfooter";
 
 export default function HomePage() {
 
 	return (
-		<AboutFooter2 />
+		<AboutFooter />
 	);
 }

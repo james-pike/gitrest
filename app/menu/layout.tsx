@@ -15,26 +15,7 @@ export default function MenuLayout({
 	children: React.ReactNode;
 }) {
 
-	const [isMobile, setIsMobile] = useState(false);
-
-	useEffect(() => {
-		const handleResize = () => {
-			setIsMobile(window.innerWidth <= 568); // Adjust the threshold as needed
-		};
-
-		handleResize(); // Check initial width
-		window.addEventListener("resize", handleResize);
-
-		return () => {
-			window.removeEventListener("resize", handleResize);
-		};
-	}, []);
 	return (
-	
-	
 		<Tab2	/>
-		
-
-		
 	);
 }

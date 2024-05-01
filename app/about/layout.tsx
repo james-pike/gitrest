@@ -17,12 +17,7 @@ export default function AboutLayout({
 }: {
 	children: React.ReactNode;
 }) {
-
-
 	return (
 		<AboutFooter	/>
-		
-
-		
 	);
 }
