@@ -70,7 +70,7 @@ export default function AboutFooter2() {
 <div style={{ position: 'relative', height: '48vh' }}>
 <Image
      className=" object-cover w-full "
-  src="/images/a3.jpg"
+  src="/images/a6.png"
   alt="{name}"
   quality={50}
   width={440}
@@ -124,7 +124,7 @@ export default function AboutFooter2() {
 
 
 
-                    <div className="border-4 border-black"></div>
+                    <div className="border-2 border-black"></div>
 
                     <div style={{ position: 'relative', height: '30vh' }}>
 <Image
