@@ -258,7 +258,7 @@ export default function AboutFooter() {
              
 
 
-                <div className=" pt-2  pb-3 px-4">
+                <div className=" pt-2.5  pb-3 px-4">
                     <div className="space-y-2 ">
                         <div className="flex items-center justify-start">
                             <img    
@@ -290,6 +290,10 @@ export default function AboutFooter() {
                 </div>
             </div>
         </footer>
+
+
+
+
 
 
 
@@ -419,8 +423,8 @@ export default function AboutFooter() {
       <div className="border-4 border-black"></div>
 
 
-      <div className="xl:grid xl:grid-cols-3 pt-4 xl:gap-8">
-          <div className="space-y-8 md:pr-8">
+      <div className="xl:grid xl:grid-cols-3 pt-6 xl:gap-8">
+          <div className="space-y-8 md:pr-8 px-1">
               <div className="flex items-center justify-start">
                   <img
                         className="h-10 w-auto"
