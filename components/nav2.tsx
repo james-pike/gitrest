@@ -42,7 +42,7 @@ export default function Nav2(props: NavbarProps) {
         {...props}
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}
-        maxWidth="2xl"
+        maxWidth="xl"
         isBordered
         classNames={{
           base: "border-default-100 mx-auto max-w-9xl",
@@ -67,8 +67,8 @@ export default function Nav2(props: NavbarProps) {
       >
         <NavbarBrand>
           <a href="/" style={{ textDecoration: 'none', }}>
-            <div className="rounded-full mt-10 py-0 text-background -ml-3 focus:outline-none">
-              <img className="h-24 w-auto" src="./images/logo.png" alt="Logo" />
+            <div className="rounded-full mt-12 py-0 text-background -ml-3 focus:outline-none">
+              <img className="h-28 w-auto" src="./images/logo.png" alt="Logo" />
             </div>
           </a>
         </NavbarBrand>
@@ -79,7 +79,7 @@ export default function Nav2(props: NavbarProps) {
               <NavbarItem isActive={path === item.route}>
                 <Link
                   color={path === item.route ? "foreground" : "foreground"}
-                  className="w-full focus:outline-none"
+                  className="w-full focus:outline-none text-xl"
                   href={item.route}
                   size="lg"
                   onClick={handleMenuItemClick} // Close menu when clicked

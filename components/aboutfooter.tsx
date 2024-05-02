@@ -97,7 +97,7 @@ export default function AboutFooter() {
   <footer className="flex w-full pb-4 flex-col max-w-9xl  mx-auto ">
   <div className="  " style={{ paddingLeft: '1%', paddingRight: '1%' }}>
      
-      <div style={{ position: 'relative', height: '48vh', opacity: 0.8 }}>
+      <div style={{ position: 'relative', height: '42vh', opacity: 0.8 }}>
           <Image
                 className=" object-cover w-full "
                 src="/images/g1.jpg"
@@ -105,7 +105,7 @@ export default function AboutFooter() {
                 quality={50}
                 width={440}
                 height={0}
-                style={{ width: 'full', height: '48vh' }} // optional
+                style={{ width: 'full', height: '42vh' }} // optional
                 priority
             />
           <div className="pt-6"
