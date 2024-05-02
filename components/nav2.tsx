@@ -42,7 +42,7 @@ export default function Nav2(props: NavbarProps) {
         {...props}
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}
-        maxWidth="xl"
+        maxWidth="2xl"
         isBordered
         classNames={{
           base: "border-default-100 mx-auto max-w-9xl",
@@ -66,9 +66,9 @@ export default function Nav2(props: NavbarProps) {
         height="60px"
       >
         <NavbarBrand>
-          <a href="/" style={{ textDecoration: 'none' }}>
-            <div className="rounded-full mt-3 py-0 text-background -ml-3 focus:outline-none">
-              <img className="h-16 w-auto" src="./images/logo.png" alt="Logo" />
+          <a href="/" style={{ textDecoration: 'none', }}>
+            <div className="rounded-full mt-5 py-0 text-background -ml-3 focus:outline-none">
+              <img className="h-20 w-auto" src="./images/logo.png" alt="Logo" />
             </div>
           </a>
         </NavbarBrand>
