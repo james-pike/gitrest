@@ -67,8 +67,8 @@ export default function Nav2(props: NavbarProps) {
       >
         <NavbarBrand>
           <a href="/" style={{ textDecoration: 'none', }}>
-            <div className="rounded-full mt-5 py-0 text-background -ml-3 focus:outline-none">
-              <img className="h-20 w-auto" src="./images/logo.png" alt="Logo" />
+            <div className="rounded-full mt-10 py-0 text-background -ml-3 focus:outline-none">
+              <img className="h-24 w-auto" src="./images/logo.png" alt="Logo" />
             </div>
           </a>
         </NavbarBrand>
@@ -117,7 +117,7 @@ export default function Nav2(props: NavbarProps) {
               }
               className="dark:bg-foreground bg-red-800 font-medium text-background focus:outline-none"
               color="secondary"
-              radius="full"
+              // radius="full"
               variant="flat"
             >
               Reservations

@@ -4,6 +4,6 @@ import LocationFooter from "@/components/locationfooter";
 export default function HomePage() {
 
 	return (
-		<LocationFooter />
+		<AboutFooter />
 	);
 }

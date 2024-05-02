@@ -91,7 +91,7 @@ export default function AboutFooter() {
 
             <div style={{ position: 'relative', height: '48vh' }}>
 <Image
-     className=" object-cover w-full "
+     className="object-cover w-full"
   src="/images/a6.png"
   alt="{name}"
   quality={50}
@@ -298,18 +298,18 @@ export default function AboutFooter() {
 
 
         
-  <footer className="flex w-full pb-7 flex-col max-w-9xl  mx-auto hidden md:block">
+  <footer className="flex w-full pb-4 flex-col max-w-9xl  mx-auto hidden md:block">
   <div className="  " style={{ paddingLeft: '1%', paddingRight: '1%' }}>
      
-      <div style={{ position: 'relative', height: '42vh' }}>
+      <div style={{ position: 'relative', height: '48vh', opacity: 0.8 }}>
           <Image
                 className=" object-cover w-full "
-                src="/images/a6.png"
+                src="/images/g1.jpg"
                 alt="{name}"
                 quality={50}
                 width={440}
                 height={0}
-                style={{ width: 'full', height: '42vh' }} // optional
+                style={{ width: 'full', height: '48vh' }} // optional
                 priority
             />
           <div className="pt-6"
@@ -425,10 +425,10 @@ export default function AboutFooter() {
       </div>
 
 
-      <div className="border-4 border-black"></div>
+      
 
 
-      <div className="xl:grid xl:grid-cols-3 pt-6 xl:gap-8">
+      {/* <div className="xl:grid xl:grid-cols-3 pt-6 xl:gap-8">
           <div className="space-y-8 md:pr-8 px-1">
               <div className="flex items-center justify-start">
                   <img
@@ -470,7 +470,7 @@ export default function AboutFooter() {
       <div className="flex flex-wrap justify-between gap-2 pt-8">
           <p className="text-small text-default-400">&copy; 2024 Acme Inc. All rights reserved.</p>
           <ThemeButton      />
-      </div>
+      </div> */}
   </div>
 </footer>
         </div>
