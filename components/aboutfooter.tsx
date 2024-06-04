@@ -11,7 +11,8 @@ export default function AboutFooter() {
                 <div className="  " style={{ paddingLeft: '0%', paddingRight: '0%' }}>
 
                     <div>
-                        <Video />
+                        <Video 
+                        />
                     </div>
 
                     <div className="border-6 border-black"></div>
