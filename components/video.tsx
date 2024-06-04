@@ -5,7 +5,7 @@
         export default function Video() {
             
             return (
-                <div className="relative z-100">
+                <div className="relative ">
                     <video
                         src={"/video/almonte1.mp4"}
                         loop
@@ -18,7 +18,7 @@
                     </video>
                     <div className="absolute top-1/2 left-1/4 transform -translate-x-1/4 -translate-y-1/2 z-20 space-y-3">
                         <h1 className="text-6xl text-white font-bold">JOES ITALIAN KITCHEN</h1>
-                        <p className="text-2xl text-white">This content should display the Wellington Menu</p>
+                        <p className="text-2xl text-white">Lorem Ipsum serving Almonte, Preston, & Wellington</p>
                     </div>
                 </div>
             );
