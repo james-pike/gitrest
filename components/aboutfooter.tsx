@@ -15,30 +15,7 @@ export default function AboutFooter() {
                         />
                     </div>
 
-                    <div className="border-6 border-black"></div>
-
-                    <div style={{ position: 'relative', height: '16em', opacity: 0.8 }}>
-                        <Image
-                            className=" object-cover w-full "
-                            src="/images/g1.jpg"
-                            alt="{name}"
-                            quality={50}
-                            width={440}
-                            height={0}
-                            style={{ width: 'full', height: '16em' }} // optional
-                            priority
-                        />
-                        <div className="pt-6"
-                            style={{
-                                position: 'absolute',
-                                top: '60%', // Position the buttons below the subtitle
-                                left: '20%', // Position the buttons in the middle horizontally
-                                transform: 'translateX(-20%)', // Center the buttons horizontally
-                                zIndex: 10, // Ensure it's above the image
-                            }}
-                        >
-                        </div>
-                    </div>
+                
                     <div className="border-6 border-black"></div>
                     <div className="md:grid md:grid-cols-2 gap-4">
                         <div style={{ position: 'relative', height: '20em' }}>
@@ -85,6 +62,7 @@ export default function AboutFooter() {
 
                             </div>
                         </div>
+                        <div className="border-6 border-black"></div>
                         <div style={{ position: 'relative', height: '20em' }}>
                             <img
                                 className="w-full object-cover border-black"
