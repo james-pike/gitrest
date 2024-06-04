@@ -2,12 +2,19 @@
 
 import React from "react";
 import Image from "next/image";
+import Video from "./video";
 
 export default function AboutFooter() {
     return (
         <div>
             <footer className="flex w-full pb-4 flex-col max-w-9xl  mx-auto ">
                 <div className="  " style={{ paddingLeft: '0%', paddingRight: '0%' }}>
+
+                    <div>
+                        <Video />
+                    </div>
+
+                    <div className="border-6 border-black"></div>
 
                     <div style={{ position: 'relative', height: '16em', opacity: 0.8 }}>
                         <Image
