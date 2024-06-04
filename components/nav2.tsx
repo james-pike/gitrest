@@ -24,6 +24,7 @@ const menuItems = [
   { name: "HOME", route: "/" },
   { name: "MENU", route: "/menu" },
   { name: "LOCATIONS", route: "/locations" },
+  { name: "GIFT CARDS", route: "/giftcards" },
   { name: "ABOUT", route: "/about" },
 ];
 
