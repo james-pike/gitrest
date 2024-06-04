@@ -14,7 +14,7 @@
                             quality={50}
                             width={440}
                             height={0}
-                            style={{ width: 'full', height: '30em' }} // optional
+                            style={{ width: 'full', height: '24em' }} // optional
                             priority
                         />
                     <div className="absolute top-1/2 left-1/4 transform -translate-x-1/4 -translate-y-1/2 z-20 space-y-3">
