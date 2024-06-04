@@ -5,7 +5,7 @@
         export default function Video() {
             
             return (
-                <div className="relative">
+                <div className="relative z-100">
                     <video
                         src={"/video/almonte1.mp4"}
                         loop
