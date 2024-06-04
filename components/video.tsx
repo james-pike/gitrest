@@ -11,8 +11,9 @@
                         loop
                         autoPlay
                         muted
-                        style={{ opacity: 0.75, height: '20vh' }}
+                        style={{ opacity: 0.75, height: '40vh' }}
                         className='object-cover w-full h-full lg:px-40 '
+                        poster='/images/poster.jpg'
                     >
                     </video>
                     <div className="absolute top-1/2 left-1/4 transform -translate-x-1/4 -translate-y-1/2 z-20 space-y-3">
