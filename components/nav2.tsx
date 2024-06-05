@@ -143,7 +143,6 @@ export default function Nav2(props: NavbarProps) {
           onClick={() => {
             setIsMenuOpen(false)
                 window.open("https://joesitaliankitchen-1asc.mobi2go.com")
-                
               }
           }>
             Orders
