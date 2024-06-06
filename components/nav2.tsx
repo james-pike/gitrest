@@ -68,7 +68,7 @@ export default function Nav2(props: NavbarProps) {
         <NavbarBrand>
           <a href="/" style={{ textDecoration: 'none', }}>
             <div className="rounded-full mt-12 py-0 text-background -ml-3 focus:outline-none">
-              <img className="h-24 w-auto" src="./images/logo.png" alt="Logo" />
+              <img className="h-20 w-auto" src="./images/logo.png" alt="Logo" />
             </div>
           </a>
         </NavbarBrand>
@@ -175,6 +175,18 @@ export default function Nav2(props: NavbarProps) {
                         onPress={onClose}
                       >
                         Almonte
+                      </Button>
+                      <Button
+                        color="default"
+                        className="border-white border focus:outline-none"
+                        onClick={() =>
+                          window.open(
+                            "https://booking.resdiary.com/widget/Standard/JoesItalianKitchen/364"
+                          )
+                        }
+                        onPress={onClose}
+                      >
+                        Preston
                       </Button>
                       <Button
                         color="default"
