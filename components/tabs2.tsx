@@ -59,6 +59,15 @@ export default function Tab2({ initialLocation = "Wellington", ...props }: { ini
               >
                 Almonte
               </DropdownItem>
+
+              <DropdownItem
+                key="preston"
+                shortcut={selectedLocation === "Preston" && <FiCheck />}
+                onClick={() => handleLocationChange("Preston")}
+                startContent={<SlLocationPin />}
+              >
+                Preston
+              </DropdownItem>
               <DropdownItem
                 key="wellington"
                 shortcut={selectedLocation === "Wellington" && <FiCheck />}
@@ -106,6 +115,14 @@ export default function Tab2({ initialLocation = "Wellington", ...props }: { ini
                 Almonte
               </DropdownItem>
               <DropdownItem
+                key="preston"
+                shortcut={selectedLocation === "Preston" && <FiCheck />}
+                onClick={() => handleLocationChange("Preston")}
+                startContent={<SlLocationPin />}
+              >
+                Preston
+              </DropdownItem>
+              <DropdownItem
                 key="wellington"
                 shortcut={selectedLocation === "Wellington" && <FiCheck />}
                 onClick={() => handleLocationChange("Wellington")}
@@ -127,7 +144,7 @@ export default function Tab2({ initialLocation = "Wellington", ...props }: { ini
 
 export async function getServerSideProps() {
   // Fetch initial location from the server or use a default value
-  const initialLocation = "Wellington"; // Replace with logic to fetch from the server if needed
+  const initialLocation = "Preston"; // Replace with logic to fetch from the server if needed
 
   return {
     props: {
