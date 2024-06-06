@@ -67,7 +67,7 @@ export default function Nav2(props: NavbarProps) {
       >
         <NavbarBrand>
           <a href="/" style={{ textDecoration: 'none', }}>
-            <div className="rounded-full mt-12 py-0 text-background -ml-3 focus:outline-none">
+            <div className="rounded-full mt-8 py-0 text-background -ml-3 focus:outline-none">
               <img className="h-20 w-auto" src="./images/logo.png" alt="Logo" />
             </div>
           </a>
@@ -157,10 +157,10 @@ export default function Nav2(props: NavbarProps) {
               <ModalContent className="focus:outline-none">
                 {(onClose) => (
                   <>
-                    <ModalHeader className="flex flex-col gap-1 focus:outline-none">RESERVATIONS</ModalHeader>
+                    <ModalHeader className="flex flex-col gap-1 underline focus:outline-none">RESERVATIONS</ModalHeader>
                     <ModalBody>
                       <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing lorem ipsum dolor sit amet consectetur electus atque integra connect Open Table
+                        Lorem ipsum dolor sit amet consectetur adipisicing lorem ipsum dolor sit amet consectetur electus atque integra connect Open Table.
                       </p>
                     </ModalBody>
                     <ModalFooter>
