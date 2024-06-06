@@ -67,7 +67,7 @@ export default function Nav2(props: NavbarProps) {
       >
         <NavbarBrand>
           <a href="/" style={{ textDecoration: 'none', }}>
-            <div className="rounded-full mt-8 py-0 text-background -ml-3 focus:outline-none">
+            <div className="rounded-full mt-10 py-0 text-background -ml-3 focus:outline-none">
               <img className="h-20 w-auto" src="./images/logo.png" alt="Logo" />
             </div>
           </a>
